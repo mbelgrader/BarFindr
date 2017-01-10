@@ -15,8 +15,8 @@ column name | data type | details
 id              | integer   | not null, primary key
 name            | string    | not null
 address         | string    | not null
-lat             | integer   | not null
-lng             | integer   | not null
+lat             | float     | not null
+lng             | float     | not null
 image           | string    | not null
 average_rating  | integer   | not null
 
@@ -51,5 +51,6 @@ comment_id  | integer   | not null, foreign key (references comments), indexed
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
+bar_id      | integer   | not null
 username    | string    | not null
 rating      | integer   | not null

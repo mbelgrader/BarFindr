@@ -14,9 +14,9 @@ sufficient CSS styling:
 - [ ] New account creation, login, and guest/demo login
 - [ ] Map
 - [ ] Business Info
-- [ ] Tags
-- [ ] Search
-- [ ] Comments/Ratings
+- [ ] Search by Tags
+- [ ] Comments
+- [ ] Ratings
 - [ ] Production README [sample](docs/production_readme.md)
 
 ## Design Docs
