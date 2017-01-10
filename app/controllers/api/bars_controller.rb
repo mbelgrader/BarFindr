@@ -1,6 +1,6 @@
 class Api::BarsController < ApplicationController
   def index
-    @bars = Bar.all
+    @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
     render :index
   end
 
@@ -12,7 +12,10 @@ class Api::BarsController < ApplicationController
   private
 
   def bar_params
-    params.require(:bench).permit(:name, :address, :lat, :lng)
+    params.require(:bar).permit(:name, :address, :lat, :lng)
   end
 
+  def bounds
+    params[:bounds]
+  end
 end

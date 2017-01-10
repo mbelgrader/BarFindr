@@ -1,7 +1,11 @@
 import React from 'react';
+import BarMap from '../map/bar_map';
 
-const Search = () => (
+const Search = ({ bars, updateFilter }) => (
   <div>
-    <h1>Search</h1>
+    <p>Search</p>
+    <BarMap bars={bars} updateFilter={updateFilter}/>
   </div>
 );
+
+export default Search;
