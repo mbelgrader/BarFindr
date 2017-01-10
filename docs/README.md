@@ -61,5 +61,6 @@ sufficient CSS styling:
 ### Bonus Features (TBD)
 - [ ] Mobile responsive
 - [ ] Geolocation (detect current users location)
+- [ ] Custom map icons
 - [ ] Up/down vote comments
 - [ ] Favorites
