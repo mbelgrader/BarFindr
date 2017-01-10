@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
+import SearchContainer from './search/search_container';
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -27,3 +28,5 @@ const Root = ({ store }) => {
   );
 };
 export default Root;
+
+// <IndexRoute component={ SearchContainer } />
