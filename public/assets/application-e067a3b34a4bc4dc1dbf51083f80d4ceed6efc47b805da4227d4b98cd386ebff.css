@@ -1,0 +1,52 @@
+/* line 3, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+html, body, h1, h2, h3, p, section, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 15, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.map {
+  height: 500px;
+  width: 700px;
+  float: right;
+}
+
+/* line 21, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-form {
+  position: absolute;
+  top: 10;
+  left: 20;
+}
+
+/* line 33, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 2px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

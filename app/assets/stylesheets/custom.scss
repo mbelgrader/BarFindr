@@ -14,14 +14,18 @@ html, body, h1, h2, h3, p, section, a {
 
 .map {
   height: 500px;
-  width: 500px;
+  width: 700px;
   float: right;
 }
 
 .account-form {
-  position: fixed;
+  position: absolute;;
   top: 10;
-  left: 10;
+  left: 20;
+}
+
+form {
+  
 }
 
 // header
