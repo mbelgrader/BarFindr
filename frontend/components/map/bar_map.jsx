@@ -43,22 +43,22 @@ class BarMap extends Component {
         southWest: { lat: south, lng: west } };
       this.props.updateFilter('bounds', bounds);
     });
-    google.maps.event.addListener(this.map, 'click', event => {
-      const coords = _getCoordsObj(event.latLng);
-      this._handleClick(coords);
-    });
+    // google.maps.event.addListener(this.map, 'click', event => {
+    //   const coords = _getCoordsObj(event.latLng);
+    //   this._handleClick(coords);
+    // });
   }
 
   _handleMarkerClick(bar) {
     this.props.router.push(`bars/${bar.id}`);
   }
 
-  _handleClick(coords) {
-    this.props.router.push({
-      pathname: "bars/new",
-      query: coords
-    });
-  }
+  // _handleClick(coords) {
+  //   this.props.router.push({
+  //     pathname: "bars/new",
+  //     query: coords
+  //   });
+  // }
 
   render() {
     return <div className="map" ref="map">Map</div>;

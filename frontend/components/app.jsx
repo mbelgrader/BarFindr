@@ -1,9 +1,10 @@
 import React from 'react';
-import SearchContainer from './search/search_container';
+// import SearchContainer from './search/search_container';
+import HeaderContainer from './header/header_container'
 
 const App = ({ children }) => (
   <div>
-    <h1>BarFindr</h1>
+    <HeaderContainer />
     { children }
   </div>
 );
