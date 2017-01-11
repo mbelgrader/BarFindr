@@ -4,12 +4,20 @@ import { Link, withRouter } from 'react-router';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { username: '', password: '' };
+    this.state = { email: '', password: '' };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidUpdate() {
     this.redirect();
+  }
+
+  componentDidMount() {
+
+        if (this.props.formType === 'demo') {
+          this.setState({email: 'demo', password: 'password'});
+        }
+
   }
 
   redirect() {
@@ -24,6 +32,7 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+
     const user = Object.assign({}, this.state);
     this.props.processForm(user).then(() => this.redirect());
   }
@@ -33,10 +42,21 @@ class SessionForm extends React.Component {
   }
 
   otherLink() {
-    if (this.props.formType === 'login')
-      return <Link to='/signup'>Sign Up</Link>;
-    else
-      return <Link to='login'>Log In</Link>;
+    if (this.props.formType === 'login') {
+      return (
+        <div className='account-message'>
+          <span>or </span>
+          <Link to='/signup'>Create an account</Link>
+        </div>
+      );
+    } else {
+      return (
+        <div className='account-message'>
+          <span>Already have an account? </span>
+          <Link to='login'>Log In</Link>
+        </div>
+      );
+    }
   }
 
   showErrors() {
@@ -52,16 +72,16 @@ class SessionForm extends React.Component {
   render() {
     const { formType } = this.props;
     return (
-      <div className='account-form'>
-        <h1>{this.capitalize(formType)} or {this.otherLink()}</h1>
+      <div className="account-form">
         <form onSubmit={this.handleSubmit}>
+          <h1>{this.capitalize(formType)}</h1>
 
           {this.showErrors()}
 
-          <label>Username:
+          <label>Email:
             <input type='text'
-                   onChange={this.update('username')}
-                   value={this.state.username} />
+                   onChange={this.update('email')}
+                   value={this.state.email} />
           </label>
           <br />
           <label>Password:
@@ -70,8 +90,9 @@ class SessionForm extends React.Component {
                    value={this.state.password} />
           </label>
           <br />
-          <input type='submit' value='Submit' />
+          <input className='button'type='submit' value='Submit' />
 
+          {this.otherLink()}
         </form>
       </div>
     );

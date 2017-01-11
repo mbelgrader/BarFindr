@@ -4,7 +4,8 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
-import SearchContainer from './search/search_container';
+import { Guide } from './guide';
+// import BarDetailContainer from './sidebar/bar_detail_component';
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -18,14 +19,17 @@ const Root = ({ store }) => {
     <Provider store={ store }>
       <Router history={ hashHistory }>
         <Route path='/' component={ App } >
-          <IndexRoute component={ SearchContainer } />
+          <IndexRoute component={ Guide } />
           <Route path='login' component={ SessionFormContainer }
                  onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={ SessionFormContainer }
                  onEnter={_redirectIfLoggedIn} />
+               <Route path='demo' component={ SessionFormContainer } />
         </Route>
       </Router>
     </Provider>
   );
 };
 export default Root;
+
+// <Route path='bars/:barId' component={ BarDetailContainer } />
