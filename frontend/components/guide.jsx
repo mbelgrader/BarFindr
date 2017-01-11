@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const Guide = () => (
-  <div className='guide'>
+  <div className='sidebar'>
     <ul>
       <li>
         <i className="fa fa-mouse-pointer" aria-hidden="true"></i>

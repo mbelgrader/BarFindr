@@ -8,7 +8,6 @@ import BarDetail from './bar_detail';
 const mapStateToProps = (state, { params, ownProps }) => {
   const barId = parseInt(params.barId);
   const bar = selectBar(state, barId);
-  
   return {
     barId,
     bar

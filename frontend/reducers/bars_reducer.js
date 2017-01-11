@@ -1,4 +1,5 @@
 import { RECEIVE_BARS, RECEIVE_BAR } from '../actions/bar_actions';
+import merge from 'lodash/merge';
 
 const barsReducer = (state = {}, action) => {
   Object.freeze(state);

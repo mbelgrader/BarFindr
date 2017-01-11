@@ -9,6 +9,10 @@ class Api::BarsController < ApplicationController
     render :show
   end
 
+  def show
+    @bar = Bar.find(params[:id])
+  end
+
   private
 
   def bar_params

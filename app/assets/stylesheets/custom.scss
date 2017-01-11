@@ -21,26 +21,25 @@ body {
 }
 
 .map {
-  height: 500px;
-  width: 700px;
+  height: 100vh;
   float: right;
+  width: 66%;
 }
 
 // guide
 
-.guide {
-  width: 250px;
-  height: 100%;
+.sidebar {
+  height: 100vh;
   background-color: $blue;
   color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
+  width: 33%;
 }
 
 i {
   padding-right: 10px;
 }
-
 
 // header
 
@@ -66,9 +65,10 @@ nav a {
 // login/signup
 
 .account-form {
-  position: absolute;
-  top: 10;
-  left: 80;
+  // position: absolute;
+  // top: 10;
+  // left: 80;
+  height: 100vh;
 }
 
 input, label {

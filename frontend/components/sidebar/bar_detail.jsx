@@ -1,10 +1,26 @@
 import React from 'react';
 
-export const BarDetail = ({ bar }) = (
-  <div>
-    <ul>
-      <li>{bar.name}</li>
-      <li>{bar.address}</li>
-    </ul>
-  </div>
-);
+class BarDetail extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.props.fetchBar(this.props.barId);
+  }
+
+  render() {
+    const { name, address } = this.props.bar;
+    return(
+      <div className='sidebar'>
+        <ul>
+          <li>{name}</li>
+          <li>{address}</li>
+        </ul>
+      </div>
+
+    );
+  }
+}
+
+export default BarDetail;

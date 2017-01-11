@@ -5,3 +5,10 @@ export const fetchBars = (filters) => {
     filters
   });
 };
+
+export const fetchBar = (id) => {
+  return $.ajax({
+    method: 'GET',
+    url: `api/bars/${id}`,
+  });
+};

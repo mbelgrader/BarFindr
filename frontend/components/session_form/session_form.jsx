@@ -13,17 +13,13 @@ class SessionForm extends React.Component {
   }
 
   componentDidMount() {
-
-        if (this.props.formType === 'demo') {
-          this.setState({email: 'demo', password: 'password'});
-        }
-
+    if (this.props.formType === 'demo')
+      this.setState({email: 'demo', password: 'password'});
   }
 
   redirect() {
-    if (this.props.loggedIn) {
+    if (this.props.loggedIn)
       this.props.router.push("/");
-    }
   }
 
   update(field) {

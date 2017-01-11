@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import { Guide } from './guide';
-// import BarDetailContainer from './sidebar/bar_detail_component';
+import BarDetailContainer from './sidebar/bar_detail_container';
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -24,12 +24,11 @@ const Root = ({ store }) => {
                  onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={ SessionFormContainer }
                  onEnter={_redirectIfLoggedIn} />
-               <Route path='demo' component={ SessionFormContainer } />
+          <Route path='demo' component={ SessionFormContainer } />
+          <Route path='bars/:barId' component={ BarDetailContainer } />
         </Route>
       </Router>
     </Provider>
   );
 };
 export default Root;
-
-// <Route path='bars/:barId' component={ BarDetailContainer } />
