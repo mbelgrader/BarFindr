@@ -52,7 +52,7 @@ class SessionForm extends React.Component {
   render() {
     const { formType } = this.props;
     return (
-      <div>
+      <div className='account-form'>
         <h1>{this.capitalize(formType)} or {this.otherLink()}</h1>
         <form onSubmit={this.handleSubmit}>
 

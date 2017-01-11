@@ -18,7 +18,6 @@ address         | string    | not null
 lat             | float     | not null
 lng             | float     | not null
 image           | string    | not null
-average_rating  | integer   | not null
 
 ## tags
 column name | data type | details

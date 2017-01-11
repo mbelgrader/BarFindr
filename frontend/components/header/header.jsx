@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const links = () => (
-  <nav>
+  <div>
     <Link to="/signup">Sign Up</Link>
     &nbsp;&nbsp;
     <Link to="/login">Log In</Link>
-  </nav>
+  </div>
 );
 
 const signOut = (logout) => (
@@ -15,7 +15,7 @@ const signOut = (logout) => (
 
 const Greeting = ({ currentUser, logout }) => (
   <nav>
-    <h1>BarFindr</h1>
+    <Link to="/"><h1>BarFindr</h1></Link>
     {currentUser ? signOut(logout) : links()}
   </nav>
 );
