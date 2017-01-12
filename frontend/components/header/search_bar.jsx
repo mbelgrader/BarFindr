@@ -5,10 +5,13 @@ class SearchBar extends React.Component {
     super(props);
     this.state = {filter: ''};
     this.update = this.update.bind(this);
+    // debugger
   }
 
   update(e) {
+    // debugger
     this.setState({ filter: e.currentTarget.value });
+    this.props.updateFilter(e.currentTarget.value);
   }
 
   render() {

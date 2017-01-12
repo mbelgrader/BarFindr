@@ -1,11 +1,11 @@
 import { UPDATE_FILTER } from '../actions/filter_actions';
 import merge from 'lodash/merge';
 
-const _defaultFilters = Object.freeze({
+const _defaultFilter = Object.freeze({
   bounds: {}
 });
 
-const filterReducer = (state = _defaultFilters, action) => {
+const filterReducer = (state = _defaultFilter, action) => {
   Object.freeze(state);
   if (action.type === UPDATE_FILTER) {
     const newFilter = {
