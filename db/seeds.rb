@@ -44,7 +44,7 @@ Tagging.create!(bar_id: 1, tag_id: 8)
 
 Tagging.create!(bar_id: 2, tag_id: 1)
 Tagging.create!(bar_id: 2, tag_id: 5)
-Tagging.create!(bar_id: 3, tag_id: 6)
+Tagging.create!(bar_id: 2, tag_id: 6)
 Tagging.create!(bar_id: 2, tag_id: 7)
 Tagging.create!(bar_id: 2, tag_id: 10)
 
@@ -58,7 +58,7 @@ Tagging.create!(bar_id: 4, tag_id: 3)
 Tagging.create!(bar_id: 4, tag_id: 6)
 Tagging.create!(bar_id: 4, tag_id: 7)
 Tagging.create!(bar_id: 4, tag_id: 9)
-Tagging.create!(bar_id: 3, tag_id: 11)
+Tagging.create!(bar_id: 4, tag_id: 11)
 
 Comment.create!(comment: 'Great place') # 1
 Comment.create!(comment: 'Cheap drinks') # 2

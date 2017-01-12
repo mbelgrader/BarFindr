@@ -3,10 +3,12 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true
   validates :email, uniqueness: true
 
-  has_many :bar_comments, :ratings
+  has_many :bar_comments
+  has_many :ratings
 
   after_initialize :ensure_session_token
   attr_reader :password
+
 
   def password=(password)
     self.password_digest = BCrypt::Password.create(password)

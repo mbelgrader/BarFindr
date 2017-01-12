@@ -1,8 +1,9 @@
 $blue: #1cb9d0;
+$light-grey: #c3c6cc;
 
 // reset
 
-html, body, section, h1, h2, h3, p, a, ul, li {
+html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -12,6 +13,12 @@ html, body, section, h1, h2, h3, p, a, ul, li {
 	vertical-align: baseline;
   text-decoration: none;
   list-style: none;
+  // border: none;
+  // outline: none;
+}
+
+button {
+
 }
 
 body {
@@ -59,31 +66,43 @@ nav a {
   padding: 0px 8px 0px 8px;
 }
 
-.logo {
-  // font-style: italic;
+.demo-button {
+  border: 1px solid $blue;
+  border-radius: 4px;
+  color: $blue;
+  background-color: white;
+  padding: 4px 8px 4px 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: inherit;
 }
 
-
-// login/signup
-
-.account-form {
-  // position: absolute;
-  // top: 10;
-  // left: 80;
-  height: 100vh;
+.search {
+  // padding: 6px 15px 6px 30px;
+	// margin:3px;
+  margin: 0px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid $light-grey;
+  border-radius: 10px;
+  font-size: 12px;
+  // border: none;
+  outline: none;
 }
 
 input, label {
   margin: 10px;
 }
 
-.submit {
-
-}
-
 form {
   text-align: center;
   padding: 10px;
+}
+
+input {
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 
 .account-message {
@@ -95,6 +114,30 @@ form {
   color: $blue;
 }
 
-// .button {
-//   border-color: $blue;
+.button {
+  // border-color: $blue;
+  border: none;
+  background-color: $blue;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  border-bottom: 1px solid #587cb5;
+  border-right: 1px solid #587cb5;
+  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+// .logo {
+//   font-style: italic;
+// }
+
+
+// login/signup
+
+// .account-form {
+//   // position: absolute;
+//   // top: 10;
+//   // left: 80;
+//   height: 100vh;
 // }
