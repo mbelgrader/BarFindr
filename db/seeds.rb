@@ -89,3 +89,23 @@ BarComment.create!(user_id: 3, bar_id: 3, comment_id: 6)
 BarComment.create!(user_id: 1, bar_id: 4, comment_id: 8)
 BarComment.create!(user_id: 1, bar_id: 4, comment_id: 1)
 BarComment.create!(user_id: 1, bar_id: 4, comment_id: 5)
+
+Rating.create!(bar_id: 1, user_id: 1, rating: 5)
+Rating.create!(bar_id: 1, user_id: 2, rating: 5)
+Rating.create!(bar_id: 1, user_id: 3, rating: 5)
+Rating.create!(bar_id: 1, user_id: 4, rating: 5)
+
+Rating.create!(bar_id: 2, user_id: 1, rating: 4)
+Rating.create!(bar_id: 2, user_id: 2, rating: 4)
+Rating.create!(bar_id: 2, user_id: 3, rating: 4)
+Rating.create!(bar_id: 2, user_id: 4, rating: 4)
+
+Rating.create!(bar_id: 3, user_id: 1, rating: 3)
+Rating.create!(bar_id: 3, user_id: 2, rating: 4)
+Rating.create!(bar_id: 3, user_id: 3, rating: 2)
+Rating.create!(bar_id: 3, user_id: 4, rating: 5)
+
+Rating.create!(bar_id: 4, user_id: 1, rating: 4)
+Rating.create!(bar_id: 4, user_id: 2, rating: 4)
+Rating.create!(bar_id: 4, user_id: 3, rating: 5)
+Rating.create!(bar_id: 4, user_id: 4, rating: 5)
