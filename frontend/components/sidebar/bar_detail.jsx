@@ -14,7 +14,6 @@ class BarDetail extends React.Component {
     newProps.params.barId;
 
     if (this.props.params.barId !== newProps.params.barId){
-      // debugger
       this.props.fetchBar(parseInt(newProps.params.barId));
     }
 
