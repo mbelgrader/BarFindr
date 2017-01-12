@@ -1,0 +1,104 @@
+/* line 5, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+html, body, section, h1, h2, h3, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 17, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1cb9d0;
+}
+
+/* line 23, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.map {
+  height: 100vh;
+  float: right;
+  width: 66%;
+}
+
+/* line 29, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar {
+  height: 100vh;
+  background-color: #1cb9d0;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 33%;
+}
+
+/* line 38, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.detail {
+  text-align: center;
+}
+
+/* line 42, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+i {
+  padding-right: 10px;
+}
+
+/* line 48, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 2px;
+}
+
+/* line 58, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav a {
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 69, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-form {
+  height: 100vh;
+}
+
+/* line 76, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+input, label {
+  margin: 10px;
+}
+
+/* line 84, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 89, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message {
+  color: black;
+  font-size: 15px;
+}
+
+/* line 94, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message a {
+  color: #1cb9d0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
