@@ -8,7 +8,7 @@ const RootReducer = combineReducers({
   session: SessionReducer,
   bars: barsReducer,
   barDetails: barDetailsReducer,
-  filter: filterReducer
+  filters: filterReducer
 });
 
 export default RootReducer;

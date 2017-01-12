@@ -1,8 +1,8 @@
-export const fetchBars = (filter) => {
+export const fetchBars = (filters) => {
   return $.ajax({
     method: 'GET',
     url: 'api/bars',
-    filter
+    filters
   });
 };
 

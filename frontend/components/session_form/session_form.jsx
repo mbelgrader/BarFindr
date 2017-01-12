@@ -12,6 +12,17 @@ class SessionForm extends React.Component {
     this.redirect();
   }
 
+  componentWillReceiveProps(newProps) {
+    // debugger
+    console.log(this.props.location);
+    console.log(newProps.location);
+    if (this.props.location.pathname !== '/demo') {
+      this.setState({email: '', password: ''});
+    } else {
+      this.setState({email: 'demo', password: 'password'});
+    }
+  }
+
   componentDidMount() {
     if (this.props.formType === 'demo')
       this.setState({email: 'demo', password: 'password'});
@@ -77,13 +88,15 @@ class SessionForm extends React.Component {
           <label>Email:
             <input type='text'
                    onChange={this.update('email')}
-                   value={this.state.email} />
+                   value={this.state.email}
+                   placeholder='Email' />
           </label>
           <br />
           <label>Password:
             <input type='password'
                    onChange={this.update('password')}
-                   value={this.state.password} />
+                   value={this.state.password}
+                   placeholder='Password' />
           </label>
           <br />
           <input className='button'type='submit' value='Submit' />
