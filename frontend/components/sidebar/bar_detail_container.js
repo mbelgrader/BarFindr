@@ -10,7 +10,8 @@ const mapStateToProps = (state, { params, ownProps }) => {
   const bar = selectBar(state, barId);
   return {
     barId,
-    bar
+    bar,
+    ownProps
   };
 };
 

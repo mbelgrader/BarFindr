@@ -9,8 +9,15 @@ class BarDetail extends React.Component {
     this.props.fetchBar(this.props.barId);
   }
 
-  componentDidUpdate() {
-    this.props.fetchBar(this.props.barId);
+  componentWillReceiveProps(newProps) {
+    this.props.params.barId;
+    newProps.params.barId;
+
+    if (this.props.params.barId !== newProps.params.barId){
+      // debugger
+      this.props.fetchBar(parseInt(newProps.params.barId));
+    }
+
   }
 
   render() {

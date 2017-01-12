@@ -3,6 +3,7 @@ import merge from 'lodash/merge';
 
 const barDetailsReducer = (state = {}, action) => {
   Object.freeze(state);
+  // debugger
   switch (action.type) {
     case RECEIVE_BAR:
       const newBar = {[action.bar.id]: action.bar};
