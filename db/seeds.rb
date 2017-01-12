@@ -1,6 +1,10 @@
 
-User.create!(email: 'test', password: 'password')
 User.create!(email: 'demo', password: 'password')
+User.create!(email: 'test1', password: 'password')
+User.create!(email: 'test2', password: 'password')
+User.create!(email: 'test3', password: 'password')
+User.create!(email: 'test4', password: 'password')
+User.create!(email: 'test5', password: 'password')
 
 Bar.create!(name: 'Dada Bar',
             address: '65 Post St',
@@ -55,3 +59,33 @@ Tagging.create!(bar_id: 4, tag_id: 6)
 Tagging.create!(bar_id: 4, tag_id: 7)
 Tagging.create!(bar_id: 4, tag_id: 9)
 Tagging.create!(bar_id: 3, tag_id: 11)
+
+Comment.create!(comment: 'Great place') # 1
+Comment.create!(comment: 'Cheap drinks') # 2
+Comment.create!(comment: 'Awesome bartenders') # 3
+Comment.create!(comment: 'Live bands!!!!') # 4
+Comment.create!(comment: 'Quiet place to relax') # 5
+Comment.create!(comment: 'Really good cigars') # 6
+Comment.create!(comment: 'Cool art display') # 7
+Comment.create!(comment: 'Cool spot') # 8
+Comment.create!(comment: 'They have a pool table!') # 9
+
+BarComment.create!(user_id: 1, bar_id: 1, comment_id: 2)
+BarComment.create!(user_id: 5, bar_id: 1, comment_id: 3)
+BarComment.create!(user_id: 4, bar_id: 1, comment_id: 1)
+BarComment.create!(user_id: 2, bar_id: 1, comment_id: 2)
+BarComment.create!(user_id: 3, bar_id: 1, comment_id: 7)
+
+BarComment.create!(user_id: 2, bar_id: 2, comment_id: 1)
+BarComment.create!(user_id: 3, bar_id: 2, comment_id: 2)
+BarComment.create!(user_id: 1, bar_id: 2, comment_id: 8)
+BarComment.create!(user_id: 5, bar_id: 2, comment_id: 9)
+BarComment.create!(user_id: 4, bar_id: 2, comment_id: 3)
+BarComment.create!(user_id: 5, bar_id: 2, comment_id: 4)
+
+BarComment.create!(user_id: 2, bar_id: 3, comment_id: 8)
+BarComment.create!(user_id: 3, bar_id: 3, comment_id: 6)
+
+BarComment.create!(user_id: 1, bar_id: 4, comment_id: 8)
+BarComment.create!(user_id: 1, bar_id: 4, comment_id: 1)
+BarComment.create!(user_id: 1, bar_id: 4, comment_id: 5)
