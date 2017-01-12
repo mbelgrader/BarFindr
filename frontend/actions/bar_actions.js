@@ -2,6 +2,7 @@ import * as APIUtil from '../util/bar_api_util';
 
 export const RECEIVE_BARS = "RECEIVE_BARS";
 export const RECEIVE_BAR = "RECEIVE_BAR";
+export const RECEIVE_BAR_DETAILS = "RECEIVE_BAR_DETAILS";
 
 export const fetchBars = filters => dispatch => (
   APIUtil.fetchBars(filters)

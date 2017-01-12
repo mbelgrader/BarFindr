@@ -9,10 +9,14 @@ class BarDetail extends React.Component {
     this.props.fetchBar(this.props.barId);
   }
 
+  componentDidUpdate() {
+    this.props.fetchBar(this.props.barId);
+  }
+
   render() {
     const { name, address } = this.props.bar;
     return(
-      <div className='sidebar'>
+      <div className='sidebar detail'>
         <ul>
           <li>{name}</li>
           <li>{address}</li>

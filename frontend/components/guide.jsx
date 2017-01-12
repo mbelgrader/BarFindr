@@ -10,7 +10,7 @@ export const Guide = () => (
     <br />
       <li>
         <i className="fa fa-search" aria-hidden="true"></i>
-        Search for different vibes (lounge, club, dive, etc)
+        Search for different vibes <br /> lounge, club, dive, etc)
       </li>
     </ul>
   </div>

@@ -1,1 +1,1 @@
-json.partial! '/api/bars/bar', bar: @bar
+json.extract! @bar, :id, :name, :address

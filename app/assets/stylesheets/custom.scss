@@ -26,8 +26,6 @@ body {
   width: 66%;
 }
 
-// guide
-
 .sidebar {
   height: 100vh;
   background-color: $blue;
@@ -35,6 +33,10 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   padding: 20px;
   width: 33%;
+}
+
+.detail {
+  text-align: center;
 }
 
 i {

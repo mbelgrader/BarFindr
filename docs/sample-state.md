@@ -8,12 +8,6 @@
     errors: []
   },
 
-  forms: {
-    signUp: {errors: []},
-    logIn: {errors: []},
-    createComment: {errors: ["body can't be blank"]}
-  },
-
   bars: {
     1: {
       lat: 37.7888521,

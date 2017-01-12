@@ -6,9 +6,6 @@ const barsReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_BARS:
       return action.bars;
-    case RECEIVE_BAR:
-      const newBar = {[action.bar.id]: action.bar};
-      return merge({}, state, newBar);
     default:
       return state;
   }

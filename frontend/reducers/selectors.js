@@ -1,7 +1,7 @@
 import { values } from 'lodash';
 
-export const selectBar = ({ bars }, id) => {
-   return bars[id] || {};
+export const selectBar = ({ barDetails }, id) => {
+   return barDetails[id] || {};
 };
 
 export const selectAllBars = bars => values(bars);
