@@ -90,7 +90,7 @@ Comment.create!(body: 'Cool art display', user_id: 6, bar_id: 1)
 Comment.create!(body: 'Cheap drinks', user_id: 5, bar_id: 2)
 Comment.create!(body: 'Awesome bartenders', user_id: 2, bar_id: 2)
 Comment.create!(body: 'Live bands!!!!', user_id: 3, bar_id: 2)
-Comment.create!(body: 'They have a pool table!', user_id: 4, bar_id: 2)
+Comment.create!(body: 'pool tables!', user_id: 4, bar_id: 2)
 
 # Cigar
 Comment.create!(body: 'Really good cigars', user_id: 7, bar_id: 3)

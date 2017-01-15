@@ -3,14 +3,22 @@ import React from 'react';
 export const Guide = () => (
   <div className='sidebar'>
     <ul>
-      <li>
+      <li className='click-info'>
         <i className="fa fa-mouse-pointer" aria-hidden="true"></i>
-        Click on a icon to see more info
+        Click an icon to see more info
       </li>
     <br />
       <li>
         <i className="fa fa-search" aria-hidden="true"></i>
-        Search for different vibes <br /> lounge, club, dive, etc)
+        Search for different vibes &nbsp; : <br />
+      <ul className='tag-list'>
+          <li>lounge</li>
+          <li>club</li>
+          <li>dive</li>
+          <li>hipster</li>
+          <li>hookah</li>
+          <li>etc</li>
+        </ul>
       </li>
     </ul>
   </div>
