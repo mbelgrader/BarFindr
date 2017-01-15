@@ -21,7 +21,8 @@ Bar.create!(name: 'Benders',
             address: '806 S Van Ness Ave',
             lat: 37.7601718,
             lng: -122.419518,
-            image: "https://irs0.4sqi.net/img/general/600x600/26378902_dhZ3ItUCRWNy9mQnaA5dhOBfDfgMcHOkt1wOg7-iVOQ.jpg")
+            image: "http://cdn.shopify.com/s/files/1/0750/2079/files/dzr-sf-bar-report-02_cf116450-2673-45cd-98c4-3792a44bde47.jpg?1822377684330399469")
+            # "https://irs0.4sqi.net/img/general/600x600/26378902_dhZ3ItUCRWNy9mQnaA5dhOBfDfgMcHOkt1wOg7-iVOQ.jpg"
 
 Bar.create!(name: "The Cigar Bar \& Grill",
             address: '850 Montgomery St',

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
+import { Guide } from '../sidebar/guide';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -92,35 +93,38 @@ class SessionForm extends React.Component {
   render() {
     const { formType } = this.props;
     return (
-      <div className="account-form">
-        <form onSubmit={this.handleSubmit}>
-          <h1>{this.capitalize(formType)}</h1>
+      <div>
+        <Guide />
+        <div className="account-form">
+          <form onSubmit={this.handleSubmit}>
+            <h1>{this.capitalize(formType)}</h1>
 
-          {this.showErrors()}
+            {this.showErrors()}
 
-          {this.usernameInput()}
-          <br />
+            {this.usernameInput()}
+            <br />
 
-          <label><i className="fa fa-envelope" aria-hidden="true"></i>
-            <input type='text'
-                   onChange={this.update('email')}
-                   value={this.state.email}
-                   placeholder='Email' />
-          </label>
+            <label><i className="fa fa-envelope" aria-hidden="true"></i>
+              <input type='text'
+                     onChange={this.update('email')}
+                     value={this.state.email}
+                     placeholder='Email' />
+            </label>
 
-          <br />
-          <label><i className="fa fa-lock" aria-hidden="true"></i>
-            <input type='password'
-                   onChange={this.update('password')}
-                   value={this.state.password}
-                   placeholder='Password' />
-          </label>
+            <br />
+            <label><i className="fa fa-lock" aria-hidden="true"></i>
+              <input type='password'
+                     onChange={this.update('password')}
+                     value={this.state.password}
+                     placeholder='Password' />
+            </label>
 
-          <br />
-          <input className='button'type='submit' value='Submit' />
+            <br />
+            <input className='button'type='submit' value='Submit' />
 
-          {this.otherLink()}
-        </form>
+            {this.otherLink()}
+          </form>
+        </div>
       </div>
     );
   }
