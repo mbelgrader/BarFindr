@@ -28,11 +28,8 @@ class BarMap extends Component {
   }
 
   componentDidUpdate() {
-    if(this.props.singleBar){
-      this.MarkerManager.updateMarkers([this.props.bars[Object.keys(this.props.bars)[0]]]); //grabs only that one bar
-    } else {
-      this.MarkerManager.updateMarkers(this.props.bars);
-    }
+    // debugger
+    this.MarkerManager.updateMarkers(this.props.bars);
   }
 
   _registerListeners() {

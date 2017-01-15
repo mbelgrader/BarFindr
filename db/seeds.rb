@@ -1,13 +1,13 @@
 
 User.create!(email: 'demo', username: 'demo', password: 'password')
-User.create!(email: 'test1', username: 'test1', password: 'password')
-User.create!(email: 'test2', username: 'test2', password: 'password')
-User.create!(email: 'test3', username: 'test3', password: 'password')
-User.create!(email: 'test4', username: 'test4', password: 'password')
-User.create!(email: 'test5', username: 'test5', password: 'password')
-User.create!(email: 'test6', username: 'test6', password: 'password')
-User.create!(email: 'test7', username: 'test7', password: 'password')
-User.create!(email: 'test8', username: 'test8', password: 'password')
+User.create!(email: 'ashley12@test.com', username: 'ashley12', password: 'password')
+User.create!(email: 'amillz@test.com', username: 'amillz', password: 'password')
+User.create!(email: 'stevie@test.com', username: 'stevie', password: 'password')
+User.create!(email: 'brandon34@test.com', username: 'brandon34', password: 'password')
+User.create!(email: 'xtina5@test.com', username: 'xtina5', password: 'password')
+User.create!(email: 'jenny42@test.com', username: 'jenny42', password: 'password')
+User.create!(email: 'nick12@test.com', username: 'nick12', password: 'password')
+User.create!(email: 'dandk@test.com', username: 'dandk', password: 'password')
 
 Bar.create!(name: 'Dada Bar',
             address: '65 Post St',
@@ -68,21 +68,21 @@ Tagging.create!(bar_id: 4, tag_id: 9)
 Tagging.create!(bar_id: 4, tag_id: 11)
 
 # Dada
-Comment.create!(body: 'Great place', user_id: 1, bar_id: 1)
-Comment.create!(body: 'Cool art display', user_id: 1, bar_id: 1)
+Comment.create!(body: 'Great place', user_id: 5, bar_id: 1)
+Comment.create!(body: 'Cool art display', user_id: 6, bar_id: 1)
 
 # Benders
-Comment.create!(body: 'Cheap drinks', user_id: 1, bar_id: 2)
+Comment.create!(body: 'Cheap drinks', user_id: 5, bar_id: 2)
 Comment.create!(body: 'Awesome bartenders', user_id: 2, bar_id: 2)
 Comment.create!(body: 'Live bands!!!!', user_id: 3, bar_id: 2)
 Comment.create!(body: 'They have a pool table!', user_id: 4, bar_id: 2)
 
 # Cigar
-Comment.create!(body: 'Really good cigars', user_id: 2, bar_id: 3)
+Comment.create!(body: 'Really good cigars', user_id: 7, bar_id: 3)
 
 # Library
 Comment.create!(body: 'Quiet place to relax', user_id: 4, bar_id: 4)
-Comment.create!(body: 'Cool spot', user_id: 1, bar_id: 4)
+Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 4)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 1, rating: 5)

@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '' };
+    this.state = { username: '', email: '', password: '' };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -41,7 +41,7 @@ class SessionForm extends React.Component {
     e.preventDefault();
 
     const user = Object.assign({}, this.state);
-    this.props.processForm(user).then(() => this.redirect());
+    this.props.processForm({user});
   }
 
   capitalize(word) {
@@ -66,6 +66,19 @@ class SessionForm extends React.Component {
     }
   }
 
+  usernameInput() {
+    if (this.props.formType === 'signup') {
+      return (
+        <label><i className="fa fa-user" aria-hidden="true"></i>
+          <input type='text'
+                 onChange={this.update('username')}
+                 value={this.state.username}
+                 placeholder='Username' />
+        </label>
+      );
+    }
+  }
+
   showErrors() {
     return(
       <ul>
@@ -85,19 +98,24 @@ class SessionForm extends React.Component {
 
           {this.showErrors()}
 
-          <label>Email:
+          {this.usernameInput()}
+          <br />
+
+          <label><i className="fa fa-envelope" aria-hidden="true"></i>
             <input type='text'
                    onChange={this.update('email')}
                    value={this.state.email}
                    placeholder='Email' />
           </label>
+
           <br />
-          <label>Password:
+          <label><i className="fa fa-lock" aria-hidden="true"></i>
             <input type='password'
                    onChange={this.update('password')}
                    value={this.state.password}
                    placeholder='Password' />
           </label>
+
           <br />
           <input className='button'type='submit' value='Submit' />
 

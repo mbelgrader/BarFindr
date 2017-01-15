@@ -6,14 +6,14 @@ export default class MarkerManager {
     this.handleClick = handleClick;
     this.markers = [];
     //permanently bind instance methods
-    this._createMarkerFromBench = this._createMarkerFromBench.bind(this);
+    this._createMarkerFromBar = this._createMarkerFromBar.bind(this);
     this._removeMarker = this._removeMarker.bind(this);
     this._markersToRemove = this._markersToRemove.bind(this);
   }
 
   updateMarkers(bars){
     this.bars = bars;
-    this._barsToAdd().forEach(this._createMarkerFromBench);
+    this._barsToAdd().forEach(this._createMarkerFromBar);
     this._markersToRemove().forEach(this._removeMarker);
   }
 
@@ -27,7 +27,7 @@ export default class MarkerManager {
     return this.markers.filter( marker => !barIds.includes(marker.barId) );
   }
 
-  _createMarkerFromBench(bar) {
+  _createMarkerFromBar(bar) {
     const pos = new google.maps.LatLng(bar.lat, bar.lng);
     const marker = new google.maps.Marker({
       position: pos,

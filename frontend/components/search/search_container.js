@@ -1,18 +1,17 @@
 import { connect } from 'react-redux';
 import { selectAllBars } from '../../reducers/selectors';
 import { updateFilter } from '../../actions/filter_actions';
-
-import BarMap from './bar_map';
+import Search from './search';
 
 const mapStateToProps = ({ bars }) => ({
   bars: selectAllBars(bars)
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateFilter: (filter) => dispatch(updateFilter(filter))
+  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
 });
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(BarMap);
+)(Search);

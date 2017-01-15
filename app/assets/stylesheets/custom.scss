@@ -1,4 +1,6 @@
 $blue: #1cb9d0;
+$dark-blue: #1452b7;
+$light-blue: #2ce3f7;
 $light-grey: #c3c6cc;
 
 // reset
@@ -135,6 +137,12 @@ input {
   padding: 8px;
   font-size: 12px;
   border-top: 1px solid $light-grey;
+}
+
+.comments span {
+  padding-right: 15px;
+  font-style: italic;
+  color: #dcf0f2;
 }
 // .logo {
 //   font-style: italic;

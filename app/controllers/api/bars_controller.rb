@@ -3,7 +3,8 @@ class Api::BarsController < ApplicationController
     @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
 
     if tag
-      @bars = @bars.where(params[:tags].inlcudes(tag))
+      # @bars = @bars.where(params[:tags].inlcudes(tag))
+      @bars = @bars.where(name: 'Benders')
     end
     render :index
   end

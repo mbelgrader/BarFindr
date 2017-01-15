@@ -14,10 +14,10 @@ const signOut = (logout) => (
   <button className='nav-button' onClick={logout}>Log Out</button>
 );
 
-const Header = ({ currentUser, logout }) => (
+const Header = ({ currentUser, logout, updateFilter }) => (
   <nav>
     <Link to="/"><h1 className="logo">BarFindr</h1></Link>
-    <SearchBarContainer />
+    <SearchBarContainer updateFilter={updateFilter} />
     {currentUser ? signOut(logout) : links()}
   </nav>
 );

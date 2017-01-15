@@ -1,0 +1,160 @@
+/* line 8, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 26, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1cb9d0;
+}
+
+/* line 32, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.map {
+  height: 100vh;
+  float: right;
+  width: 66%;
+}
+
+/* line 38, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar {
+  height: 100vh;
+  background-color: #1cb9d0;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 33%;
+}
+
+/* line 47, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.detail {
+  text-align: center;
+}
+
+/* line 51, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+i {
+  padding-right: 10px;
+}
+
+/* line 57, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 2px;
+}
+
+/* line 67, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav a {
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 71, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.nav-button {
+  border: 1px solid #1cb9d0;
+  border-radius: 4px;
+  color: #1cb9d0;
+  background-color: white;
+  padding: 4px 8px 4px 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+/* line 82, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.search {
+  margin: 0px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #c3c6cc;
+  border-radius: 10px;
+  font-size: 12px;
+  outline: none;
+}
+
+/* line 95, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+input, label {
+  margin: 10px;
+}
+
+/* line 99, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 104, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+input {
+  border: 1px solid #c3c6cc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* line 110, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message {
+  color: black;
+  font-size: 15px;
+}
+
+/* line 115, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message a {
+  color: #1cb9d0;
+}
+
+/* line 119, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.button {
+  border: none;
+  background-color: #1cb9d0;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  border-bottom: 1px solid #587cb5;
+  border-right: 1px solid #587cb5;
+}
+
+/* line 132, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comments {
+  padding: 20px;
+}
+
+/* line 136, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comments ul li {
+  padding: 8px;
+  font-size: 12px;
+  border-top: 1px solid #c3c6cc;
+}
+
+/* line 142, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comments span {
+  padding-right: 15px;
+  font-style: italic;
+  color: #dcf0f2;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

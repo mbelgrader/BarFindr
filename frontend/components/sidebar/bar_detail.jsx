@@ -20,10 +20,11 @@ class BarDetail extends React.Component {
     const { name, address } = this.props.bar;
 
     let comments = [];
-    // if (this.props.bar.comments) {
-      // comments = selectComments(this.props.bar);
-      // debugger
-    // }
+    if (this.props.bar.comments) {
+      comments = this.props.bar.comments.map((comment, i) => {
+        return <li key={i}><span>@{comment.username}</span>{comment.body}</li>;
+      });
+    }
     return(
       <div className='sidebar detail'>
         <ul>
@@ -33,6 +34,7 @@ class BarDetail extends React.Component {
 
         <div className='comments'>
           <ul>
+            {comments}
           </ul>
         </div>
       </div>
