@@ -18,7 +18,6 @@ class BarDetail extends React.Component {
 
   render() {
     const { name, address } = this.props.bar;
-
     let comments = [];
     if (this.props.bar.comments) {
       comments = this.props.bar.comments.map((comment, i) => {
@@ -27,9 +26,10 @@ class BarDetail extends React.Component {
     }
     return(
       <div className='sidebar detail'>
+        <img src={this.props.bar.image} />
         <ul>
-          <li>{name}</li>
-          <li>{address}</li>
+          <li className='bar-name'>{name}</li>
+          <li className='address'>{address}</li>
         </ul>
 
         <div className='comments'>
@@ -44,5 +44,3 @@ class BarDetail extends React.Component {
 }
 
 export default BarDetail;
-
-// {comments.map((comment, i) => <li key={i}>{comment}</li>)}

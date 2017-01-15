@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import SearchBarContainer from './search_bar_container';
+import SearchBar from './search_bar';
 
 const links = () => (
   <div>
@@ -17,7 +17,7 @@ const signOut = (logout) => (
 const Header = ({ currentUser, logout, updateFilter }) => (
   <nav>
     <Link to="/"><h1 className="logo">BarFindr</h1></Link>
-    <SearchBarContainer updateFilter={updateFilter} />
+    <SearchBar updateFilter={updateFilter} />
     {currentUser ? signOut(logout) : links()}
   </nav>
 );

@@ -19,10 +19,6 @@ html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
   // outline: none;
 }
 
-button {
-
-}
-
 body {
   font-family: 'Ubuntu', sans-serif;
   // font-family: 'Droid Sans', sans-serif;
@@ -33,23 +29,6 @@ body {
   height: 100vh;
   float: right;
   width: 66%;
-}
-
-.sidebar {
-  height: 100vh;
-  background-color: $blue;
-  color: white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  width: 33%;
-}
-
-.detail {
-  text-align: center;
-}
-
-i {
-  padding-right: 10px;
 }
 
 // header
@@ -129,6 +108,31 @@ input {
   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+// sidebar
+
+.sidebar {
+  height: 100vh;
+  background-color: $blue;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 33%;
+  text-align: center;
+}
+
+i {
+  padding-right: 10px;
+}
+
+.address {
+  font-size: 14px;
+}
+
+.bar-name {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
 .comments {
   padding: 20px;
 }
@@ -143,6 +147,13 @@ input {
   padding-right: 15px;
   font-style: italic;
   color: #dcf0f2;
+}
+
+.sidebar img {
+  width: 300px;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: 4px solid white;
 }
 // .logo {
 //   font-style: italic;

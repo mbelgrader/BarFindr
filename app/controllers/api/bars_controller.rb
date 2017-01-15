@@ -21,7 +21,7 @@ class Api::BarsController < ApplicationController
   private
 
   def bar_params
-    params.require(:bar).permit(:name, :address, :lat, :lng, :tags)
+    params.require(:bar).permit(:name, :address, :lat, :lng, :tags, :image)
   end
 
   def bounds

@@ -1,4 +1,4 @@
-json.extract! @bar, :id, :name, :address, :tags
+json.extract! @bar, :id, :name, :address, :tags, :image
 
 json.comments do
   json.array! @bar.comments do |comment|
