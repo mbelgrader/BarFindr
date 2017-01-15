@@ -35,15 +35,9 @@ tag_id      | integer   | not null, foreign key (references tags), indexed
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-comment     | string    | not null
-
-## bar_comments
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
+body        | string    | not null
 user_id     | integer   | not null, foreign key (references users), indexed
 bar_id      | integer   | not null, foreign key (references bars), indexed
-comment_id  | integer   | not null, foreign key (references comments), indexed
 
 ## ratings
 column name | data type | details

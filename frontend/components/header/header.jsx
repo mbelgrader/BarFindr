@@ -4,14 +4,14 @@ import SearchBarContainer from './search_bar_container';
 
 const links = () => (
   <div>
-    <Link className='demo-button' to="/demo">Demo</Link>
+    <Link className='nav-button' to="/demo">Demo</Link>
     <Link to="/signup">Sign Up</Link>
     <Link to="/login">Log In</Link>
   </div>
 );
 
 const signOut = (logout) => (
-  <button onClick={logout}>Log Out</button>
+  <button className='nav-button' onClick={logout}>Log Out</button>
 );
 
 const Header = ({ currentUser, logout }) => (

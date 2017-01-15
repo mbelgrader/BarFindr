@@ -1,6 +1,10 @@
 class Api::BarsController < ApplicationController
   def index
     @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
+
+    if tag
+      @bars = @bars.where(params[:tags].inlcudes(tag))
+    end
     render :index
   end
 
@@ -16,10 +20,14 @@ class Api::BarsController < ApplicationController
   private
 
   def bar_params
-    params.require(:bar).permit(:name, :address, :lat, :lng)
+    params.require(:bar).permit(:name, :address, :lat, :lng, :tags)
   end
 
   def bounds
     params[:bounds]
+  end
+
+  def tag
+    params[:tag]
   end
 end

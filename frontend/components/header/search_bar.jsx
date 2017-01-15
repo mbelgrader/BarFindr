@@ -3,26 +3,31 @@ import React from 'react';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {filter: ''};
-    this.update = this.update.bind(this);
-    // debugger
+    this.state = {input: ''};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  update(e) {
+  handleSubmit(e) {
+    this.props.updateFilter('tag', this.state.input);
+  }
+
+  handleChange(e) {
+    this.setState({ input: e.currentTarget.value });
     // debugger
-    this.setState({ filter: e.currentTarget.value });
-    this.props.updateFilter(e.currentTarget.value);
   }
 
   render() {
     return (
       <div>
-        <i className="fa fa-search" aria-hidden="true"></i>
-        <input className='search'
-               onChange={this.update}
-               type='text'
-               value={this.state.filter}
-               placeholder='Search..'/>
+        <form onSubmit={this.handleSubmit}>
+          <i className="fa fa-search" aria-hidden="true"></i>
+          <input className='search'
+                 onChange={this.handleChange}
+                 type='text'
+                 value={this.state.input}
+                 placeholder='Search..'/>
+        </form>
       </div>
     );
   }

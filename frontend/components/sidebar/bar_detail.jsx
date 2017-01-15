@@ -20,10 +20,10 @@ class BarDetail extends React.Component {
     const { name, address } = this.props.bar;
 
     let comments = [];
-    if (this.props.bar.comments) {
-      comments = selectComments(this.props.bar);
+    // if (this.props.bar.comments) {
+      // comments = selectComments(this.props.bar);
       // debugger
-    }
+    // }
     return(
       <div className='sidebar detail'>
         <ul>
@@ -33,7 +33,6 @@ class BarDetail extends React.Component {
 
         <div className='comments'>
           <ul>
-            {comments.map((comment, i) => <li key={i}>{comment}</li>)}
           </ul>
         </div>
       </div>
@@ -43,3 +42,5 @@ class BarDetail extends React.Component {
 }
 
 export default BarDetail;
+
+// {comments.map((comment, i) => <li key={i}>{comment}</li>)}

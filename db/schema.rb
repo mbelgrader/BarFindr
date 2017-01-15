@@ -10,19 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170112040954) do
+ActiveRecord::Schema.define(version: 20170113005815) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "bar_comments", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.integer  "bar_id",     null: false
-    t.integer  "comment_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id", "bar_id", "comment_id"], name: "index_bar_comments_on_user_id_and_bar_id_and_comment_id", using: :btree
-  end
 
   create_table "bars", force: :cascade do |t|
     t.string   "name",       null: false
@@ -34,9 +25,12 @@ ActiveRecord::Schema.define(version: 20170112040954) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string   "comment",    null: false
+    t.string   "body",       null: false
+    t.integer  "bar_id",     null: false
+    t.integer  "user_id",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["bar_id", "user_id"], name: "index_comments_on_bar_id_and_user_id", using: :btree
   end
 
   create_table "ratings", force: :cascade do |t|
@@ -45,7 +39,7 @@ ActiveRecord::Schema.define(version: 20170112040954) do
     t.integer  "rating",     null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["bar_id", "user_id"], name: "index_ratings_on_bar_id_and_user_id", unique: true, using: :btree
+    t.index ["bar_id", "user_id"], name: "index_ratings_on_bar_id_and_user_id", using: :btree
   end
 
   create_table "taggings", force: :cascade do |t|
@@ -68,6 +62,7 @@ ActiveRecord::Schema.define(version: 20170112040954) do
     t.string   "session_token",   null: false
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "username",        null: false
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
   end
 

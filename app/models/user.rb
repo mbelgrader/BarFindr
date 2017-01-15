@@ -1,9 +1,9 @@
 class User < ApplicationRecord
-  validates :email, :password, :session_token, presence: true
+  validates :email, :password, :session_token, :username, presence: true
   validates :password, length: { minimum: 6 }, allow_nil: true
   validates :email, uniqueness: true
 
-  has_many :bar_comments
+  has_many :comments
   has_many :ratings
 
   after_initialize :ensure_session_token

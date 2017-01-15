@@ -1,10 +1,13 @@
 
-User.create!(email: 'demo', password: 'password')
-User.create!(email: 'test1', password: 'password')
-User.create!(email: 'test2', password: 'password')
-User.create!(email: 'test3', password: 'password')
-User.create!(email: 'test4', password: 'password')
-User.create!(email: 'test5', password: 'password')
+User.create!(email: 'demo', username: 'demo', password: 'password')
+User.create!(email: 'test1', username: 'test1', password: 'password')
+User.create!(email: 'test2', username: 'test2', password: 'password')
+User.create!(email: 'test3', username: 'test3', password: 'password')
+User.create!(email: 'test4', username: 'test4', password: 'password')
+User.create!(email: 'test5', username: 'test5', password: 'password')
+User.create!(email: 'test6', username: 'test6', password: 'password')
+User.create!(email: 'test7', username: 'test7', password: 'password')
+User.create!(email: 'test8', username: 'test8', password: 'password')
 
 Bar.create!(name: 'Dada Bar',
             address: '65 Post St',
@@ -38,73 +41,68 @@ Tag.create!(name: 'hipster') # 9
 Tag.create!(name: 'biker') # 10
 Tag.create!(name: 'pool') # 11
 
+# Dada
 Tagging.create!(bar_id: 1, tag_id: 3)
 Tagging.create!(bar_id: 1, tag_id: 7)
 Tagging.create!(bar_id: 1, tag_id: 8)
 
+# Benders
 Tagging.create!(bar_id: 2, tag_id: 1)
 Tagging.create!(bar_id: 2, tag_id: 5)
 Tagging.create!(bar_id: 2, tag_id: 6)
 Tagging.create!(bar_id: 2, tag_id: 7)
 Tagging.create!(bar_id: 2, tag_id: 10)
 
+# Cigar
 Tagging.create!(bar_id: 3, tag_id: 3)
 Tagging.create!(bar_id: 3, tag_id: 5)
 Tagging.create!(bar_id: 3, tag_id: 6)
 Tagging.create!(bar_id: 3, tag_id: 7)
 Tagging.create!(bar_id: 3, tag_id: 11)
 
+# Library
 Tagging.create!(bar_id: 4, tag_id: 3)
 Tagging.create!(bar_id: 4, tag_id: 6)
 Tagging.create!(bar_id: 4, tag_id: 7)
 Tagging.create!(bar_id: 4, tag_id: 9)
 Tagging.create!(bar_id: 4, tag_id: 11)
 
-Comment.create!(comment: 'Great place') # 1
-Comment.create!(comment: 'Cheap drinks') # 2
-Comment.create!(comment: 'Awesome bartenders') # 3
-Comment.create!(comment: 'Live bands!!!!') # 4
-Comment.create!(comment: 'Quiet place to relax') # 5
-Comment.create!(comment: 'Really good cigars') # 6
-Comment.create!(comment: 'Cool art display') # 7
-Comment.create!(comment: 'Cool spot') # 8
-Comment.create!(comment: 'They have a pool table!') # 9
+# Dada
+Comment.create!(body: 'Great place', user_id: 1, bar_id: 1)
+Comment.create!(body: 'Cool art display', user_id: 1, bar_id: 1)
 
-BarComment.create!(user_id: 1, bar_id: 1, comment_id: 2)
-BarComment.create!(user_id: 5, bar_id: 1, comment_id: 3)
-BarComment.create!(user_id: 4, bar_id: 1, comment_id: 1)
-BarComment.create!(user_id: 2, bar_id: 1, comment_id: 2)
-BarComment.create!(user_id: 3, bar_id: 1, comment_id: 7)
+# Benders
+Comment.create!(body: 'Cheap drinks', user_id: 1, bar_id: 2)
+Comment.create!(body: 'Awesome bartenders', user_id: 2, bar_id: 2)
+Comment.create!(body: 'Live bands!!!!', user_id: 3, bar_id: 2)
+Comment.create!(body: 'They have a pool table!', user_id: 4, bar_id: 2)
 
-BarComment.create!(user_id: 2, bar_id: 2, comment_id: 1)
-BarComment.create!(user_id: 3, bar_id: 2, comment_id: 2)
-BarComment.create!(user_id: 1, bar_id: 2, comment_id: 8)
-BarComment.create!(user_id: 5, bar_id: 2, comment_id: 9)
-BarComment.create!(user_id: 4, bar_id: 2, comment_id: 3)
-BarComment.create!(user_id: 5, bar_id: 2, comment_id: 4)
+# Cigar
+Comment.create!(body: 'Really good cigars', user_id: 2, bar_id: 3)
 
-BarComment.create!(user_id: 2, bar_id: 3, comment_id: 8)
-BarComment.create!(user_id: 3, bar_id: 3, comment_id: 6)
+# Library
+Comment.create!(body: 'Quiet place to relax', user_id: 4, bar_id: 4)
+Comment.create!(body: 'Cool spot', user_id: 1, bar_id: 4)
 
-BarComment.create!(user_id: 1, bar_id: 4, comment_id: 8)
-BarComment.create!(user_id: 1, bar_id: 4, comment_id: 1)
-BarComment.create!(user_id: 1, bar_id: 4, comment_id: 5)
-
+# Dada
 Rating.create!(bar_id: 1, user_id: 1, rating: 5)
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
 Rating.create!(bar_id: 1, user_id: 3, rating: 5)
 Rating.create!(bar_id: 1, user_id: 4, rating: 5)
 
+# Benders
 Rating.create!(bar_id: 2, user_id: 1, rating: 4)
 Rating.create!(bar_id: 2, user_id: 2, rating: 4)
 Rating.create!(bar_id: 2, user_id: 3, rating: 4)
 Rating.create!(bar_id: 2, user_id: 4, rating: 4)
 
+# Cigar
 Rating.create!(bar_id: 3, user_id: 1, rating: 3)
 Rating.create!(bar_id: 3, user_id: 2, rating: 4)
 Rating.create!(bar_id: 3, user_id: 3, rating: 2)
 Rating.create!(bar_id: 3, user_id: 4, rating: 5)
 
+# Library
 Rating.create!(bar_id: 4, user_id: 1, rating: 4)
 Rating.create!(bar_id: 4, user_id: 2, rating: 4)
 Rating.create!(bar_id: 4, user_id: 3, rating: 5)
