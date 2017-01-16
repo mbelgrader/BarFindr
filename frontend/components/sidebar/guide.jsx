@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Guide = () => (
   <div className='sidebar'>
-    <ul>
+    <ul className='guide'>
       <li className='click-info'>
         <i className="fa fa-mouse-pointer" aria-hidden="true"></i>
         Click an icon to see more info

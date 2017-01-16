@@ -6,12 +6,13 @@ class CommentForm extends React.Component {
     super(props);
     this.state = { body: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
+    debugger
     // this.navigateToBarShow = this.navigateToBarShow.bind(this);
   }
 
-  navigateToBarShow() {
-    this.props.router.push(`/benches/${this.props.params.benchId}`);
-  }
+  // navigateToBarShow() {
+  //   this.props.router.push(`/benches/${this.props.params.benchId}`);
+  // }
 
   handleSubmit(e) {
     e.preventDefault();

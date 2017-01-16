@@ -28,7 +28,7 @@ Bar.create!(name: "The Cigar Bar \& Grill",
             address: '850 Montgomery St',
             lat: 37.7915624,
             lng: -122.4207866,
-            image: "http://ww2.hdnux.com/photos/12/21/03/2691321/6/1024x1024.jpg")
+            image: "http://cigarplaces.com/cigarplacesimages/15-2.jpg")
 
 Bar.create!(name: 'Library Bar',
             address: '562 Sutter St',
