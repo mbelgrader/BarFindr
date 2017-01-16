@@ -12,3 +12,11 @@ export const fetchBar = (id) => {
     url: `api/bars/${id}`,
   });
 };
+
+export const createComment = (data) => {
+  return $.ajax({
+    method: 'POST',
+    url: 'api/comments',
+    data
+  });
+};

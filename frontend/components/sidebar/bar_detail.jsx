@@ -1,5 +1,6 @@
 import React from 'react';
 import { selectComments } from '../../reducers/selectors';
+import CommentButton from './comment_button';
 
 class BarDetail extends React.Component {
   constructor(props) {
@@ -31,6 +32,8 @@ class BarDetail extends React.Component {
           <li className='bar-name'>{name}</li>
           <li className='address'>{address}</li>
         </ul>
+
+        <CommentButton />
 
         <div className='comments'>
           <ul>

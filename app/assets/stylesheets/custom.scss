@@ -139,10 +139,6 @@ i {
   font-size: 20px;
 }
 
-.comments {
-  padding: 20px;
-}
-
 .comments ul li {
   padding: 8px;
   font-size: 12px;
@@ -156,7 +152,7 @@ i {
 }
 
 .sidebar img {
-  width: 300px;
+  width: 100%;
   height: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   // border: 4px solid white;
@@ -174,6 +170,10 @@ i {
 .click-info {
   padding: 15px;
   padding-top: 40px;
+}
+
+.comment-button {
+  margin: 25px;
 }
 
 // .logo {

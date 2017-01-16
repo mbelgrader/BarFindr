@@ -6,12 +6,21 @@ import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import { Guide } from './sidebar/guide';
 import BarDetailContainer from './sidebar/bar_detail_container';
+import CommentFormContainer from './sidebar/comment_form_container';
 
 const Root = ({ store }) => {
+
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
       replace('/');
+    }
+  };
+
+  const _ensureLoggedIn = (nextState, replace) => {
+    const currentUser = store.getState().session.currentUser;
+    if (!currentUser) {
+      replace('/login');
     }
   };
 
@@ -24,8 +33,12 @@ const Root = ({ store }) => {
                  onEnter={_redirectIfLoggedIn} />
           <Route path='signup' component={ SessionFormContainer }
                  onEnter={_redirectIfLoggedIn} />
-          <Route path='demo' component={ SessionFormContainer } />
-          <Route path='bars/:barId' component={ BarDetailContainer } />
+          <Route path='demo' component={ SessionFormContainer }
+                 onEnter={_redirectIfLoggedIn} />
+          <Route path='bars/:barId' component={ BarDetailContainer } >
+            <Route path="comment" component={CommentFormContainer}
+                 onEnter={_ensureLoggedIn} />
+          </Route>
         </Route>
       </Router>
     </Provider>

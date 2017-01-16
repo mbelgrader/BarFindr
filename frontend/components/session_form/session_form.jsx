@@ -14,9 +14,6 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    // debugger
-    console.log(this.props.location);
-    console.log(newProps.location);
     if (this.props.location.pathname !== '/demo') {
       this.setState({email: '', password: ''});
     } else {
