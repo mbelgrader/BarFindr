@@ -8,6 +8,7 @@ User.create!(email: 'xtina5@test.com', username: 'xtina5', password: 'password')
 User.create!(email: 'jenny42@test.com', username: 'jenny42', password: 'password')
 User.create!(email: 'nick12@test.com', username: 'nick12', password: 'password')
 User.create!(email: 'dandk@test.com', username: 'dandk', password: 'password')
+User.create!(email: 'hunter@test.com', username: 'hunter45', password: 'password')
 
 # zeitgeist, infusion, smugglers,
 
@@ -99,26 +100,53 @@ Tagging.create!(bar_id: 6, tag_id: 11)
 # Dada
 Comment.create!(body: 'Great place', user_id: 5, bar_id: 1)
 Comment.create!(body: 'Cool art display', user_id: 6, bar_id: 1)
+Comment.create!(body: 'Love the mezzanine', user_id: 6, bar_id: 1)
+Comment.create!(body: 'New place is amazing', user_id: 6, bar_id: 1)
+Comment.create!(body: 'Stylish venue', user_id: 6, bar_id: 1)
+Comment.create!(body: 'Amazing bartenders', user_id: 6, bar_id: 1)
+Comment.create!(body: 'Beautiful interior', user_id: 6, bar_id: 1)
+Comment.create!(body: 'Really cool modern art', user_id: 6, bar_id: 1)
 
 # Benders
 Comment.create!(body: 'Cheap drinks', user_id: 5, bar_id: 2)
 Comment.create!(body: 'Awesome bartenders', user_id: 2, bar_id: 2)
 Comment.create!(body: 'Live bands!!!!', user_id: 3, bar_id: 2)
 Comment.create!(body: 'pool tables!', user_id: 4, bar_id: 2)
+Comment.create!(body: 'decent beer selection', user_id: 6, bar_id: 2)
+Comment.create!(body: "There\'s a juke box and photobooth", user_id: 7, bar_id: 2)
+Comment.create!(body: "Burger is amazing", user_id: 8, bar_id: 2)
+Comment.create!(body: 'Everyone is really friendly', user_id: 9, bar_id: 2)
+Comment.create!(body: 'Cool bands', user_id: 10, bar_id: 2)
 
 # Cigar
 Comment.create!(body: 'Really good cigars', user_id: 7, bar_id: 3)
+Comment.create!(body: 'Food takes a long time and not that great', user_id: 6, bar_id: 3)
+Comment.create!(body: 'Ahi poke and cheese/meat plate are really good', user_id: 5, bar_id: 3)
+Comment.create!(body: 'Fun place to hang out on a nice day', user_id: 4, bar_id: 3)
+Comment.create!(body: 'Great place to day drink with a cigar', user_id: 3, bar_id: 3)
+Comment.create!(body: 'Cool outdoor patio space', user_id: 2, bar_id: 3)
 
 # Library
 Comment.create!(body: 'Quiet place to relax', user_id: 4, bar_id: 4)
-Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 4)
+Comment.create!(body: 'Cool spot', user_id: 3, bar_id: 4)
+Comment.create!(body: 'Great food', user_id: 2, bar_id: 4)
+Comment.create!(body: 'Expert cocktails', user_id: 5, bar_id: 4)
+Comment.create!(body: 'Cozy place', user_id: 6, bar_id: 4)
+
+# Infusion
+Comment.create!(body: 'They play top 40/hip hop', user_id: 8, bar_id: 5)
+Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 5)
+Comment.create!(body: 'Really pricey', user_id: 6, bar_id: 5)
+Comment.create!(body: 'Really long line on a weeknight', user_id: 5, bar_id: 5)
+Comment.create!(body: 'VIP is on point', user_id: 3, bar_id: 5)
+Comment.create!(body: 'Not easy finding parking..', user_id: 2, bar_id: 5)
 
 # Zeitgeist
-Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 5)
-Comment.create!(body: 'They have a pool table', user_id: 8, bar_id: 5)
-Comment.create!(body: 'Cheap drinks!', user_id: 8, bar_id: 5)
-Comment.create!(body: 'Nice outdoor area', user_id: 8, bar_id: 5)
-Comment.create!(body: 'Great place to hang and daydrink', user_id: 8, bar_id: 5)
+Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 6)
+Comment.create!(body: 'They have a pool table', user_id: 7, bar_id: 6)
+Comment.create!(body: 'Cheap drinks!', user_id: 6, bar_id: 6)
+Comment.create!(body: 'Nice outdoor area', user_id: 5, bar_id: 6)
+Comment.create!(body: 'Great place to hang and daydrink', user_id: 4, bar_id: 6)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 1, rating: 5)
@@ -143,3 +171,15 @@ Rating.create!(bar_id: 4, user_id: 1, rating: 4)
 Rating.create!(bar_id: 4, user_id: 2, rating: 4)
 Rating.create!(bar_id: 4, user_id: 3, rating: 5)
 Rating.create!(bar_id: 4, user_id: 4, rating: 5)
+
+# Infusion
+Rating.create!(bar_id: 5, user_id: 1, rating: 4)
+Rating.create!(bar_id: 5, user_id: 2, rating: 4)
+Rating.create!(bar_id: 5, user_id: 3, rating: 5)
+Rating.create!(bar_id: 5, user_id: 4, rating: 5)
+
+# Zeitgeist
+Rating.create!(bar_id: 6, user_id: 1, rating: 4)
+Rating.create!(bar_id: 6, user_id: 2, rating: 4)
+Rating.create!(bar_id: 6, user_id: 3, rating: 5)
+Rating.create!(bar_id: 6, user_id: 4, rating: 5)

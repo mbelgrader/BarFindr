@@ -3,9 +3,13 @@ class Api::BarsController < ApplicationController
     @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
     # debugger
     if tag != ''
-      # @bars = @bars.where(:tags).inlcudes(tag)
-      # @bars = @bars.where('tags'
-      # @bars = @bars.where(name: 'Benders')
+      # @bars = @bars.includes(:tags).where("'club' IN tags")
+
+      # @bars = @bars.where("tags INCLUDES ?", "%#{params[:tag]}%")
+      # @bars = @bars.includes(:tags).where("tags INCLUDES ?", "%#{params[:tag]}%")
+      @bars = @bars.includes(:tags).where("#{params[:tag]} IN tags")
+      @bars = @bars.includes(:tags).where("tags INCLUDES #{params[:tag]} ")
+      # @bars = @bars.where(:tags).includes("#{params[:tag]}")
     end
     render :index
   end

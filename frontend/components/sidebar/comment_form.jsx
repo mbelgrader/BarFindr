@@ -6,21 +6,24 @@ class CommentForm extends React.Component {
     super(props);
     this.state = { body: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.redirect = this.redirect.bind(this);
+    this.redirect = this.redirect.bind(this);
   }
 
-  // redirect() {
-  //   this.props.router.push(`/bars/${this.props.params.barId}`);
-  // }
+  redirect() {
+    this.props.router.push(`/bars/${this.props.params.barId}`);
+  }
 
   handleSubmit(e) {
     e.preventDefault();
     const barId = parseInt(this.props.params.barId);
+    // debugger
+    // not getting the current user from container
     const comment = Object.assign({}, this.state, {
-      bar_id: barId
+      bar_id: barId,
+      user_id: this.props.currentUserId
     });
     this.props.createComment({comment});
-    // this.redirect();
+    this.redirect();
   }
 
   update(property) {
@@ -36,11 +39,12 @@ class CommentForm extends React.Component {
           <br/>
           <textarea
             cols='30'
-            rows='10'
+            rows='5'
             value={ this.state.body }
             onChange={ this.update("body") }></textarea>
           <br/>
-          <input type="submit"/>
+          <button className='nav-button' onClick={ this.redirect }>Cancel</button>
+          <input className='nav-button' type="submit"/>
         </form>
       </div>
     );
@@ -48,4 +52,3 @@ class CommentForm extends React.Component {
 }
 
 export default withRouter(CommentForm);
-// <button onClick={ this.redirect }>X</button>
