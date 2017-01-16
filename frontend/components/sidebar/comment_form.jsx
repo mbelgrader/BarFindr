@@ -16,13 +16,12 @@ class CommentForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const barId = parseInt(this.props.params.barId);
-    // debugger
-    // not getting the current user from container
     const comment = Object.assign({}, this.state, {
       bar_id: barId,
       user_id: this.props.currentUserId
     });
-    this.props.createComment({comment});
+
+    this.props.createComment({comment}).then(this.props.fetchBar(barId));
     this.redirect();
   }
 

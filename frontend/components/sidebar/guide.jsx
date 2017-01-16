@@ -17,6 +17,7 @@ export const Guide = () => (
           <li>dive</li>
           <li>hipster</li>
           <li>hookah</li>
+          <li>food</li>
           <li>etc</li>
         </ul>
       </li>

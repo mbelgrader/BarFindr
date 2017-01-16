@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createComment } from '../../actions/bar_actions.js';
+import { createComment, fetchBar } from '../../actions/bar_actions.js';
 
 import CommentForm from './comment_form';
 
@@ -8,10 +8,11 @@ const mapStateToProps = ({ session }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  createComment: comment => dispatch(createComment(comment))
+  createComment: comment => dispatch(createComment(comment)),
+  fetchBar: (id) => dispatch(fetchBar(id))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CommentForm);

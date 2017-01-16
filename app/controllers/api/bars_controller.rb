@@ -7,8 +7,8 @@ class Api::BarsController < ApplicationController
 
       # @bars = @bars.where("tags INCLUDES ?", "%#{params[:tag]}%")
       # @bars = @bars.includes(:tags).where("tags INCLUDES ?", "%#{params[:tag]}%")
-      @bars = @bars.includes(:tags).where("#{params[:tag]} IN tags")
-      @bars = @bars.includes(:tags).where("tags INCLUDES #{params[:tag]} ")
+      @bars = Bar.includes(:tags).where("tags.name = ?", "#{params[:tag]}").references(:tags)
+      # @bars = @bars.includes(:tags).where("tags INCLUDES #{params[:tag]} ")
       # @bars = @bars.where(:tags).includes("#{params[:tag]}")
     end
     render :index
