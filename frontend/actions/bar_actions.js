@@ -15,10 +15,13 @@ export const fetchBar = id => dispatch => (
     .then(bar => dispatch(receiveBar(bar)))
 );
 
-export const createComment = comment => dispatch => (
-  APIUtil.createComment(comment)
-  .then(comment => dispatch(receiveComment(comment)))
-);
+export const createComment = comment => dispatch => {
+  debugger
+  return (
+    APIUtil.createComment(comment)
+    .then(comment => dispatch(receiveComment(comment)))
+  );
+}
 
 export const receiveBars = bars => ({
   type: RECEIVE_BARS,
@@ -30,7 +33,10 @@ export const receiveBar = bar => ({
   bar
 });
 
-export const receiveComment = comment => ({
-  type: RECEIVE_COMMENT,
-  comment
-});
+export const receiveComment = comment => {
+  debugger
+  return({
+    type: RECEIVE_COMMENT,
+    comment
+  });
+}

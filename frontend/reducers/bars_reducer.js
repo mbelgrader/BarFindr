@@ -10,6 +10,7 @@ const barsReducer = (state = {}, action) => {
       return action.bars;
     case RECEIVE_COMMENT:
       const comment = action.comment;
+      debugger
       newState[comment.bar_id].comments.push(comment);
       return newState;
     default:

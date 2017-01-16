@@ -79,7 +79,7 @@ class SessionForm extends React.Component {
 
   showErrors() {
     return(
-      <ul>
+      <ul className='errors'>
         {this.props.errors.map((error, i) => (
           <li key={i}>{error}</li>
         ))}
@@ -98,8 +98,6 @@ class SessionForm extends React.Component {
 
             {this.showErrors()}
 
-            {this.usernameInput()}
-            <br />
 
             <label><i className="fa fa-envelope" aria-hidden="true"></i>
               <input type='text'
@@ -117,7 +115,7 @@ class SessionForm extends React.Component {
             </label>
 
             <br />
-            <input className='button'type='submit' value='Submit' />
+            <input className='button form-submit' type='submit' value='Submit' />
 
             {this.otherLink()}
           </form>
