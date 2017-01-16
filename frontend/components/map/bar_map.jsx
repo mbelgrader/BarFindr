@@ -1,3 +1,5 @@
+/* global google:false */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router';
@@ -29,6 +31,8 @@ class BarMap extends Component {
 
   componentDidUpdate() {
     // debugger
+    // getting passed all bars instead of filtered
+    // it is hitting debugger, so it is updating
     this.MarkerManager.updateMarkers(this.props.bars);
   }
 
@@ -40,22 +44,11 @@ class BarMap extends Component {
         southWest: { lat: south, lng: west } };
       this.props.updateFilter('bounds', bounds);
     });
-    // google.maps.event.addListener(this.map, 'click', event => {
-    //   const coords = _getCoordsObj(event.latLng);
-    //   this._handleClick(coords);
-    // });
   }
 
   _handleMarkerClick(bar) {
     this.props.router.push(`bars/${bar.id}`);
   }
-
-  // _handleClick(coords) {
-  //   this.props.router.push({
-  //     pathname: "bars/new",
-  //     query: coords
-  //   });
-  // }
 
   render() {
     return <div className="map" ref="map">Map</div>;

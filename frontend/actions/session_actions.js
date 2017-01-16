@@ -12,7 +12,13 @@ export const signup = user => dispatch => (
 export const login = user => dispatch => (
   APIUtil.login(user)
     .then(user => dispatch(receiveCurrentUser(user)),
-      err => dispatch(receiveErrors(err.responseJSON)))
+      err => {
+        if (err.responseJSON) {
+          dispatch(receiveErrors(err.responseJSON));
+        } else {
+          dispatch(receiveErrors(["Can't be blank"]));
+        }
+      })
 );
 
 export const logout = () => dispatch => (

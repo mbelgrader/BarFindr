@@ -1,10 +1,11 @@
 class Api::BarsController < ApplicationController
   def index
     @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
-
-    if tag
-      # @bars = @bars.where(params[:tags].inlcudes(tag))
-      @bars = @bars.where(name: 'Benders')
+    # debugger
+    if tag != ''
+      # @bars = @bars.where(:tags).inlcudes(tag)
+      # @bars = @bars.where('tags'
+      # @bars = @bars.where(name: 'Benders')
     end
     render :index
   end

@@ -42,6 +42,12 @@ Bar.create!(name: 'Infusion Loung',
             lng: -122.4105829,
             image: "https://static1.squarespace.com/static/5327c2b2e4b097bd81745542/53eca270e4b0eecc91fb29ee/53eca27ce4b063ce92890272/1408017022207/Infusion+Lounge+SF+Dance+Floor_HYVEmag.jpg")
 
+Bar.create!(name: 'Zeitgeist',
+            address: '199 Valencia St',
+            lat: 37.7700323,
+            lng: -122.424292,
+            image: "http://wcimages.s3.amazonaws.com/1245897505iW2QuOwBbxNT_lg.jpg")
+
 Tag.create!(name: 'dive') # 1
 Tag.create!(name: 'club') # 2
 Tag.create!(name: 'lounge') # 3
@@ -81,7 +87,14 @@ Tagging.create!(bar_id: 4, tag_id: 7)
 Tagging.create!(bar_id: 4, tag_id: 9)
 Tagging.create!(bar_id: 4, tag_id: 11)
 
+# Infusion
 Tagging.create!(bar_id: 5, tag_id: 2)
+
+# Zeitgeist
+Tagging.create!(bar_id: 6, tag_id: 1)
+Tagging.create!(bar_id: 6, tag_id: 6)
+Tagging.create!(bar_id: 6, tag_id: 7)
+Tagging.create!(bar_id: 6, tag_id: 11)
 
 # Dada
 Comment.create!(body: 'Great place', user_id: 5, bar_id: 1)
@@ -99,6 +112,13 @@ Comment.create!(body: 'Really good cigars', user_id: 7, bar_id: 3)
 # Library
 Comment.create!(body: 'Quiet place to relax', user_id: 4, bar_id: 4)
 Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 4)
+
+# Zeitgeist
+Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 5)
+Comment.create!(body: 'They have a pool table', user_id: 8, bar_id: 5)
+Comment.create!(body: 'Cheap drinks!', user_id: 8, bar_id: 5)
+Comment.create!(body: 'Nice outdoor area', user_id: 8, bar_id: 5)
+Comment.create!(body: 'Great place to hang and daydrink', user_id: 8, bar_id: 5)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 1, rating: 5)

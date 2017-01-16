@@ -1,8 +1,9 @@
-export const fetchBars = (filters) => {
+export const fetchBars = (data) => {
+  console.log(data);
   return $.ajax({
     method: 'GET',
     url: 'api/bars',
-    filters
+    data
   });
 };
 

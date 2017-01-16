@@ -34,6 +34,7 @@ class BarDetail extends React.Component {
         </ul>
 
         <CommentButton />
+        {this.props.children}
 
         <div className='comments'>
           <ul>

@@ -6,12 +6,11 @@ class CommentForm extends React.Component {
     super(props);
     this.state = { body: "" };
     this.handleSubmit = this.handleSubmit.bind(this);
-    debugger
-    // this.navigateToBarShow = this.navigateToBarShow.bind(this);
+    // this.redirect = this.redirect.bind(this);
   }
 
-  // navigateToBarShow() {
-  //   this.props.router.push(`/benches/${this.props.params.benchId}`);
+  // redirect() {
+  //   this.props.router.push(`/bars/${this.props.params.barId}`);
   // }
 
   handleSubmit(e) {
@@ -21,7 +20,7 @@ class CommentForm extends React.Component {
       bar_id: barId
     });
     this.props.createComment({comment});
-    // this.navigateToBarShow();
+    // this.redirect();
   }
 
   update(property) {
@@ -49,4 +48,4 @@ class CommentForm extends React.Component {
 }
 
 export default withRouter(CommentForm);
-// <button onClick={ this.navigateToBarShow }>Cancel</button>
+// <button onClick={ this.redirect }>X</button>
