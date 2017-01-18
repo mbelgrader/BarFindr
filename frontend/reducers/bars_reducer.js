@@ -8,11 +8,6 @@ const barsReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_BARS:
       return action.bars;
-    case RECEIVE_COMMENT:
-      const comment = action.comment;
-      debugger
-      newState[comment.bar_id].comments.push(comment);
-      return newState;
     default:
       return state;
   }

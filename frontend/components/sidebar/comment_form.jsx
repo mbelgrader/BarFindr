@@ -21,7 +21,7 @@ class CommentForm extends React.Component {
       user_id: this.props.currentUserId
     });
 
-    this.props.createComment({comment}).then(this.props.fetchBar(barId));
+    this.props.createComment({comment});
     this.redirect();
   }
 

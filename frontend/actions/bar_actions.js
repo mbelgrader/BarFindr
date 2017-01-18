@@ -16,12 +16,12 @@ export const fetchBar = id => dispatch => (
 );
 
 export const createComment = comment => dispatch => {
-  debugger
+
   return (
     APIUtil.createComment(comment)
-    .then(comment => dispatch(receiveComment(comment)))
+    .then(review => dispatch(receiveComment(review)))
   );
-}
+};
 
 export const receiveBars = bars => ({
   type: RECEIVE_BARS,
@@ -34,9 +34,9 @@ export const receiveBar = bar => ({
 });
 
 export const receiveComment = comment => {
-  debugger
+  // debugger
   return({
     type: RECEIVE_COMMENT,
     comment
   });
-}
+};
