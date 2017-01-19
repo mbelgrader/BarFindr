@@ -29,6 +29,7 @@ class BarDetail extends React.Component {
     if (this.props.bar.comments) {
       comments = this.props.bar.comments.map((comment, i) => {
         let deleteLink;
+        if (this.props.currentUser.id === comment.user_id)
           deleteLink = <span className='delete-button' onClick={this.commentDelete.bind(null, comment.id)}>delete</span>;
         return (<li key={i}>
                   <span>@{comment.username}</span>{comment.body}
