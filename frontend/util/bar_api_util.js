@@ -23,18 +23,17 @@ export const createComment = (data) => {
 };
 
 export const deleteComment = (id) => {
-  // debugger
-  // passing correct id
   return $.ajax({
     method: 'DELETE',
     url: 'api/comments/',
-    data: id
+    data: {id: id}
   });
 };
 
-// export const fetchRating = (id) => {
-//   return $.ajax({
-//     method: 'GET',
-//     url: `api/bars/${id}`,
-//   });
-// };
+export const addRating = (rating) => {
+  return $.ajax({
+    method: 'POST',
+    url: `api/ratings`,
+    data: rating
+  });
+};

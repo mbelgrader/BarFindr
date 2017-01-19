@@ -36,7 +36,7 @@ export const createComment = comment => dispatch => {
 };
 
 export const receiveComment = comment => {
-  debugger
+  // debugger
   return({
     type: RECEIVE_COMMENT,
     comment
@@ -51,19 +51,25 @@ export const deleteComment = id => dispatch => {
   );
 };
 
-export const removeComment = id => {
+export const removeComment = comment => {
   return ({
     type: REMOVE_COMMENT,
-    id
+    comment
   });
 };
 
-// export const fetchRating = id => dispatch => (
-//   APIUtil.fetchRating(id)
-//     .then(bar => dispatch(receiveRating(bar)))
-// );
-//
-// export const receiveRating = id => ({
-//   type: RECEIVE_RATING,
-//   id
-// });
+
+export const updateRating = (rating) => dispatch => {
+  return (
+    APIUtil.addRating(rating)
+    .then(res => dispatch(receiveRating(res)))
+  );
+};
+
+export const receiveRating = rating => {
+  // debugger
+  return({
+    type: RECEIVE_RATING,
+    rating
+  });
+};

@@ -35,7 +35,8 @@ const Root = ({ store }) => {
                  onEnter={_redirectIfLoggedIn} />
           <Route path='demo' component={ SessionFormContainer }
                  onEnter={_redirectIfLoggedIn} />
-          <Route path='bars/:barId' component={ BarDetailContainer } >
+          <Route path='bars/:barId' component={ BarDetailContainer }
+                 onEnter={_ensureLoggedIn} >
             <Route path="comment" component={CommentFormContainer}
                  onEnter={_ensureLoggedIn} />
           </Route>

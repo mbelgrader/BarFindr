@@ -6,5 +6,6 @@ Rails.application.routes.draw do
     resources :bars, only: [:index, :create, :show]
     resource :session, only: [:create, :destroy]
     resource :comments, only: [:create, :destroy]
+    resource :ratings, only: [:create, :update]
   end
 end

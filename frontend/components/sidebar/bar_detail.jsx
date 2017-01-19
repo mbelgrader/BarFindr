@@ -39,14 +39,16 @@ class BarDetail extends React.Component {
     }
 
     return(
-      <div className='sidebar detail'>
+      <div className='sidebar'>
         <img src={this.props.bar.image} />
         <ul>
           <li className='bar-name'>{name}</li>
           <li className='address'>{address}</li>
         </ul>
 
-        <RatingButtonContainer averageRating={this.props.bar.average_rating} />
+        <RatingButtonContainer
+          averageRating={this.props.bar.average_rating}
+          barId={this.props.barId} />
         <CommentButton />
         {this.props.children}
 

@@ -12,10 +12,9 @@ class Api::CommentsController < ApplicationController
   end
 
   def destroy
-    # debugger
-    # not getting :id from util
     @comment = Comment.find(params[:id])
     @comment.destroy
+    render json: @comment
   end
 
   private

@@ -3,8 +3,9 @@ json.extract! @bar,
               :name,
               :address,
               :tags,
-              :image, 
+              :image,
               :average_rating
+              # :user_rating
 
 json.comments do
   json.array! @bar.comments do |comment|

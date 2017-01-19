@@ -18,10 +18,16 @@ const barDetailsReducer = (state = {}, action) => {
       newState[comment.bar_id].comments.push(comment);
       return newState;
     case REMOVE_COMMENT:
-      newState[comment.bar_id].comments.splice(action.id, 1);
+      let commentId;
+      newState[action.comment.bar_id].comments.forEach((com, i) => {
+        if (com.id === action.comment.id)
+          commentId = i;
+      });
+      newState[action.comment.bar_id].comments.splice(commentId, 1);
       return newState;
-    // case RECEIVE_RATING:
-
+    case RECEIVE_RATING:
+      newState[action.bar_id].user_rating = action.rating;
+      return newState;
     default:
       return state;
   }

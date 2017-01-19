@@ -11,12 +11,14 @@ class RatingButton extends React.Component {
 
   ratingChanged(newRating) {
     console.log(newRating);
-    // dispatch update rating button
+    const barId = this.props.barId;
+    const rating = {rating: newRating, bar_id: barId};
+    this.props.updateRating(rating);
   }
 
   render() {
     // debugger
-    // gets averageRating but not displaying
+
     return (
       <div className='stars'>
         <ReactStars
