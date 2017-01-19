@@ -6,9 +6,9 @@ class Bar < ApplicationRecord
   has_many :ratings
   has_many :comments
 
-  # def average_rating
-  #   self.ratings.average(:rating).to_f
-  # end
+  def average_rating
+    self.ratings.average(:rating).to_f
+  end
 
   def self.in_bounds(bounds)
     self.where("lat < ?", bounds[:northEast][:lat])

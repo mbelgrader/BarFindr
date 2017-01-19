@@ -31,3 +31,10 @@ export const deleteComment = (id) => {
     data: id
   });
 };
+
+// export const fetchRating = (id) => {
+//   return $.ajax({
+//     method: 'GET',
+//     url: `api/bars/${id}`,
+//   });
+// };

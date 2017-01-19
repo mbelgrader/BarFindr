@@ -16,6 +16,14 @@ class Api::BarsController < ApplicationController
   def show
     @bar = Bar.find(params[:id])
     # @user_rating = current_user.ratings.where(bar_id: @bar.id)
+    # @rating = @bar.average_rating
+    # if current_user
+    #   @rating = @bar.ratings.where(user_id: current_user.id)
+    #   @rating = @bar.average_rating if @rating.nil?
+    # else
+    #   @rating = @bar.average_rating
+    # end
+    @average_rating = @bar.average_rating
   end
 
   private

@@ -1,7 +1,7 @@
 import React from 'react';
 import { selectComments } from '../../reducers/selectors';
 import CommentButton from './comment_button';
-import RatingButton from './rating_button';
+import RatingButtonContainer from './rating_button_container';
 
 class BarDetail extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class BarDetail extends React.Component {
     if (this.props.bar.comments) {
       comments = this.props.bar.comments.map((comment, i) => {
         let deleteLink;
-          deleteLink = <span onClick={this.commentDelete.bind(null, comment.id)}>delete</span>;
+          deleteLink = <span className='delete-button' onClick={this.commentDelete.bind(null, comment.id)}>delete</span>;
         return (<li key={i}>
                   <span>@{comment.username}</span>{comment.body}
                   {deleteLink}
@@ -37,6 +37,7 @@ class BarDetail extends React.Component {
               );
       });
     }
+
     return(
       <div className='sidebar detail'>
         <img src={this.props.bar.image} />
@@ -45,7 +46,7 @@ class BarDetail extends React.Component {
           <li className='address'>{address}</li>
         </ul>
 
-        <RatingButton />
+        <RatingButtonContainer averageRating={this.props.bar.average_rating} />
         <CommentButton />
         {this.props.children}
 

@@ -15,19 +15,20 @@ class RatingButton extends React.Component {
   }
 
   render() {
-
+    // debugger
+    // gets averageRating but not displaying
     return (
-
-    <div className='stars'>
-      <ReactStars
-        count={5}
-        onChange={this.ratingChanged}
-        size={20}
-        color1={'#c3c6cc'}
-        color2={'white'} />
-    </div>
+      <div className='stars'>
+        <ReactStars
+          count={5}
+          onChange={this.ratingChanged}
+          size={20}
+          color1={'#c3c6cc'}
+          color2={'white'}
+          value={this.props.averageRating} />
+      </div>
       );
-  }
+    }
 }
 
 export default RatingButton;
