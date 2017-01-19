@@ -49,6 +49,18 @@ Bar.create!(name: 'Zeitgeist',
             lng: -122.424292,
             image: "http://wcimages.s3.amazonaws.com/1245897505iW2QuOwBbxNT_lg.jpg")
 
+Bar.create!(name: 'Laguna Cafe',
+            address: '1821 Haight St',
+            lat: 37.769229,
+            lng: -122.4545044,
+            image: "https://s3-media1.fl.yelpcdn.com/bphoto/GmVfsEdgbf7ur_KQiu3Ihg/ls.jpg")
+
+Bar.create!(name: '724Hookah',
+            address: '724 Geary St',
+            lat: 37.7866522,
+            lng: -122.4174318,
+            image: "http://s3-media2.ak.yelpcdn.com/bphoto/V7wMqAKLkbz6hI5oxkvl5g/l.jpg")
+
 Tag.create!(name: 'dive') # 1
 Tag.create!(name: 'club') # 2
 Tag.create!(name: 'lounge') # 3
@@ -96,6 +108,15 @@ Tagging.create!(bar_id: 6, tag_id: 1)
 Tagging.create!(bar_id: 6, tag_id: 6)
 Tagging.create!(bar_id: 6, tag_id: 7)
 Tagging.create!(bar_id: 6, tag_id: 11)
+
+# Laguna
+Tagging.create!(bar_id: 7, tag_id: 4)
+Tagging.create!(bar_id: 7, tag_id: 6)
+Tagging.create!(bar_id: 7, tag_id: 7)
+
+# 724 hookah
+Tagging.create!(bar_id: 8, tag_id: 4)
+Tagging.create!(bar_id: 8, tag_id: 7)
 
 # Dada
 Comment.create!(body: 'Really cool modern art', user_id: 6, bar_id: 1)
@@ -148,6 +169,21 @@ Comment.create!(body: 'Cheap drinks!', user_id: 6, bar_id: 6)
 Comment.create!(body: 'They have a pool table', user_id: 7, bar_id: 6)
 Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 6)
 
+# Laguna
+Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 7)
+Comment.create!(body: 'Great place!', user_id: 8, bar_id: 7)
+Comment.create!(body: 'Music too loud..', user_id: 8, bar_id: 7)
+Comment.create!(body: 'So. Much. Fun.', user_id: 8, bar_id: 7)
+Comment.create!(body: 'Good music and food', user_id: 8, bar_id: 7)
+Comment.create!(body: 'Nice ambience', user_id: 8, bar_id: 7)
+
+#724 hookah
+Comment.create!(body: 'Best hookah place in SF', user_id: 2, bar_id: 8)
+Comment.create!(body: 'meh', user_id: 3, bar_id: 8)
+Comment.create!(body: 'pricey', user_id: 4, bar_id: 8)
+Comment.create!(body: 'This place is legit. Worth checking out', user_id: 8, bar_id: 8)
+Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 8)
+
 # Dada
 Rating.create!(bar_id: 1, user_id: 1, rating: 5)
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
@@ -183,3 +219,15 @@ Rating.create!(bar_id: 6, user_id: 1, rating: 4)
 Rating.create!(bar_id: 6, user_id: 2, rating: 4)
 Rating.create!(bar_id: 6, user_id: 3, rating: 5)
 Rating.create!(bar_id: 6, user_id: 4, rating: 5)
+
+# Laguna
+Rating.create!(bar_id: 7, user_id: 1, rating: 4)
+Rating.create!(bar_id: 7, user_id: 2, rating: 4)
+Rating.create!(bar_id: 7, user_id: 3, rating: 4)
+Rating.create!(bar_id: 7, user_id: 4, rating: 4)
+
+# 724 hookah
+Rating.create!(bar_id: 8, user_id: 1, rating: 4)
+Rating.create!(bar_id: 8, user_id: 2, rating: 4)
+Rating.create!(bar_id: 8, user_id: 3, rating: 4)
+Rating.create!(bar_id: 8, user_id: 4, rating: 4)

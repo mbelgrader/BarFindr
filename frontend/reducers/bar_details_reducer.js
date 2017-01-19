@@ -1,4 +1,7 @@
-import { RECEIVE_BAR, RECEIVE_BAR_DETAILS, RECEIVE_COMMENT } from '../actions/bar_actions';
+import { RECEIVE_BAR,
+         RECEIVE_BAR_DETAILS,
+         RECEIVE_COMMENT,
+         REMOVE_COMMENT } from '../actions/bar_actions';
 import merge from 'lodash/merge';
 
 const barDetailsReducer = (state = {}, action) => {
@@ -13,6 +16,8 @@ const barDetailsReducer = (state = {}, action) => {
       const comment = action.comment;
       newState[comment.bar_id].comments.push(comment);
       return newState;
+    case REMOVE_COMMENT:
+      newState[comment.bar_id].comments.splice(action.id, 1);
     default:
       return state;
   }

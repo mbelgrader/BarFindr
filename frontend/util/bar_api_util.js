@@ -21,3 +21,13 @@ export const createComment = (data) => {
     data
   });
 };
+
+export const deleteComment = (id) => {
+  // debugger
+  // passing correct id
+  return $.ajax({
+    method: 'DELETE',
+    url: 'api/comments/',
+    data: id
+  });
+};

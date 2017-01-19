@@ -4,6 +4,7 @@ export const RECEIVE_BARS = "RECEIVE_BARS";
 export const RECEIVE_BAR = "RECEIVE_BAR";
 export const RECEIVE_BAR_DETAILS = "RECEIVE_BAR_DETAILS";
 export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
+export const REMOVE_COMMENT = "REMOVE_COMMENT";
 
 export const fetchBars = filters => dispatch => (
   APIUtil.fetchBars(filters)
@@ -16,10 +17,17 @@ export const fetchBar = id => dispatch => (
 );
 
 export const createComment = comment => dispatch => {
-
   return (
     APIUtil.createComment(comment)
     .then(review => dispatch(receiveComment(review)))
+  );
+};
+
+export const deleteComment = id => dispatch => {
+  // debugger
+  return (
+    APIUtil.deleteComment(id)
+    .then(comment => dispatch(removeComment(comment)))
   );
 };
 
@@ -34,9 +42,16 @@ export const receiveBar = bar => ({
 });
 
 export const receiveComment = comment => {
-  // debugger
+  debugger
   return({
     type: RECEIVE_COMMENT,
     comment
+  });
+};
+
+export const removeComment = id => {
+  return ({
+    type: REMOVE_COMMENT,
+    id
   });
 };

@@ -6,6 +6,7 @@ import RatingButton from './rating_button';
 class BarDetail extends React.Component {
   constructor(props) {
     super(props);
+    this.commentDelete = this.commentDelete.bind(this);
   }
 
   componentDidMount() {
@@ -18,12 +19,22 @@ class BarDetail extends React.Component {
     }
   }
 
+  commentDelete(id) {
+    this.props.deleteComment(id);
+  }
+
   render() {
     const { name, address } = this.props.bar;
     let comments = [];
     if (this.props.bar.comments) {
       comments = this.props.bar.comments.map((comment, i) => {
-        return <li key={i}><span>@{comment.username}</span>{comment.body}</li>;
+        let deleteLink;
+          deleteLink = <span onClick={this.commentDelete.bind(null, comment.id)}>delete</span>;
+        return (<li key={i}>
+                  <span>@{comment.username}</span>{comment.body}
+                  {deleteLink}
+                </li>
+              );
       });
     }
     return(

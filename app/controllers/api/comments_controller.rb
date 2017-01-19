@@ -11,6 +11,13 @@ class Api::CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    # debugger
+    # not getting :id from util
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+  end
+
   private
 
   def comment_params
