@@ -3,7 +3,7 @@
 [heroku][link]: https://peaceful-sea-91630.herokuapp.com/
 [trello][link]: https://trello.com/b/r6AsBhbv/barfindr
 
-## Minimum Viable Product
+# Minimum Viable Product
 
 BarFindr allows users to find nearby bars with an easy to use map interface. Built using Ruby on Rails
 and React/Redux.  By the end of Week 9, this app will, at a minimum, satisfy the
