@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170115051255) do
+ActiveRecord::Schema.define(version: 20170120022019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20170115051255) do
   create_table "ratings", force: :cascade do |t|
     t.integer  "bar_id",     null: false
     t.integer  "user_id",    null: false
-    t.integer  "rating",     null: false
+    t.float    "rating",     null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["bar_id", "user_id"], name: "index_ratings_on_bar_id_and_user_id", using: :btree

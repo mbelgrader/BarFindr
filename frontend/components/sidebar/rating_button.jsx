@@ -19,21 +19,31 @@ class RatingButton extends React.Component {
     const { userRating, averageRating } = this.props;
 
     let ratingValue;
+    let ratingSource;
+
     if (userRating > 0) {
       ratingValue = userRating;
+      ratingSource = 'user';
     } else {
       ratingValue = averageRating;
+      ratingSource = 'avg';
     }
 
+    const ratingMessage = ratingSource === 'user' ? "You're rating" : "Average rating";
+
+
     return (
-      <div className='stars'>
-        <ReactStars
-          count={5}
-          onChange={this.ratingChanged}
-          size={20}
-          color1={'#c3c6cc'}
-          color2={'white'}
-          value={ratingValue} />
+      <div>
+        <div className='stars'>
+          <ReactStars
+            count={5}
+            onChange={this.ratingChanged}
+            size={20}
+            color1={'#c3c6cc'}
+            color2={'white'}
+            value={ratingValue} />
+        </div>
+        <p>{ratingMessage}</p>
       </div>
       );
     }

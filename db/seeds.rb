@@ -197,10 +197,10 @@ Rating.create!(bar_id: 2, user_id: 3, rating: 4)
 Rating.create!(bar_id: 2, user_id: 4, rating: 4)
 
 # Cigar
-Rating.create!(bar_id: 3, user_id: 1, rating: 3)
-Rating.create!(bar_id: 3, user_id: 2, rating: 3)
-Rating.create!(bar_id: 3, user_id: 3, rating: 4)
-Rating.create!(bar_id: 3, user_id: 4, rating: 4)
+Rating.create!(bar_id: 3, user_id: 1, rating: 3.5)
+Rating.create!(bar_id: 3, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 3, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 3, user_id: 4, rating: 3.5)
 
 # Library
 Rating.create!(bar_id: 4, user_id: 1, rating: 4)
@@ -209,10 +209,10 @@ Rating.create!(bar_id: 4, user_id: 3, rating: 4)
 Rating.create!(bar_id: 4, user_id: 4, rating: 4)
 
 # Infusion
-Rating.create!(bar_id: 5, user_id: 1, rating: 3)
-Rating.create!(bar_id: 5, user_id: 2, rating: 3)
-Rating.create!(bar_id: 5, user_id: 3, rating: 3)
-Rating.create!(bar_id: 5, user_id: 4, rating: 3)
+Rating.create!(bar_id: 5, user_id: 1, rating: 3.5)
+Rating.create!(bar_id: 5, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 5, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 5, user_id: 4, rating: 3.5)
 
 # Zeitgeist
 Rating.create!(bar_id: 6, user_id: 1, rating: 4)

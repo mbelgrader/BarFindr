@@ -7,7 +7,7 @@ class Api::RatingsController < ApplicationController
 
     if @rating
       new_rating = params[:rating]
-      # debugger
+      
       if @rating.update(rating_params)
         render :show
       else

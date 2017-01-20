@@ -15,7 +15,6 @@ class SearchBar extends React.Component {
 
   handleChange(e) {
     this.setState({ input: e.currentTarget.value });
-    // debugger
   }
 
   render() {
