@@ -22,7 +22,7 @@ Redux stores the state of the application, making the code clean and easily main
 Map icons based on location will add to the user experience. Beer icons for locations that specialize in craft beer. Martini glasses for craft cocktail lounges. Turntables for nightclubs.
 
 ### Colorized map
-A customized map color scheme to match the theme colors.
+A customized map color scheme to match the theme.
 
 ### Geolocation
 Utilize the geolocation api to display the current users location.
