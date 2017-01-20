@@ -10,22 +10,20 @@ class RatingButton extends React.Component {
   }
 
   ratingChanged(newRating) {
-    console.log(newRating);
     const barId = this.props.barId;
-    // debugger
     const rating = {rating: newRating, bar_id: barId};
     this.props.updateRating(rating);
   }
 
   render() {
     const { userRating, averageRating } = this.props;
-    // debugger
-    console.log(this.props);
+
     let ratingValue;
-    if (userRating)
+    if (userRating > 0) {
       ratingValue = userRating;
-    else
+    } else {
       ratingValue = averageRating;
+    }
 
     return (
       <div className='stars'>

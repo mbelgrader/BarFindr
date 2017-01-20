@@ -12,6 +12,7 @@ const barDetailsReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_BAR:
       const newBar = {[action.bar.id]: action.bar};
+      newBar[action.bar.id].user_rating = newBar[action.bar.id].user_rating[0].rating;
       return merge({}, state, newBar);
     case RECEIVE_COMMENT:
       const comment = action.comment;
@@ -26,10 +27,9 @@ const barDetailsReducer = (state = {}, action) => {
       newState[action.comment.bar_id].comments.splice(commentId, 1);
       return newState;
     case RECEIVE_RATING:
-      const barId = action.rating.bar_id
-      // wrong bar id (should not be 1)
+      const barId = action.rating.bar_id;
       console.log(action);
-      newState[barId].user_rating = action.rating;
+      newState[barId].user_rating = action.rating.rating;
       return newState;
     default:
       return state;
