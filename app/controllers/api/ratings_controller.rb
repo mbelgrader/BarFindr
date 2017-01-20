@@ -2,20 +2,20 @@ class Api::RatingsController < ApplicationController
 
   def create
     @user_id = current_user.id
-    @bar_id = params[:bar_id]
-    @rating = current_user.ratings.where(bar_id: @bar_id).first
+    @bar_id = rating_params[:bar_id]
+    @rating = current_user.ratings.find_by(bar_id: @bar_id)
 
     if @rating
       new_rating = params[:rating]
-      debugger
-      @rating = Rating.find(@user_id)
-      if @rating.update_attribute(:rating, new_rating)
+      # debugger
+      if @rating.update(rating_params)
         render :show
       else
         render json: @rating, status: :unprocessable_entity
       end
     else
-      @rating = Rating.create(rating_params)
+      @rating = Rating.new(rating_params)
+      @rating.user = current_user
       if @rating.save
         render :show
       else

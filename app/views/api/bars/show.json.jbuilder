@@ -5,7 +5,8 @@ json.extract! @bar,
               :tags,
               :image,
               :average_rating
-              # :user_rating
+
+json.user_rating @user_rating
 
 json.comments do
   json.array! @bar.comments do |comment|

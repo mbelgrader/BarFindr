@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, withRouter } from 'react-router';
 import { Guide } from '../sidebar/guide';
@@ -8,7 +7,6 @@ class SessionForm extends React.Component {
     super(props);
     this.state = { username: '', email: '', password: '' };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.loginDemo = this.loginDemo.bind(this);
   }
 
   componentDidUpdate() {
@@ -18,16 +16,14 @@ class SessionForm extends React.Component {
   componentWillReceiveProps(newProps) {
     if (this.props.location.pathname !== '/demo') {
       this.setState({email: '', password: ''});
-    }
-    else {
-      // this.setState({email: 'demo', password: 'password'});
-      // this.loginDemo();
+    } else {
+      this.setState({email: 'demo', password: 'password'});
     }
   }
 
   componentDidMount() {
     if (this.props.formType === 'demo')
-      this.loginDemo();
+      this.setState({email: 'demo', password: 'password'});
   }
 
   redirect() {
@@ -44,25 +40,6 @@ class SessionForm extends React.Component {
 
     const user = Object.assign({}, this.state);
     this.props.processForm({user});
-  }
-
-  loginDemo() {
-    const email = "demo";
-    const password = "password";
-    let i = 0;
-    const animate = () => {
-      i++;
-      this.setState({ email: email.slice(0, i) });
-
-      if (i === email.length) {
-        this.setState({ password });
-        clearInterval(animation);
-        this.props.processForm({user: {email, password} }).then(() => this.redirect());
-      }
-    };
-    const animation = setInterval(animate, 200);
-
-    // const animation = setInterval(animate, 100);
   }
 
   capitalize(word) {

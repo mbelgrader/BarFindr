@@ -26,7 +26,10 @@ const barDetailsReducer = (state = {}, action) => {
       newState[action.comment.bar_id].comments.splice(commentId, 1);
       return newState;
     case RECEIVE_RATING:
-      newState[action.bar_id].user_rating = action.rating;
+      const barId = action.rating.bar_id
+      // wrong bar id (should not be 1)
+      console.log(action);
+      newState[barId].user_rating = action.rating;
       return newState;
     default:
       return state;

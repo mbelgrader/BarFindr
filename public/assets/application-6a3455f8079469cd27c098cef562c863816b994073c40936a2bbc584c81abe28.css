@@ -1,0 +1,240 @@
+/* line 8, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 22, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1cb9d0;
+}
+
+/* line 28, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.map {
+  height: 95vh;
+  float: right;
+  width: 66.6%;
+}
+
+/* line 43, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 2px;
+}
+
+/* line 53, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+nav a {
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 57, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.nav-button {
+  border: 1px solid #1cb9d0;
+  border-radius: 4px;
+  color: #1cb9d0;
+  background-color: white;
+  padding: 4px 8px 4px 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+/* line 68, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.search {
+  margin: 0px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #c3c6cc;
+  border-radius: 10px;
+  font-size: 12px;
+  outline: none;
+}
+
+/* line 81, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+input, label {
+  margin: 10px;
+}
+
+/* line 85, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 90, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+input {
+  border: 1px solid #c3c6cc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* line 96, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message {
+  color: black;
+  font-size: 15px;
+}
+
+/* line 101, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message a {
+  color: #1cb9d0;
+}
+
+/* line 105, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.button {
+  border: none;
+  background-color: #1cb9d0;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  border-bottom: 1px solid #587cb5;
+  border-right: 1px solid #587cb5;
+}
+
+/* line 120, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar {
+  height: 95vh;
+  background-color: #1cb9d0;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 33.33%;
+  text-align: center;
+  overflow: scroll;
+}
+
+/* line 129, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* line 134, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+i {
+  padding-right: 10px;
+}
+
+/* line 138, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.address {
+  font-size: 14px;
+}
+
+/* line 142, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.bar-name {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/* line 147, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comments ul li {
+  padding: 8px;
+  font-size: 12px;
+  border-top: 1px solid #c3c6cc;
+}
+
+/* line 153, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comments span {
+  padding-right: 15px;
+  font-style: italic;
+  color: #dcf0f2;
+}
+
+/* line 159, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 166, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.tag-list li {
+  padding: 10px;
+}
+
+/* line 171, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.tag-list {
+  padding: 10px;
+}
+
+/* line 175, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.click-info {
+  padding: 15px;
+  padding-top: 40px;
+}
+
+/* line 180, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.comment-button {
+  margin-bottom: 25px;
+}
+
+/* line 184, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.stars {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* line 190, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.delete-button {
+  padding-left: 10px;
+}
+
+/* line 200, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-form {
+  padding: 20px;
+  position: absolute;
+  width: 300px;
+  height: auto;
+  background-color: white;
+  top: 50%;
+  margin-top: -163px;
+  right: 33%;
+  margin-right: -200px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+/* line 214, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.account-form h1 {
+  font-size: 22px;
+}
+
+/* line 218, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.errors {
+  color: red;
+  padding: 15px;
+}
+
+/* line 224, /Users/maria/Desktop/BarFindr/app/assets/stylesheets/custom.scss */
+.form-submit {
+  margin: 25px;
+  font-size: 15px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

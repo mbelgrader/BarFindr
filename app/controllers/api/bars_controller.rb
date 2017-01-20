@@ -15,7 +15,6 @@ class Api::BarsController < ApplicationController
 
   def show
     @bar = Bar.find(params[:id])
-    @average_rating = @bar.average_rating
 
     @user_rating = nil
     if current_user

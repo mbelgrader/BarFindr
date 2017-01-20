@@ -9,12 +9,16 @@ const mapStateToProps = (state, {params, ownProps }) => {
   const barId = parseInt(params.barId);
   const bar = selectBar(state, barId);
   const currentUser = state.session.currentUser;
-
+  let userRating = 0;
+  if (bar && bar.user_rating && bar.user_rating.length > 0)
+    userRating = bar.user_rating[0].rating;
+  console.log(bar);
   return {
     barId,
     currentUser,
     bar,
-    ownProps
+    ownProps,
+    userRating
   };
 };
 

@@ -1,5 +1,4 @@
 export const fetchBars = (data) => {
-  console.log(data);
   return $.ajax({
     method: 'GET',
     url: 'api/bars',
@@ -34,6 +33,6 @@ export const addRating = (rating) => {
   return $.ajax({
     method: 'POST',
     url: `api/ratings`,
-    data: rating
+    data: {rating}
   });
 };

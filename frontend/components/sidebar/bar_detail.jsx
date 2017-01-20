@@ -49,7 +49,8 @@ class BarDetail extends React.Component {
 
         <RatingButtonContainer
           averageRating={this.props.bar.average_rating}
-          barId={this.props.barId} />
+          barId={this.props.barId}
+          userRating={this.props.userRating} />
         <CommentButton />
         {this.props.children}
 

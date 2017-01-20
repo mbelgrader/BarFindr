@@ -21,12 +21,8 @@ class BarMap extends Component {
     const map = this.refs.map;
     this.map = new google.maps.Map(map, _mapOptions);
     this.MarkerManager = new MarkerManager(this.map, this._handleMarkerClick.bind(this));
-    if (this.props.singleBar) {
-      this.props.fetchBar(this.props.barId);
-    } else {
       this._registerListeners();
       this.MarkerManager.updateMarkers(this.props.bars);
-    }
   }
 
   componentDidUpdate() {
@@ -42,6 +38,7 @@ class BarMap extends Component {
       const bounds = {
         northEast: { lat:north, lng: east },
         southWest: { lat: south, lng: west } };
+        // debugger
       this.props.updateFilter('bounds', bounds);
     });
   }
