@@ -12,7 +12,9 @@ const barDetailsReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_BAR:
       const newBar = {[action.bar.id]: action.bar};
-      newBar[action.bar.id].user_rating = newBar[action.bar.id].user_rating[0].rating;
+      debugger
+      if (newBar[action.bar.id].user_rating.length > 0)
+        newBar[action.bar.id].user_rating = newBar[action.bar.id].user_rating[0].rating;
       return merge({}, state, newBar);
     case RECEIVE_COMMENT:
       const comment = action.comment;

@@ -43,7 +43,7 @@ class RatingButton extends React.Component {
             color2={'white'}
             value={ratingValue} />
         </div>
-        <p>{ratingMessage}</p>
+        <p className='rating-message'>{ratingMessage}</p>
       </div>
       );
     }

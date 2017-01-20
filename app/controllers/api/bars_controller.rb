@@ -16,7 +16,7 @@ class Api::BarsController < ApplicationController
   def show
     @bar = Bar.find(params[:id])
 
-    @user_rating = nil
+    @user_rating = 0
     if current_user
       @user_rating = @bar.ratings.where(user_id: current_user.id)
     end

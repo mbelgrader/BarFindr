@@ -22,6 +22,10 @@ body {
   color:  $blue;
 }
 
+button {
+  cursor: pointer;
+}
+
 .map {
   height: 95vh;
   float: right;
@@ -53,6 +57,7 @@ nav a {
   margin-right: 8px;
   font-size: 15px;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .search {
@@ -161,17 +166,22 @@ i {
 }
 
 .comment-button {
-  margin-bottom: 25px;
+  margin: 25px 0 25px 0;
 }
 
 .stars {
   max-width: 100px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0 0 0;
+}
+
+.rating-message {
+  font-size: 14px;
 }
 
 .delete-button {
   padding-left: 10px;
+  cursor: pointer;
 }
 
 // login/signup

@@ -185,49 +185,49 @@ Comment.create!(body: 'This place is legit. Worth checking out', user_id: 8, bar
 Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 8)
 
 # Dada
-Rating.create!(bar_id: 1, user_id: 1, rating: 5)
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
 Rating.create!(bar_id: 1, user_id: 3, rating: 5)
 Rating.create!(bar_id: 1, user_id: 4, rating: 5)
+Rating.create!(bar_id: 1, user_id: 5, rating: 5)
 
 # Benders
-Rating.create!(bar_id: 2, user_id: 1, rating: 4)
 Rating.create!(bar_id: 2, user_id: 2, rating: 4)
 Rating.create!(bar_id: 2, user_id: 3, rating: 4)
 Rating.create!(bar_id: 2, user_id: 4, rating: 4)
+Rating.create!(bar_id: 2, user_id: 5, rating: 4)
 
 # Cigar
-Rating.create!(bar_id: 3, user_id: 1, rating: 3.5)
 Rating.create!(bar_id: 3, user_id: 2, rating: 3.5)
 Rating.create!(bar_id: 3, user_id: 3, rating: 3.5)
 Rating.create!(bar_id: 3, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 3, user_id: 5, rating: 3.5)
 
 # Library
-Rating.create!(bar_id: 4, user_id: 1, rating: 4)
 Rating.create!(bar_id: 4, user_id: 2, rating: 4)
 Rating.create!(bar_id: 4, user_id: 3, rating: 4)
 Rating.create!(bar_id: 4, user_id: 4, rating: 4)
+Rating.create!(bar_id: 4, user_id: 5, rating: 4)
 
 # Infusion
-Rating.create!(bar_id: 5, user_id: 1, rating: 3.5)
 Rating.create!(bar_id: 5, user_id: 2, rating: 3.5)
 Rating.create!(bar_id: 5, user_id: 3, rating: 3.5)
 Rating.create!(bar_id: 5, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 5, user_id: 5, rating: 3.5)
 
 # Zeitgeist
-Rating.create!(bar_id: 6, user_id: 1, rating: 4)
 Rating.create!(bar_id: 6, user_id: 2, rating: 4)
 Rating.create!(bar_id: 6, user_id: 3, rating: 5)
 Rating.create!(bar_id: 6, user_id: 4, rating: 5)
+Rating.create!(bar_id: 6, user_id: 5, rating: 4)
 
 # Laguna
-Rating.create!(bar_id: 7, user_id: 1, rating: 4)
 Rating.create!(bar_id: 7, user_id: 2, rating: 4)
 Rating.create!(bar_id: 7, user_id: 3, rating: 4)
 Rating.create!(bar_id: 7, user_id: 4, rating: 4)
+Rating.create!(bar_id: 7, user_id: 5, rating: 4)
 
 # 724 hookah
-Rating.create!(bar_id: 8, user_id: 1, rating: 4)
 Rating.create!(bar_id: 8, user_id: 2, rating: 4)
 Rating.create!(bar_id: 8, user_id: 3, rating: 4)
 Rating.create!(bar_id: 8, user_id: 4, rating: 4)
+Rating.create!(bar_id: 8, user_id: 5, rating: 4)

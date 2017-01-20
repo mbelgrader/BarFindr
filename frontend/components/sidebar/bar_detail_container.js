@@ -10,7 +10,7 @@ const mapStateToProps = (state, {params, ownProps }) => {
   const bar = selectBar(state, barId);
   const currentUser = state.session.currentUser;
   let userRating = 0;
-  if (bar && bar.user_rating)
+  if (bar && bar.user_rating && bar.user_rating > 0)
     userRating = bar.user_rating;
   return {
     barId,
