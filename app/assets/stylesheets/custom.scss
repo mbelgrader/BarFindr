@@ -15,13 +15,10 @@ html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
 	vertical-align: baseline;
   text-decoration: none;
   list-style: none;
-  // border: none;
-  // outline: none;
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  // font-family: 'Droid Sans', sans-serif;
   color:  $blue;
 }
 
@@ -29,13 +26,6 @@ body {
   height: 95vh;
   float: right;
   width: 66.6%;
-}
-
-.footer {
-  // height: 50px;
-  // // background-color: $light-grey;
-  // border-top: 2px solid $blue;
-  // box-shadow: 0 2px 4px 0 rgba(0.5, 0, 0, 0);
 }
 
 // header
@@ -66,15 +56,12 @@ nav a {
 }
 
 .search {
-  // padding: 6px 15px 6px 30px;
-	// margin:3px;
   margin: 0px;
   height: 20px;
   width: 200px;
   border: 1px solid $light-grey;
   border-radius: 10px;
   font-size: 12px;
-  // border: none;
   outline: none;
 }
 
@@ -103,7 +90,6 @@ input {
 }
 
 .button {
-  // border-color: $blue;
   border: none;
   background-color: $blue;
   color: white;
@@ -112,7 +98,6 @@ input {
   font-family: inherit;
   border-bottom: 1px solid #587cb5;
   border-right: 1px solid #587cb5;
-  // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 // sidebar
@@ -160,11 +145,9 @@ i {
   width: 100%;
   height: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  // border: 4px solid white;
 }
 
 .tag-list li {
-  // list-style: circle;
   padding: 10px;
 }
 
@@ -190,10 +173,6 @@ i {
 .delete-button {
   padding-left: 10px;
 }
-// .logo {
-//   font-style: italic;
-// }
-
 
 // login/signup
 
@@ -217,12 +196,14 @@ i {
 
 .errors {
   color: red;
-  // padding-top: 10px;
   padding: 15px;
 }
 
 .form-submit {
   margin: 25px;
   font-size: 15px;
-  // padding: 4px 8px 4px 8px;
+}
+
+.logo {
+  font-size: 20px;
 }

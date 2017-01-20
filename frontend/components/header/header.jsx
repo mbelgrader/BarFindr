@@ -1,25 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
 import SearchBar from './search_bar';
 
-const links = () => (
-  <div>
-    <Link className='nav-button' to="/demo">Demo</Link>
-    <Link to="/signup">Sign Up</Link>
-    <Link to="/login">Log In</Link>
-  </div>
-);
 
-const signOut = (logout) => (
-  <button className='nav-button' onClick={logout}>Log Out</button>
-);
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleLogout = this.handleLogout.bind(this);
+  }
 
-const Header = ({ currentUser, logout, updateFilter }) => (
-  <nav>
-    <Link to="/"><h1 className="logo">BarFindr</h1></Link>
-    <SearchBar updateFilter={updateFilter} />
-    {currentUser ? signOut(logout) : links()}
-  </nav>
-);
+  links() {
+   return (
+      <div>
+        <Link className='nav-button' to="/demo">Demo</Link>
+        <Link to="/signup">Sign Up</Link>
+        <Link to="/login">Log In</Link>
+      </div>
+    );
+  }
 
-export default Header;
+  handleLogout() {
+    this.props.logout();
+    this.props.router.push("/");
+  }
+
+  signOut() {
+    return <button className='nav-button' onClick={this.handleLogout}>Log Out</button>;
+  }
+
+  render() {
+    const { updateFilter, currentUser } = this.props;
+    return(
+      <nav>
+        <Link to="/"><h1 className="logo">BarFindr</h1></Link>
+        <SearchBar updateFilter={updateFilter} />
+        {currentUser ? this.signOut() : this.links()}
+      </nav>
+    );
+  }
+}
+
+export default withRouter(Header);
