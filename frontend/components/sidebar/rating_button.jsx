@@ -31,7 +31,6 @@ class RatingButton extends React.Component {
 
     const ratingMessage = ratingSource === 'user' ? "Your rating" : "Average Rating";
 
-
     return (
       <div>
         <div className='stars'>

@@ -4,7 +4,7 @@ import { createComment, fetchBar } from '../../actions/bar_actions.js';
 import CommentForm from './comment_form';
 
 const mapStateToProps = ({ session }) => ({
-    currentUserId: session.currentUser.id
+  currentUserId: session.currentUser.id
 });
 
 const mapDispatchToProps = dispatch => ({

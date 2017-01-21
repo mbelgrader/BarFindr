@@ -17,7 +17,6 @@ export const receiveBars = bars => ({
   bars
 });
 
-
 export const fetchBar = id => dispatch => (
   APIUtil.fetchBar(id)
     .then(bar => dispatch(receiveBar(bar)))
@@ -28,45 +27,32 @@ export const receiveBar = bar => ({
   bar
 });
 
-export const createComment = comment => dispatch => {
-  return (
-    APIUtil.createComment(comment)
+export const createComment = comment => dispatch => (
+  APIUtil.createComment(comment)
     .then(review => dispatch(receiveComment(review)))
-  );
-};
+);
 
-export const receiveComment = comment => {
-  return({
-    type: RECEIVE_COMMENT,
-    comment
-  });
-};
+export const receiveComment = comment => ({
+  type: RECEIVE_COMMENT,
+  comment
+});
 
-export const deleteComment = id => dispatch => {
-  return (
-    APIUtil.deleteComment(id)
+export const deleteComment = id => dispatch => (
+  APIUtil.deleteComment(id)
     .then(comment => dispatch(removeComment(comment)))
-  );
-};
+);
 
-export const removeComment = comment => {
-  return ({
-    type: REMOVE_COMMENT,
-    comment
-  });
-};
+export const removeComment = comment => ({
+  type: REMOVE_COMMENT,
+  comment
+});
 
-
-export const updateRating = (rating) => dispatch => {
-  return (
-    APIUtil.addRating(rating)
+export const updateRating = (rating) => dispatch => (
+  APIUtil.addRating(rating)
     .then(res => dispatch(receiveRating(res)))
-  );
-};
+);
 
-export const receiveRating = rating => {
-  return({
-    type: RECEIVE_RATING,
-    rating
-  });
-};
+export const receiveRating = rating => ({
+  type: RECEIVE_RATING,
+  rating
+});

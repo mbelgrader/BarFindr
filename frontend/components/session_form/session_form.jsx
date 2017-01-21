@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
   }
 
   showErrors() {
-    return(
+    return (
       <ul className='errors'>
         {this.props.errors.map((error, i) => (
           <li key={i}>{error}</li>
@@ -98,7 +98,6 @@ class SessionForm extends React.Component {
 
             {this.showErrors()}
 
-
             <label><i className="fa fa-envelope" aria-hidden="true"></i>
               <input type='text'
                      onChange={this.update('email')}
@@ -107,6 +106,7 @@ class SessionForm extends React.Component {
             </label>
 
             <br />
+
             <label><i className="fa fa-lock" aria-hidden="true"></i>
               <input type='password'
                      onChange={this.update('password')}

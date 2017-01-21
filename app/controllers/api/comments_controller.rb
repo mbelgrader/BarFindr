@@ -1,6 +1,5 @@
 class Api::CommentsController < ApplicationController
-  # before_action :require_logged_in, only: [:create]
-
+  
   def create
     @comment = Comment.new(comment_params)
 

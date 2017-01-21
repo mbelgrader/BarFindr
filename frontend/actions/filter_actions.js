@@ -5,8 +5,7 @@ export const UPDATE_FILTER = "UPDATE_FILTER";
 
 export const updateFilter = (filter, value) => (dispatch, getState) => {
   dispatch(changeFilter(filter, value));
-  const newFilters = merge({}, getState().filters, {[filter]: value});
-  return fetchBars(newFilters)(dispatch);
+  return fetchBars(getState().filters)(dispatch);
 };
 
 export const changeFilter = (filter, value) => ({

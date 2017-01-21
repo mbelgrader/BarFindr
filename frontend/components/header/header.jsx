@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 import SearchBar from './search_bar';
 
-
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -10,7 +9,7 @@ class Header extends React.Component {
   }
 
   links() {
-   return (
+    return (
       <div>
         <Link className='nav-button' to="/demo">Demo</Link>
         <Link to="/signup">Sign Up</Link>
@@ -25,7 +24,8 @@ class Header extends React.Component {
   }
 
   signOut() {
-    return <button className='nav-button' onClick={this.handleLogout}>Log Out</button>;
+    return <button className='nav-button'
+                   onClick={this.handleLogout}>Log Out</button>;
   }
 
   render() {

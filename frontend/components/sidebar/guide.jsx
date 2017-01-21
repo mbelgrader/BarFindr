@@ -25,6 +25,3 @@ export const Guide = () => (
     </ul>
   </div>
 );
-
-// <i className="fa fa-mouse-pointer" aria-hidden="true"></i>
-// <i className="fa fa-search" aria-hidden="true"></i>

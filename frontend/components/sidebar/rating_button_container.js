@@ -4,11 +4,9 @@ import { selectBar } from '../../reducers/selectors';
 
 import RatingButton from './rating_button';
 
-const mapDispatchToProps = dispatch => {
-  return ({
-    updateRating: rating => dispatch(updateRating(rating))
-  });
-};
+const mapDispatchToProps = dispatch => ({
+  updateRating: rating => dispatch(updateRating(rating))
+});
 
 export default connect(
   null,
