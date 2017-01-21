@@ -29,7 +29,7 @@ class RatingButton extends React.Component {
       ratingSource = 'avg';
     }
 
-    const ratingMessage = ratingSource === 'user' ? "Your rating" : "Average rating";
+    const ratingMessage = ratingSource === 'user' ? "Your rating" : "Average Rating";
 
 
     return (

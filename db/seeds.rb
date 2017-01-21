@@ -9,6 +9,7 @@ User.create!(email: 'jenny42@test.com', username: 'jenny42', password: 'password
 User.create!(email: 'nick12@test.com', username: 'nick12', password: 'password')
 User.create!(email: 'dandk@test.com', username: 'dandk', password: 'password')
 User.create!(email: 'hunter@test.com', username: 'hunter45', password: 'password')
+User.create!(email: 'nikki@test.com', username: 'nikki', password: 'password')
 
 # zeitgeist, infusion, smugglers,
 
@@ -60,6 +61,24 @@ Bar.create!(name: '724Hookah',
             lat: 37.7866522,
             lng: -122.4174318,
             image: "http://s3-media2.ak.yelpcdn.com/bphoto/V7wMqAKLkbz6hI5oxkvl5g/l.jpg")
+
+Bar.create!(name: "Jillian\'s",
+            address: 'Metreon, 175 4th St',
+            lat: 37.7838403,
+            lng: -122.4051866,
+            image: "https://www.eiseverywhere.com/file_uploads/9cb9e34b3095cbb31145aae1071cc46f_SocialProgram3.jpg")
+
+Bar.create!(name: "Golden Gate Tap Room",
+            address: '449 Powell St',
+            lat: 37.7857057,
+            lng: -122.4089846,
+            image: "https://www.zagat.com/proxy/v1.4?m=image&a=resize&url=http%3A//storage.googleapis.com/zgt-photos/0x8085808e9a5d253d_0x2d5c3ea7db940d52/8cbee1700d49cdce3cc7be8d948ef2f3.jpg&width=497&height=286&key=abbc09b7c840c10937a4db331422c98b")
+
+Bar.create!(name: "Elixir",
+            address: '3200 16th St',
+            lat: 37.7665234,
+            lng: -122.4238977,
+            image: "https://media-cdn.tripadvisor.com/media/photo-s/01/8d/80/1d/looking-north-towards.jpg")
 
 Tag.create!(name: 'dive') # 1
 Tag.create!(name: 'club') # 2
@@ -117,6 +136,25 @@ Tagging.create!(bar_id: 7, tag_id: 7)
 # 724 hookah
 Tagging.create!(bar_id: 8, tag_id: 4)
 Tagging.create!(bar_id: 8, tag_id: 7)
+
+# Jillians
+Tagging.create!(bar_id: 9, tag_id: 3)
+Tagging.create!(bar_id: 9, tag_id: 6)
+Tagging.create!(bar_id: 9, tag_id: 7)
+Tagging.create!(bar_id: 9, tag_id: 8)
+Tagging.create!(bar_id: 9, tag_id: 11)
+
+# Tap Room
+Tagging.create!(bar_id: 10, tag_id: 3)
+Tagging.create!(bar_id: 10, tag_id: 6)
+Tagging.create!(bar_id: 10, tag_id: 7)
+Tagging.create!(bar_id: 10, tag_id: 8)
+Tagging.create!(bar_id: 10, tag_id: 11)
+
+# Elixir
+Tagging.create!(bar_id: 11, tag_id: 3)
+Tagging.create!(bar_id: 11, tag_id: 7)
+Tagging.create!(bar_id: 11, tag_id: 9)
 
 # Dada
 Comment.create!(body: 'Really cool modern art', user_id: 6, bar_id: 1)
@@ -184,6 +222,36 @@ Comment.create!(body: 'pricey', user_id: 4, bar_id: 8)
 Comment.create!(body: 'This place is legit. Worth checking out', user_id: 8, bar_id: 8)
 Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 8)
 
+# Jillians
+Comment.create!(body: 'Huge projector screens', user_id: 7, bar_id: 9)
+Comment.create!(body: 'sports sports sports', user_id: 9, bar_id: 9)
+Comment.create!(body: 'great wings!', user_id: 9, bar_id: 9)
+Comment.create!(body: 'food is okay', user_id: 2, bar_id: 9)
+Comment.create!(body: 'Wall of tvs', user_id: 3, bar_id: 9)
+Comment.create!(body: 'A lot of tvs..', user_id: 4, bar_id: 9)
+Comment.create!(body: 'Great to watch sports', user_id: 5, bar_id: 9)
+Comment.create!(body: 'Staff is awesome', user_id: 6, bar_id: 9)
+Comment.create!(body: 'Good range of beers', user_id: 10, bar_id: 9)
+Comment.create!(body: 'Very good vibes', user_id: 11, bar_id: 9)
+
+# Tap room
+Comment.create!(body: 'Very good vibes', user_id: 3, bar_id: 10)
+Comment.create!(body: 'Crowd was pretty cool', user_id: 4, bar_id: 10)
+Comment.create!(body: 'Beer, wings, game', user_id: 5, bar_id: 10)
+Comment.create!(body: 'Really loud', user_id: 11, bar_id: 10)
+Comment.create!(body: 'Great sports bar', user_id: 7, bar_id: 10)
+Comment.create!(body: 'good food', user_id: 10, bar_id: 10)
+Comment.create!(body: 'Games games games', user_id: 10, bar_id: 10)
+Comment.create!(body: 'Staff is very friendly', user_id: 9, bar_id: 10)
+Comment.create!(body: 'Very spacious', user_id: 6, bar_id: 10)
+
+# Elixir
+Comment.create!(body: 'Cool victorian feel', user_id: 7, bar_id: 11)
+Comment.create!(body: 'Awesome cocktails', user_id: 7, bar_id: 11)
+Comment.create!(body: 'Friendly crowd', user_id: 7, bar_id: 11)
+Comment.create!(body: 'Array of seating', user_id: 7, bar_id: 11)
+Comment.create!(body: 'old fashioned but classy', user_id: 7, bar_id: 11)
+
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
 Rating.create!(bar_id: 1, user_id: 3, rating: 5)
@@ -231,3 +299,21 @@ Rating.create!(bar_id: 8, user_id: 2, rating: 4)
 Rating.create!(bar_id: 8, user_id: 3, rating: 4)
 Rating.create!(bar_id: 8, user_id: 4, rating: 4)
 Rating.create!(bar_id: 8, user_id: 5, rating: 4)
+
+# Jillians
+Rating.create!(bar_id: 9, user_id: 2, rating: 2.5)
+Rating.create!(bar_id: 9, user_id: 3, rating: 2.5)
+Rating.create!(bar_id: 9, user_id: 4, rating: 2.5)
+Rating.create!(bar_id: 9, user_id: 5, rating: 2.5)
+
+# tap room
+Rating.create!(bar_id: 10, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 10, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 10, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 10, user_id: 5, rating: 3.5)
+
+# Elixir
+Rating.create!(bar_id: 11, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 11, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 11, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 11, user_id: 5, rating: 3.5)
