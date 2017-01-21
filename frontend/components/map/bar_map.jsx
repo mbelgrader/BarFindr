@@ -26,9 +26,6 @@ class BarMap extends Component {
   }
 
   componentDidUpdate() {
-    // debugger
-    // getting passed all bars instead of filtered
-    // it is hitting debugger, so it is updating
     this.MarkerManager.updateMarkers(this.props.bars);
   }
 
@@ -38,7 +35,6 @@ class BarMap extends Component {
       const bounds = {
         northEast: { lat:north, lng: east },
         southWest: { lat: south, lng: west } };
-        // debugger
       this.props.updateFilter('bounds', bounds);
     });
   }

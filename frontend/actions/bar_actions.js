@@ -36,7 +36,6 @@ export const createComment = comment => dispatch => {
 };
 
 export const receiveComment = comment => {
-  // debugger
   return({
     type: RECEIVE_COMMENT,
     comment
@@ -44,7 +43,6 @@ export const receiveComment = comment => {
 };
 
 export const deleteComment = id => dispatch => {
-  // debugger
   return (
     APIUtil.deleteComment(id)
     .then(comment => dispatch(removeComment(comment)))
@@ -67,7 +65,6 @@ export const updateRating = (rating) => dispatch => {
 };
 
 export const receiveRating = rating => {
-  // debugger
   return({
     type: RECEIVE_RATING,
     rating

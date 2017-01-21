@@ -80,6 +80,18 @@ Bar.create!(name: "Elixir",
             lng: -122.4238977,
             image: "https://media-cdn.tripadvisor.com/media/photo-s/01/8d/80/1d/looking-north-towards.jpg")
 
+Bar.create!(name: "Monarch",
+            address: '101 6th St',
+            lat: 37.7809868,
+            lng: -122.4106163,
+            image: "http://www.monarchsf.com/files/2013/09/explore-bar-03.jpg")
+
+Bar.create!(name: "Temple",
+            address: '540 Howard St',
+            lat: 37.7879758,
+            lng: -122.3994039,
+            image: "http://skamartist.com/sites/default/files/venues/216.png")
+
 Tag.create!(name: 'dive') # 1
 Tag.create!(name: 'club') # 2
 Tag.create!(name: 'lounge') # 3
@@ -155,6 +167,12 @@ Tagging.create!(bar_id: 10, tag_id: 11)
 Tagging.create!(bar_id: 11, tag_id: 3)
 Tagging.create!(bar_id: 11, tag_id: 7)
 Tagging.create!(bar_id: 11, tag_id: 9)
+
+# Monarch
+Tagging.create!(bar_id: 12, tag_id: 2)
+
+# Temple
+Tagging.create!(bar_id: 13, tag_id: 2)
 
 # Dada
 Comment.create!(body: 'Really cool modern art', user_id: 6, bar_id: 1)
@@ -252,6 +270,17 @@ Comment.create!(body: 'Friendly crowd', user_id: 7, bar_id: 11)
 Comment.create!(body: 'Array of seating', user_id: 7, bar_id: 11)
 Comment.create!(body: 'old fashioned but classy', user_id: 7, bar_id: 11)
 
+# Monarch
+Comment.create!(body: 'so much fun!', user_id: 7, bar_id: 12)
+Comment.create!(body: 'cover is pricey', user_id: 8, bar_id: 12)
+Comment.create!(body: 'arobatics realy cool to watch', user_id: 6, bar_id: 12)
+Comment.create!(body: 'good house music', user_id: 9, bar_id: 12)
+Comment.create!(body: 'cocktails are really good', user_id: 5, bar_id: 12)
+Comment.create!(body: 'photobooth is cool', user_id: 4, bar_id: 12)
+
+# Tempel
+Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
+
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
 Rating.create!(bar_id: 1, user_id: 3, rating: 5)
@@ -317,3 +346,15 @@ Rating.create!(bar_id: 11, user_id: 2, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 3, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 4, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 5, rating: 3.5)
+
+# Monarch
+Rating.create!(bar_id: 12, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 12, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 12, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 12, user_id: 5, rating: 3.5)
+
+# Temple
+Rating.create!(bar_id: 12, user_id: 2, rating: 3)
+Rating.create!(bar_id: 12, user_id: 3, rating: 3)
+Rating.create!(bar_id: 12, user_id: 4, rating: 3)
+Rating.create!(bar_id: 12, user_id: 5, rating: 3)

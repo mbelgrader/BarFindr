@@ -7,7 +7,6 @@ const barsReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_BARS:
-      // debugger
       return action.bars;
     default:
       return state;
