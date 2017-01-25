@@ -19,7 +19,7 @@ Redux stores the state of the application, making the code clean and easily main
 
 ### Map Icons
 
-Map icons based on location will add to the user experience. Beer icons for locations that specialize in craft beer. Martini glasses for craft cocktail lounges. Turntables for nightclubs.
+Map icons (martini glass or beer) will add to the user experience.
 
 ### Colorized map
 A customized map color scheme to match the theme.
