@@ -19,6 +19,9 @@ class SessionForm extends React.Component {
     } else {
       this.setState({email: 'demo', password: 'password'});
     }
+
+    if (this.props.location.pathname !== newProps.location.pathname)
+      this.props.clearErrors();
   }
 
   componentDidMount() {
@@ -37,7 +40,6 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-
     const user = Object.assign({}, this.state);
     this.props.processForm({user});
   }
@@ -100,7 +102,7 @@ class SessionForm extends React.Component {
 
             {this.usernameInput()}
             <br />
-            
+
             <label><i className="fa fa-envelope" aria-hidden="true"></i>
               <input type='text'
                      onChange={this.update('email')}
