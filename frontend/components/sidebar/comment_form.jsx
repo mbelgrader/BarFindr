@@ -36,6 +36,7 @@ class CommentForm extends React.Component {
 
           <label>Comment</label>
           <br/>
+          <div className='comment-spacing'></div>
           <textarea
             cols='30'
             rows='5'

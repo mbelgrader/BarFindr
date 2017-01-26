@@ -98,6 +98,9 @@ class SessionForm extends React.Component {
 
             {this.showErrors()}
 
+            {this.usernameInput()}
+            <br />
+            
             <label><i className="fa fa-envelope" aria-hidden="true"></i>
               <input type='text'
                      onChange={this.update('email')}
