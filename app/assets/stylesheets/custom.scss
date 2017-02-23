@@ -26,12 +26,6 @@ button {
   cursor: pointer;
 }
 
-.map {
-  height: 94vh;
-  float: right;
-  width: 66.6%;
-}
-
 // header
 
 nav {
@@ -108,11 +102,9 @@ input {
 // sidebar
 
 .sidebar {
-  height: 94vh;
   background-color: $blue;
   color: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  width: 33.33%;
   text-align: center;
   overflow: scroll;
 }
@@ -220,4 +212,29 @@ i {
 
 .logo {
   font-size: 20px;
+}
+
+// mobile
+@media only screen and (max-width: 767px) {
+  .map {
+    height: 300px;
+  }
+
+  .sidebar {
+    height: 100%;
+  }
+}
+
+// desktop
+@media only screen and (min-width: 768px) {
+  .map {
+    height: 94vh;
+    float: right;
+    width: 66.6%;
+  }
+
+  .sidebar {
+    height: 94vh;
+    width: 33.33%;
+  }
 }
