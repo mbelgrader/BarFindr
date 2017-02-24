@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.updateFilter('tag', this.state.input);
+    this.props.updateFilter('tag', this.state.input.toLowerCase());
   }
 
   handleChange(e) {
