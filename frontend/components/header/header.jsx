@@ -11,9 +11,9 @@ class Header extends React.Component {
   links() {
     return (
       <div>
-        <Link className='nav-button' to="/demo">Demo</Link>
-        <Link to="/signup">Sign Up</Link>
-        <Link to="/login">Log In</Link>
+        <Link className='nav-button links' to="/demo">Demo</Link>
+        <Link className='links' to="/signup">Sign Up</Link>
+        <Link className='links' to="/login">Log In</Link>
       </div>
     );
   }
@@ -24,7 +24,7 @@ class Header extends React.Component {
   }
 
   signOut() {
-    return <button className='nav-button'
+    return <button className='nav-button links'
                    onClick={this.handleLogout}>Log Out</button>;
   }
 
@@ -32,7 +32,7 @@ class Header extends React.Component {
     const { updateFilter, currentUser } = this.props;
     return(
       <nav>
-        <Link to="/"><h1 className="logo">BarFindr</h1></Link>
+        <Link to="/"><h1 id="logo">BarFindr</h1></Link>
         <SearchBar updateFilter={updateFilter} />
         {currentUser ? this.signOut() : this.links()}
       </nav>
