@@ -250,15 +250,17 @@ i {
   nav {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
-    padding-bottom: 40px;
-    flex-wrap: wrap;
+    // height: 50px;
+    // padding-bottom: 40px;
+    // flex-wrap: wrap;
   }
 
   #logo {
     order: 1;
-    padding: 10px 40px 10px 0
+    margin-top: 15px;
+    padding-bottom: 15px;
   }
 
   .search-container {
@@ -267,6 +269,8 @@ i {
     // display: flex;
     align-items: center;
     // top: 45px;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
   .links {
@@ -278,12 +282,12 @@ i {
     position: absolute;
     background-color: white;
     padding: 20px;
-    width: 300px;
+    width: auto;
     height: auto;
-    top: 100px;
+    top: 150px;
     // margin-top: -150px;
-    right: 33%;
-    margin-right: -100px;
+    right: 50%;
+    margin-right: -152px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     border-radius: 5px;
   }
