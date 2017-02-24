@@ -265,10 +265,10 @@ Comment.create!(body: 'Very spacious', user_id: 6, bar_id: 10)
 
 # Elixir
 Comment.create!(body: 'Cool victorian feel', user_id: 7, bar_id: 11)
-Comment.create!(body: 'Awesome cocktails', user_id: 7, bar_id: 11)
-Comment.create!(body: 'Friendly crowd', user_id: 7, bar_id: 11)
-Comment.create!(body: 'Array of seating', user_id: 7, bar_id: 11)
-Comment.create!(body: 'old fashioned but classy', user_id: 7, bar_id: 11)
+Comment.create!(body: 'Awesome cocktails', user_id: 9, bar_id: 11)
+Comment.create!(body: 'Friendly crowd', user_id: 6, bar_id: 11)
+Comment.create!(body: 'Array of seating', user_id: 8, bar_id: 11)
+Comment.create!(body: 'old fashioned but classy', user_id: 10, bar_id: 11)
 
 # Monarch
 Comment.create!(body: 'so much fun!', user_id: 7, bar_id: 12)
@@ -279,7 +279,7 @@ Comment.create!(body: 'cocktails are really good', user_id: 5, bar_id: 12)
 Comment.create!(body: 'photobooth is cool', user_id: 4, bar_id: 12)
 
 # Tempel
-Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
+# Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
