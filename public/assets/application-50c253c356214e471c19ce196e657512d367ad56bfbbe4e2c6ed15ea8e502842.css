@@ -1,0 +1,330 @@
+/* line 8, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* line 20, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1cb9d0;
+}
+
+/* line 25, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 31, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 2px;
+}
+
+/* line 37, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+nav a {
+  padding: 0px 8px 0px 8px;
+}
+
+/* line 41, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.nav-button {
+  border: 1px solid #1cb9d0;
+  border-radius: 4px;
+  color: #1cb9d0;
+  background-color: white;
+  padding: 4px 8px 4px 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* line 53, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.search {
+  margin: 0px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid #c3c6cc;
+  border-radius: 10px;
+  font-size: 12px;
+  outline: none;
+}
+
+/* line 63, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+input, label {
+  margin: 10px;
+}
+
+/* line 67, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+form {
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 72, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+input {
+  border: 1px solid #c3c6cc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* line 78, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message {
+  color: black;
+  font-size: 15px;
+}
+
+/* line 83, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.account-message a {
+  color: #1cb9d0;
+}
+
+/* line 87, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.button {
+  border: none;
+  background-color: #1cb9d0;
+  color: white;
+  padding: 5px 8px 5px 8px;
+  font-size: 12px;
+  font-family: inherit;
+  border-bottom: 1px solid #587cb5;
+  border-right: 1px solid #587cb5;
+}
+
+/* line 100, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar {
+  background-color: #1cb9d0;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: scroll;
+}
+
+/* line 107, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* line 112, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+i {
+  padding-right: 10px;
+}
+
+/* line 116, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.address {
+  font-size: 14px;
+}
+
+/* line 120, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.bar-name {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/* line 125, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.comments ul li {
+  padding: 8px;
+  font-size: 12px;
+  border-top: 1px solid #c3c6cc;
+}
+
+/* line 131, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.comments span {
+  padding-right: 15px;
+  font-style: italic;
+  color: #dcf0f2;
+}
+
+/* line 137, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 143, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.tag-list li {
+  padding: 10px;
+}
+
+/* line 147, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.tag-list {
+  padding: 10px;
+}
+
+/* line 151, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.click-info {
+  padding: 15px;
+  padding-top: 40px;
+}
+
+/* line 156, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.comment-button {
+  margin: 25px 0 25px 0;
+}
+
+/* line 160, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.comment-spacing {
+  height: 10px;
+}
+
+/* line 164, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.stars {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+/* line 170, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.rating-message {
+  font-size: 14px;
+}
+
+/* line 174, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.delete-button {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+/* line 183, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.account-form h1 {
+  font-size: 22px;
+}
+
+/* line 187, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.errors {
+  color: red;
+  padding: 15px;
+}
+
+/* line 192, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+.form-submit {
+  margin: 25px;
+  font-size: 15px;
+}
+
+/* line 197, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+#logo {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 203, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .map {
+    height: 94vh;
+    float: right;
+    width: 66.6%;
+  }
+
+  /* line 209, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .sidebar {
+    height: 94vh;
+    width: 33.33%;
+  }
+
+  /* line 215, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+
+  /* line 222, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .account-form {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    top: 50%;
+    margin-top: -163px;
+    right: 33%;
+    margin-right: -200px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 241, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .map {
+    height: 300px;
+  }
+
+  /* line 245, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .sidebar {
+    height: 100%;
+  }
+
+  /* line 250, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* line 257, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  #logo {
+    order: 1;
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  /* line 263, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .search-container {
+    order: 3;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  /* line 270, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .links {
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  /* line 275, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .account-form {
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+
+  /* line 287, /Users/maria/Documents/Playground/BarFindr/app/assets/stylesheets/custom.scss */
+  .account-form i {
+    display: none;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
