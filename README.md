@@ -17,10 +17,6 @@ Redux stores the state of the application, making the code clean and easily main
 
 # Future Additions
 
-### Map Icons
-
-Map icons (martini glass or beer) will add to the user experience.
-
 ### Colorized map
 A customized map color scheme to match the theme.
 
