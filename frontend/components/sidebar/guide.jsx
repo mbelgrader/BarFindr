@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchButtonContainer from './buttons/SearchButtonContainer';
 
 export const Guide = () => (
   <div className='sidebar'>
@@ -10,16 +11,15 @@ export const Guide = () => (
       <li>
         Search for different vibes &nbsp; : <br />
       <ul className='tag-list'>
-          <li>lounge</li>
-          <li>club</li>
-          <li>dive</li>
-          <li>hipster</li>
-          <li>hookah</li>
-          <li>food</li>
-          <li>pool</li>
-          <li>sports</li>
-          <li>live music</li>
-          <li>etc</li>
+          <li><SearchButtonContainer tag='Club' /></li>
+          <li><SearchButtonContainer tag='Lounge' /></li>
+          <li><SearchButtonContainer tag='Dive' /></li>
+          <li><SearchButtonContainer tag='Sports' /></li>
+          <li><SearchButtonContainer tag='Pool' /></li>
+          <li><SearchButtonContainer tag='Hookah' /></li>
+          <li><SearchButtonContainer tag='Food' /></li>
+          <li><SearchButtonContainer tag='Live Music' /></li>
+          <li><SearchButtonContainer tag='Hipster' /></li>
         </ul>
       </li>
     </ul>
