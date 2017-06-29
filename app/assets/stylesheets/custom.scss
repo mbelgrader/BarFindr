@@ -3,6 +3,9 @@ $green: #88d317;
 $dark-blue: #1452b7;
 $light-blue: #2ce3f7;
 $light-grey: #c3c6cc;
+$dark-grey: #424242;
+$darker-grey: #1A1A1A;
+$black: #131418;
 
 // reset
 
@@ -19,7 +22,7 @@ html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'sans serif', sans-serif;
   color:  $blue;
 }
 
@@ -31,19 +34,25 @@ button {
 
 nav {
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 0px 15px 0px 15px;
+  padding: 10px 15px 10px 15px;
   margin-bottom: 2px;
+  background-color: $black;
+  color: $light-grey
 }
 
 nav a {
   padding: 0px 8px 0px 8px;
+  cursor: pointer;
 }
 
 .unselected-button {
-  border: 1px solid $blue;
+  border-top: 1px solid $dark-grey;
+  border-left: 1px solid $dark-grey;
+  border-bottom: 2px solid $dark-grey;
+  border-right: 2px solid $dark-grey;
   border-radius: 4px;
-  color: $blue;
-  background-color: white;
+  color: $light-grey;
+  background-color: $black;
   padding: 4px 8px 4px 8px;
   margin-right: 8px;
   font-size: 16px;
@@ -51,13 +60,14 @@ nav a {
   height: 40px;
   font-family: inherit;
   cursor: pointer;
+  outline: none;
 }
 
 .selected-button {
   border: 1px solid $blue;
   border-radius: 4px;
-  color: $blue;
-  background-color: $green;
+  color: $light-grey;
+  background-color: white;
   padding: 4px 8px 4px 8px;
   margin-right: 8px;
   font-size: 16px;
@@ -65,13 +75,14 @@ nav a {
   height: 40px;
   font-family: inherit;
   cursor: pointer;
+  outline: none;
 }
 
 .nav-button {
-  border: 1px solid $blue;
+  border: 1px solid $light-grey;
   border-radius: 4px;
-  color: $blue;
-  background-color: white;
+  color: $light-grey;
+  background-color: $black;
   padding: 4px 8px 4px 8px;
   margin-right: 8px;
   font-size: 15px;
@@ -134,6 +145,7 @@ input {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   overflow: scroll;
+  color: $light-grey;
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -289,6 +301,7 @@ i {
     order: 1;
     margin-top: 15px;
     padding-bottom: 15px;
+    cursor: pointer;
   }
 
   .search-container {
