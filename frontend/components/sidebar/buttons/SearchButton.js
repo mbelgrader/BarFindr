@@ -22,8 +22,9 @@ class SearchButton extends React.Component {
   }
 
   render() {
+    const style = this.state.selected ? 'selected-button' : 'unselected-button';
     return (
-      <button className="nav-button" onClick={this.handleClick}>
+      <button className={style} onClick={this.handleClick}>
         {this.props.tag}
       </button>
     );

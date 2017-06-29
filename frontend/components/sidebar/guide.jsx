@@ -5,11 +5,10 @@ export const Guide = () => (
   <div className='sidebar'>
     <ul className='guide'>
       <li className='click-info'>
-        Click an icon to see more info
+        Click a map icon to see more info
       </li>
     <br />
       <li>
-        Search for different vibes &nbsp; : <br />
       <ul className='tag-list'>
           <li><SearchButtonContainer tag='Club' /></li>
           <li><SearchButtonContainer tag='Lounge' /></li>

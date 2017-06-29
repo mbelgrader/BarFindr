@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { createComment, fetchBar } from '../../actions/bar_actions.js';
+import { createComment, fetchBar } from '../../../actions/bar_actions.js';
 
 import CommentForm from './comment_form';
 
