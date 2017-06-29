@@ -258,8 +258,11 @@ Comment.create!(body: 'good house music', user_id: 9, bar_id: 11)
 Comment.create!(body: 'cocktails are really good', user_id: 5, bar_id: 11)
 Comment.create!(body: 'photobooth is cool', user_id: 4, bar_id: 11)
 
-# Tempel
-Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
+# Temple
+Comment.create!(body: 'long line on weekends', user_id: 4, bar_id: 12)
+Comment.create!(body: 'good music', user_id: 2, bar_id: 12)
+Comment.create!(body: 'bottle service is on point', user_id: 3, bar_id: 12)
+Comment.create!(body: 'always crowded', user_id: 8, bar_id: 12)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
