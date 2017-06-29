@@ -133,39 +133,34 @@ Tagging.create!(bar_id: 6, tag_id: 6)
 Tagging.create!(bar_id: 6, tag_id: 7)
 Tagging.create!(bar_id: 6, tag_id: 11)
 
-# Laguna
+# 724 hookah
 Tagging.create!(bar_id: 7, tag_id: 4)
-Tagging.create!(bar_id: 7, tag_id: 6)
 Tagging.create!(bar_id: 7, tag_id: 7)
 
-# 724 hookah
-Tagging.create!(bar_id: 8, tag_id: 4)
-Tagging.create!(bar_id: 8, tag_id: 7)
-
 # Jillians
+Tagging.create!(bar_id: 8, tag_id: 3)
+Tagging.create!(bar_id: 8, tag_id: 6)
+Tagging.create!(bar_id: 8, tag_id: 7)
+Tagging.create!(bar_id: 8, tag_id: 8)
+Tagging.create!(bar_id: 8, tag_id: 11)
+
+# Tap Room
 Tagging.create!(bar_id: 9, tag_id: 3)
 Tagging.create!(bar_id: 9, tag_id: 6)
 Tagging.create!(bar_id: 9, tag_id: 7)
 Tagging.create!(bar_id: 9, tag_id: 8)
 Tagging.create!(bar_id: 9, tag_id: 11)
 
-# Tap Room
-Tagging.create!(bar_id: 10, tag_id: 3)
-Tagging.create!(bar_id: 10, tag_id: 6)
-Tagging.create!(bar_id: 10, tag_id: 7)
-Tagging.create!(bar_id: 10, tag_id: 8)
-Tagging.create!(bar_id: 10, tag_id: 11)
-
 # Elixir
-Tagging.create!(bar_id: 11, tag_id: 3)
-Tagging.create!(bar_id: 11, tag_id: 7)
-Tagging.create!(bar_id: 11, tag_id: 9)
+Tagging.create!(bar_id: 10, tag_id: 3)
+Tagging.create!(bar_id: 10, tag_id: 7)
+Tagging.create!(bar_id: 10, tag_id: 9)
 
 # Monarch
-Tagging.create!(bar_id: 12, tag_id: 2)
+Tagging.create!(bar_id: 11, tag_id: 2)
 
 # Temple
-Tagging.create!(bar_id: 13, tag_id: 2)
+Tagging.create!(bar_id: 12, tag_id: 2)
 
 # Dada
 Comment.create!(body: 'Really cool modern art', user_id: 6, bar_id: 1)
@@ -218,61 +213,53 @@ Comment.create!(body: 'Cheap drinks!', user_id: 6, bar_id: 6)
 Comment.create!(body: 'They have a pool table', user_id: 7, bar_id: 6)
 Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 6)
 
-# Laguna
-Comment.create!(body: 'Cool spot', user_id: 8, bar_id: 7)
-Comment.create!(body: 'Great place!', user_id: 8, bar_id: 7)
-Comment.create!(body: 'Music too loud..', user_id: 8, bar_id: 7)
-Comment.create!(body: 'So. Much. Fun.', user_id: 8, bar_id: 7)
-Comment.create!(body: 'Good music and food', user_id: 8, bar_id: 7)
-Comment.create!(body: 'Nice ambience', user_id: 8, bar_id: 7)
-
 #724 hookah
-Comment.create!(body: 'Best hookah place in SF', user_id: 2, bar_id: 8)
-Comment.create!(body: 'meh', user_id: 3, bar_id: 8)
-Comment.create!(body: 'pricey', user_id: 4, bar_id: 8)
-Comment.create!(body: 'This place is legit. Worth checking out', user_id: 8, bar_id: 8)
-Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 8)
+Comment.create!(body: 'Best hookah place in SF', user_id: 2, bar_id: 7)
+Comment.create!(body: 'meh', user_id: 3, bar_id: 7)
+Comment.create!(body: 'pricey', user_id: 4, bar_id: 7)
+Comment.create!(body: 'This place is legit. Worth checking out', user_id: 8, bar_id: 7)
+Comment.create!(body: 'Too crowded', user_id: 7, bar_id: 7)
 
 # Jillians
-Comment.create!(body: 'Huge projector screens', user_id: 7, bar_id: 9)
-Comment.create!(body: 'sports sports sports', user_id: 9, bar_id: 9)
-Comment.create!(body: 'great wings!', user_id: 9, bar_id: 9)
-Comment.create!(body: 'food is okay', user_id: 2, bar_id: 9)
-Comment.create!(body: 'Wall of tvs', user_id: 3, bar_id: 9)
-Comment.create!(body: 'A lot of tvs..', user_id: 4, bar_id: 9)
-Comment.create!(body: 'Great to watch sports', user_id: 5, bar_id: 9)
-Comment.create!(body: 'Staff is awesome', user_id: 6, bar_id: 9)
-Comment.create!(body: 'Good range of beers', user_id: 10, bar_id: 9)
-Comment.create!(body: 'Very good vibes', user_id: 11, bar_id: 9)
+Comment.create!(body: 'Huge projector screens', user_id: 7, bar_id: 8)
+Comment.create!(body: 'sports sports sports', user_id: 9, bar_id: 8)
+Comment.create!(body: 'great wings!', user_id: 9, bar_id: 8)
+Comment.create!(body: 'food is okay', user_id: 2, bar_id: 8)
+Comment.create!(body: 'Wall of tvs', user_id: 3, bar_id: 8)
+Comment.create!(body: 'A lot of tvs..', user_id: 4, bar_id: 8)
+Comment.create!(body: 'Great to watch sports', user_id: 5, bar_id: 8)
+Comment.create!(body: 'Staff is awesome', user_id: 6, bar_id: 8)
+Comment.create!(body: 'Good range of beers', user_id: 10, bar_id: 8)
+Comment.create!(body: 'Very good vibes', user_id: 11, bar_id: 8)
 
 # Tap room
-Comment.create!(body: 'Very good vibes', user_id: 3, bar_id: 10)
-Comment.create!(body: 'Crowd was pretty cool', user_id: 4, bar_id: 10)
-Comment.create!(body: 'Beer, wings, game', user_id: 5, bar_id: 10)
-Comment.create!(body: 'Really loud', user_id: 11, bar_id: 10)
-Comment.create!(body: 'Great sports bar', user_id: 7, bar_id: 10)
-Comment.create!(body: 'good food', user_id: 10, bar_id: 10)
-Comment.create!(body: 'Games games games', user_id: 10, bar_id: 10)
-Comment.create!(body: 'Staff is very friendly', user_id: 9, bar_id: 10)
-Comment.create!(body: 'Very spacious', user_id: 6, bar_id: 10)
+Comment.create!(body: 'Very good vibes', user_id: 3, bar_id: 9)
+Comment.create!(body: 'Crowd was pretty cool', user_id: 4, bar_id: 9)
+Comment.create!(body: 'Beer, wings, game', user_id: 5, bar_id: 9)
+Comment.create!(body: 'Really loud', user_id: 11, bar_id: 9)
+Comment.create!(body: 'Great sports bar', user_id: 7, bar_id: 9)
+Comment.create!(body: 'good food', user_id: 10, bar_id: 9)
+Comment.create!(body: 'Games games games', user_id: 10, bar_id: 9)
+Comment.create!(body: 'Staff is very friendly', user_id: 9, bar_id: 9)
+Comment.create!(body: 'Very spacious', user_id: 6, bar_id: 9)
 
 # Elixir
-Comment.create!(body: 'Cool victorian feel', user_id: 7, bar_id: 11)
-Comment.create!(body: 'Awesome cocktails', user_id: 9, bar_id: 11)
-Comment.create!(body: 'Friendly crowd', user_id: 6, bar_id: 11)
-Comment.create!(body: 'Array of seating', user_id: 8, bar_id: 11)
-Comment.create!(body: 'old fashioned but classy', user_id: 10, bar_id: 11)
+Comment.create!(body: 'Cool victorian feel', user_id: 7, bar_id: 10)
+Comment.create!(body: 'Awesome cocktails', user_id: 9, bar_id: 10)
+Comment.create!(body: 'Friendly crowd', user_id: 6, bar_id: 10)
+Comment.create!(body: 'Array of seating', user_id: 8, bar_id: 10)
+Comment.create!(body: 'old fashioned but classy', user_id: 10, bar_id: 10)
 
 # Monarch
-Comment.create!(body: 'so much fun!', user_id: 7, bar_id: 12)
-Comment.create!(body: 'cover is pricey', user_id: 8, bar_id: 12)
-Comment.create!(body: 'arobatics realy cool to watch', user_id: 6, bar_id: 12)
-Comment.create!(body: 'good house music', user_id: 9, bar_id: 12)
-Comment.create!(body: 'cocktails are really good', user_id: 5, bar_id: 12)
-Comment.create!(body: 'photobooth is cool', user_id: 4, bar_id: 12)
+Comment.create!(body: 'so much fun!', user_id: 7, bar_id: 11)
+Comment.create!(body: 'cover is pricey', user_id: 8, bar_id: 11)
+Comment.create!(body: 'arobatics realy cool to watch', user_id: 6, bar_id: 11)
+Comment.create!(body: 'good house music', user_id: 9, bar_id: 11)
+Comment.create!(body: 'cocktails are really good', user_id: 5, bar_id: 11)
+Comment.create!(body: 'photobooth is cool', user_id: 4, bar_id: 11)
 
 # Tempel
-# Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
+Comment.create!(body: 'long bottle service line', user_id: 4, bar_id: 12)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
@@ -310,41 +297,35 @@ Rating.create!(bar_id: 6, user_id: 3, rating: 5)
 Rating.create!(bar_id: 6, user_id: 4, rating: 5)
 Rating.create!(bar_id: 6, user_id: 5, rating: 4)
 
-# Laguna
+# 724 hookah
 Rating.create!(bar_id: 7, user_id: 2, rating: 4)
 Rating.create!(bar_id: 7, user_id: 3, rating: 4)
 Rating.create!(bar_id: 7, user_id: 4, rating: 4)
 Rating.create!(bar_id: 7, user_id: 5, rating: 4)
 
-# 724 hookah
-Rating.create!(bar_id: 8, user_id: 2, rating: 4)
-Rating.create!(bar_id: 8, user_id: 3, rating: 4)
-Rating.create!(bar_id: 8, user_id: 4, rating: 4)
-Rating.create!(bar_id: 8, user_id: 5, rating: 4)
-
 # Jillians
-Rating.create!(bar_id: 9, user_id: 2, rating: 2.5)
-Rating.create!(bar_id: 9, user_id: 3, rating: 2.5)
-Rating.create!(bar_id: 9, user_id: 4, rating: 2.5)
-Rating.create!(bar_id: 9, user_id: 5, rating: 2.5)
+Rating.create!(bar_id: 8, user_id: 2, rating: 2.5)
+Rating.create!(bar_id: 8, user_id: 3, rating: 2.5)
+Rating.create!(bar_id: 8, user_id: 4, rating: 2.5)
+Rating.create!(bar_id: 8, user_id: 5, rating: 2.5)
 
 # tap room
+Rating.create!(bar_id: 9, user_id: 2, rating: 3.5)
+Rating.create!(bar_id: 9, user_id: 3, rating: 3.5)
+Rating.create!(bar_id: 9, user_id: 4, rating: 3.5)
+Rating.create!(bar_id: 9, user_id: 5, rating: 3.5)
+
+# Elixir
 Rating.create!(bar_id: 10, user_id: 2, rating: 3.5)
 Rating.create!(bar_id: 10, user_id: 3, rating: 3.5)
 Rating.create!(bar_id: 10, user_id: 4, rating: 3.5)
 Rating.create!(bar_id: 10, user_id: 5, rating: 3.5)
 
-# Elixir
+# Monarch
 Rating.create!(bar_id: 11, user_id: 2, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 3, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 4, rating: 3.5)
 Rating.create!(bar_id: 11, user_id: 5, rating: 3.5)
-
-# Monarch
-Rating.create!(bar_id: 12, user_id: 2, rating: 3.5)
-Rating.create!(bar_id: 12, user_id: 3, rating: 3.5)
-Rating.create!(bar_id: 12, user_id: 4, rating: 3.5)
-Rating.create!(bar_id: 12, user_id: 5, rating: 3.5)
 
 # Temple
 Rating.create!(bar_id: 12, user_id: 2, rating: 3)
