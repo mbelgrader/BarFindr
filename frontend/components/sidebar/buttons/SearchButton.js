@@ -10,14 +10,14 @@ class SearchButton extends React.Component {
   }
 
   handleClick() {
-    // e.preventDefault();
+    const tag = this.props.tag.toLowerCase();
+
     if (this.state.selected) {
       this.setState({ selected: false });
-      this.props.updateFilter('tag', '');
+      this.props.deleteFilter('tags', tag);
     } else {
       this.setState({ selected: true });
-      const tag = this.props.tag.toLowerCase();
-      this.props.updateFilter('tag', tag);
+      this.props.addFilter('tags', tag);
     }
   }
 

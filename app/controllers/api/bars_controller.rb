@@ -2,8 +2,11 @@ class Api::BarsController < ApplicationController
   def index
     @bars = bounds ? Bar.in_bounds(bounds) : Bar.all
 
-    if tag != ''
-      @bars = Bar.includes(:tags).where("tags.name = ?", "#{params[:tag]}").references(:tags)
+    if params[:tags]
+      @bars = []
+      params[:tags].each do |tag|
+        @bars.concat(Bar.includes(:tags).where("tags.name = ?", "#{tag}").references(:tags))
+      end
     end
     render :index
   end
@@ -32,7 +35,4 @@ class Api::BarsController < ApplicationController
     params[:bounds]
   end
 
-  def tag
-    params[:tag]
-  end
 end
