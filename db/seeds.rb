@@ -17,74 +17,73 @@ Bar.create!(name: 'Dada Bar',
             address: '65 Post St',
             lat: 37.7888479,
             lng: -122.4052969,
-            image: "http://ww4.hdnux.com/photos/56/05/71/12082763/5/920x1240.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712453/dada_sbtp7g.jpg")
 
 Bar.create!(name: 'Benders',
             address: '806 S Van Ness Ave',
             lat: 37.7601718,
             lng: -122.419518,
-            image: "http://cdn.shopify.com/s/files/1/0750/2079/files/dzr-sf-bar-report-02_cf116450-2673-45cd-98c4-3792a44bde47.jpg?1822377684330399469")
-            # "https://irs0.4sqi.net/img/general/600x600/26378902_dhZ3ItUCRWNy9mQnaA5dhOBfDfgMcHOkt1wOg7-iVOQ.jpg"
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497311784/venues/benders.jpg")
 
 Bar.create!(name: "The Cigar Bar \& Grill",
             address: '850 Montgomery St',
             lat: 37.7915624,
             lng: -122.4207866,
-            image: "http://cigarplaces.com/cigarplacesimages/15-2.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712452/cigar_bar_vw4iew.jpg")
 
 Bar.create!(name: 'Library Bar',
             address: '562 Sutter St',
             lat: 37.7893385,
             lng: -122.4119542,
-            image: "http://uploads.jdvhotels.com/2014/06/REX_LibraryBar_Overview-1200x800.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712453/library_bar_hl9uw6.jpg")
 
 Bar.create!(name: 'Infusion Loung',
             address: '124 Ellis St',
             lat: 37.7855668,
             lng: -122.4105829,
-            image: "https://static1.squarespace.com/static/5327c2b2e4b097bd81745542/53eca270e4b0eecc91fb29ee/53eca27ce4b063ce92890272/1408017022207/Infusion+Lounge+SF+Dance+Floor_HYVEmag.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497311784/venues/infusion.jpg")
 
 Bar.create!(name: 'Zeitgeist',
             address: '199 Valencia St',
             lat: 37.7700323,
             lng: -122.424292,
-            image: "http://wcimages.s3.amazonaws.com/1245897505iW2QuOwBbxNT_lg.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712453/zeitgeist_zypbch.jpg")
 
 Bar.create!(name: '724Hookah',
             address: '724 Geary St',
             lat: 37.7866522,
             lng: -122.4174318,
-            image: "http://s3-media2.ak.yelpcdn.com/bphoto/V7wMqAKLkbz6hI5oxkvl5g/l.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712453/724hookah_qcjy6f.jpg")
 
 Bar.create!(name: "Jillian\'s",
             address: 'Metreon, 175 4th St',
             lat: 37.7838403,
             lng: -122.4051866,
-            image: "https://www.eiseverywhere.com/file_uploads/9cb9e34b3095cbb31145aae1071cc46f_SocialProgram3.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1498712453/jillians_dit5a7.jpg")
 
 Bar.create!(name: "Golden Gate Tap Room",
             address: '449 Powell St',
             lat: 37.7857057,
             lng: -122.4089846,
-            image: "https://www.zagat.com/proxy/v1.4?m=image&a=resize&url=http%3A//storage.googleapis.com/zgt-photos/0x8085808e9a5d253d_0x2d5c3ea7db940d52/8cbee1700d49cdce3cc7be8d948ef2f3.jpg&width=497&height=286&key=abbc09b7c840c10937a4db331422c98b")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497311783/venues/ggtr.jpg")
 
 Bar.create!(name: "Elixir",
             address: '3200 16th St',
             lat: 37.7665234,
             lng: -122.4238977,
-            image: "https://media-cdn.tripadvisor.com/media/photo-s/01/8d/80/1d/looking-north-towards.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497311783/venues/elixer.jpg")
 
 Bar.create!(name: "Monarch",
             address: '101 6th St',
             lat: 37.7809868,
             lng: -122.4106163,
-            image: "http://www.monarchsf.com/files/2013/09/explore-bar-03.jpg")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497328564/monarch_xtbzeq.jpg")
 
 Bar.create!(name: "Temple",
             address: '540 Howard St',
             lat: 37.7879758,
             lng: -122.3994039,
-            image: "http://skamartist.com/sites/default/files/venues/216.png")
+            image: "https://res.cloudinary.com/ddp4q9jnr/image/upload/v1497328577/temple_wq0fmx.png")
 
 Tag.create!(name: 'dive') # 1
 Tag.create!(name: 'club') # 2
