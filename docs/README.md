@@ -1,9 +1,6 @@
 # BarFindr
 
-[heroku][link]: https://www.barfindrsf.com/#/
-[trello][link]: https://trello.com/b/r6AsBhbv/barfindr
-
-
+[Live Demo](https://www.barfindrsf.com/#/)
 
 # Minimum Viable Product
 
