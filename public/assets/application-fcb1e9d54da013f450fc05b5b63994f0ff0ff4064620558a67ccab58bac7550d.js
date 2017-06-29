@@ -43292,9 +43292,9 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _header_container = __webpack_require__(368);
+	var _HeaderContainer = __webpack_require__(368);
 	
-	var _header_container2 = _interopRequireDefault(_header_container);
+	var _HeaderContainer2 = _interopRequireDefault(_HeaderContainer);
 	
 	var _search_container = __webpack_require__(371);
 	
@@ -60672,9 +60672,9 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _header_container = __webpack_require__(368);
+	var _HeaderContainer = __webpack_require__(368);
 	
-	var _header_container2 = _interopRequireDefault(_header_container);
+	var _HeaderContainer2 = _interopRequireDefault(_HeaderContainer);
 	
 	var _bar_map = __webpack_require__(375);
 	
@@ -60689,7 +60689,7 @@ return jQuery;
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_header_container2.default, {
+	    _react2.default.createElement(_HeaderContainer2.default, {
 	      updateFilter: updateFilter }),
 	    _react2.default.createElement(_bar_map2.default, {
 	      bars: bars,

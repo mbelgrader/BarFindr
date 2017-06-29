@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { createComment, fetchBar } from '../../../actions/bar_actions.js';
 
-import CommentForm from './comment_form';
+import CommentForm from './CommentForm';
 
 const mapStateToProps = ({ session }) => ({
   currentUserId: session.currentUser.id

@@ -1,7 +1,7 @@
 import React from 'react';
 import { selectComments } from '../../reducers/selectors';
-import CommentButton from './comments/comment_button';
-import RatingButtonContainer from './ratings/rating_button_container';
+import CommentButton from './comments/CommentButton';
+import RatingButtonContainer from './ratings/RatingButtonContainer';
 
 class BarDetail extends React.Component {
   constructor(props) {

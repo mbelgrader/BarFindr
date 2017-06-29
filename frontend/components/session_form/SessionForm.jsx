@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
-import { Guide } from '../sidebar/guide';
+import { Guide } from '../sidebar/Guide';
 
 class SessionForm extends React.Component {
   constructor(props) {

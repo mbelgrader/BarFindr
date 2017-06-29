@@ -43215,9 +43215,9 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _header_container = __webpack_require__(367);
+	var _HeaderContainer = __webpack_require__(367);
 	
-	var _header_container2 = _interopRequireDefault(_header_container);
+	var _HeaderContainer2 = _interopRequireDefault(_HeaderContainer);
 	
 	var _bar_map_container = __webpack_require__(377);
 	
@@ -43231,7 +43231,7 @@ return jQuery;
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_header_container2.default, null),
+	    _react2.default.createElement(_HeaderContainer2.default, null),
 	    _react2.default.createElement(_bar_map_container2.default, null),
 	    children
 	  );

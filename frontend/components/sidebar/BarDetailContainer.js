@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { fetchBar, deleteComment } from '../../actions/bar_actions';
 import { selectBar, selectComments } from '../../reducers/selectors';
 
-import BarDetail from './bar_detail';
+import BarDetail from './BarDetail';
 
 const mapStateToProps = (state, {params, ownProps }) => {
   const barId = parseInt(params.barId);

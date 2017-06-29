@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router';
-import SearchBar from './search_bar';
 
 class Header extends React.Component {
   constructor(props) {
@@ -33,7 +32,6 @@ class Header extends React.Component {
     return(
       <nav>
         <Link to="/"><h1 id="logo">BarFindr</h1></Link>
-        <SearchBar updateFilter={updateFilter} />
         {currentUser ? this.signOut() : this.links()}
       </nav>
     );

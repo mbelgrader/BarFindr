@@ -2,11 +2,11 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
-import App from './app';
-import SessionFormContainer from './session_form/session_form_container';
-import { Guide } from './sidebar/guide';
-import BarDetailContainer from './sidebar/bar_detail_container';
-import CommentFormContainer from './sidebar/comments/comment_form_container';
+import App from './App';
+import SessionFormContainer from './session_form/SessionFormContainer';
+import { Guide } from './sidebar/Guide';
+import BarDetailContainer from './sidebar/BarDetailContainer';
+import CommentFormContainer from './sidebar/comments/CommentFormContainer';
 
 const Root = ({ store }) => {
 

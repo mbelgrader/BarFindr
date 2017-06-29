@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchContainer from './search/search_container';
+import SearchContainer from './search/SearchContainer';
 
 const App = ({ children }) => (
   <div>

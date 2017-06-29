@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { selectAllBars } from '../../reducers/selectors';
 import { updateFilter } from '../../actions/filter_actions';
-import Search from './search';
+import Search from './Search';
 
 const mapStateToProps = ({ bars }) => ({
   bars: selectAllBars(bars)
