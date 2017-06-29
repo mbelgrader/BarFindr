@@ -22,8 +22,8 @@ html, body, section, h1, h2, h3, p, a, ul, li, nav, button, input {
 }
 
 body {
-  font-family: 'sans serif', sans-serif;
-  color:  $blue;
+  font-family: sans-serif;
+  color: $light-grey;
 }
 
 button {
@@ -116,23 +116,30 @@ input {
 }
 
 .account-message {
-  color: black;
+  color: $black;
   font-size: 15px;
 }
 
-.account-message a {
-  color: $blue;
+.account-message a, span {
+  margin-top: 20px;
+  color: $light-grey;
+  text-align: center;
+}
+
+.account-message span {
+  padding-right: 10px;
 }
 
 .button {
   border: none;
-  background-color: $blue;
-  color: white;
-  padding: 5px 8px 5px 8px;
+  background-color: $dark-grey;
+  color: $light-grey;
+  padding: 10px 20px 10px 20px;
   font-size: 12px;
   font-family: inherit;
-  border-bottom: 1px solid #587cb5;
-  border-right: 1px solid #587cb5;
+  border-bottom: 2px solid $darker-grey;
+  border-right: 2px solid $darker-grey;
+  outline: none;
 }
 
 // sidebar
@@ -221,15 +228,29 @@ i {
 
 // login/signup
 
-
+div.account-form {
+  background-color: $black;
+  // height: 350px;
+  padding: 40px 40px 40px 40px;
+}
 
 .account-form h1 {
   font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  background-color: $black;
+  // padding: 20;
+  border: none;
+  border-bottom: 1px solid $dark-grey;
+  text-align: center;
 }
 
 .errors {
   color: red;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .form-submit {

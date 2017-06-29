@@ -52,7 +52,6 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'login') {
       return (
         <div className='account-message'>
-          <span>or </span>
           <Link to='/signup'>Create an account</Link>
         </div>
       );
@@ -69,12 +68,11 @@ class SessionForm extends React.Component {
   usernameInput() {
     if (this.props.formType === 'signup') {
       return (
-        <label><i className="fa fa-user" aria-hidden="true"></i>
-          <input type='text'
-                 onChange={this.update('username')}
-                 value={this.state.username}
-                 placeholder='Username' />
-        </label>
+        <input type='text'
+               onChange={this.update('username')}
+               value={this.state.username}
+               className={'form-input'}
+               placeholder='Username' />
       );
     }
   }
@@ -103,24 +101,23 @@ class SessionForm extends React.Component {
             {this.usernameInput()}
             <br />
 
-            <label><i className="fa fa-envelope" aria-hidden="true"></i>
-              <input type='text'
-                     onChange={this.update('email')}
-                     value={this.state.email}
-                     placeholder='Email' />
-            </label>
+            <input type='text'
+                   onChange={this.update('email')}
+                   value={this.state.email}
+                   className={'form-input'}
+                   placeholder='Email' />
 
             <br />
 
-            <label><i className="fa fa-lock" aria-hidden="true"></i>
-              <input type='password'
-                     onChange={this.update('password')}
-                     value={this.state.password}
-                     placeholder='Password' />
-            </label>
+            <input type='password'
+                   onChange={this.update('password')}
+                   value={this.state.password}
+                   className={'form-input'}
+                   placeholder='Password' />
 
             <br />
-            <input className='button form-submit' type='submit' value='Submit' />
+
+            <input className='button form-submit' type='submit' value='Enter' />
 
             {this.otherLink()}
           </form>
