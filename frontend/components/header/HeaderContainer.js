@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/sessionActions';
-import { updateFilter } from '../../actions/filterActions';
+import { resetFilter } from '../../actions/filterActions';
 import Header from './Header';
 
 const mapStateToProps = ({ session }, ownProps) => ({
@@ -9,7 +9,7 @@ const mapStateToProps = ({ session }, ownProps) => ({
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
-  updateFilter: (filter, value) => dispatch(updateFilter(filter, value))
+  resetFilter: () => dispatch(resetFilter())
 });
 
 export default connect(

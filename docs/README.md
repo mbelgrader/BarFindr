@@ -1,7 +1,9 @@
 # BarFindr
 
-[heroku][link]: https://peaceful-sea-91630.herokuapp.com/
+[heroku][link]: https://www.barfindrsf.com/#/
 [trello][link]: https://trello.com/b/r6AsBhbv/barfindr
+
+
 
 # Minimum Viable Product
 

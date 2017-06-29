@@ -9,6 +9,12 @@ class SearchButton extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  componentWillReceiveProps(newProps) {
+    if ( newProps.tagFilters.length < 1 ) {
+      this.setState({ selected: false });
+    }
+  }
+
   handleClick() {
     const tag = this.props.tag.toLowerCase();
 

@@ -4,6 +4,7 @@ import { merge } from 'lodash';
 export const UPDATE_FILTER = "UPDATE_FILTER";
 export const RECEIVE_FILTER = "RECEIVE_FILTER";
 export const REMOVE_FILTER = "REMOVE_FILTER";
+export const CLEAR_FILTER = "CLEAR_FILTER";
 
 export const updateFilter = (filter, value) => (dispatch, getState) => {
   dispatch(changeFilter(filter, value));
@@ -33,5 +34,15 @@ export const deleteFilter = (filter, tag) => (dispatch, getState) => {
 
 export const removeFilter = (tag) => ({
   type: REMOVE_FILTER,
+  tag
+});
+
+export const resetFilter = () => (dispatch, getState) => {
+  dispatch(clearFilter());
+  return fetchBars(getState().filters)(dispatch);
+};
+
+export const clearFilter = (tag) => ({
+  type: CLEAR_FILTER,
   tag
 });

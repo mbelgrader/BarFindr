@@ -19,7 +19,7 @@ class Header extends React.Component {
   }
 
   clickHome() {
-    this.props.updateFilter('tag', '');
+    this.props.resetFilter();
     const route = this.props.router.getCurrentLocation().pathname;
     if (route !== '/')
       this.props.router.push("/");
@@ -27,7 +27,7 @@ class Header extends React.Component {
 
   handleLogout() {
     this.props.logout();
-    this.props.updateFilter('tag', '');
+    this.props.resetFilter();
     this.props.router.push("/");
   }
 
