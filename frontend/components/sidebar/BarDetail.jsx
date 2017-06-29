@@ -47,7 +47,7 @@ class BarDetail extends React.Component {
     }
 
     return(
-      <div className='sidebar'>
+      <div className='sidebar-detail'>
         <img src={this.props.bar.image} />
         <ul>
           <li className='bar-name'>{name}</li>
