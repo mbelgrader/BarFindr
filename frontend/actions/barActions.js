@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/bar_api_util';
+import * as APIUtil from '../util/barApiUtil';
 
 export const RECEIVE_BARS = "RECEIVE_BARS";
 export const RECEIVE_BAR = "RECEIVE_BAR";

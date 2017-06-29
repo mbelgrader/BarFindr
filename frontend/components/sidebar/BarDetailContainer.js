@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchBar, deleteComment } from '../../actions/bar_actions';
+import { fetchBar, deleteComment } from '../../actions/BarActions';
 import { selectBar, selectComments } from '../../reducers/selectors';
 
 import BarDetail from './BarDetail';

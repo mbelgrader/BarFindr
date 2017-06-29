@@ -50,12 +50,6 @@ Bar.create!(name: 'Zeitgeist',
             lng: -122.424292,
             image: "http://wcimages.s3.amazonaws.com/1245897505iW2QuOwBbxNT_lg.jpg")
 
-Bar.create!(name: 'Laguna Cafe',
-            address: '1821 Haight St',
-            lat: 37.769229,
-            lng: -122.4545044,
-            image: "https://s3-media1.fl.yelpcdn.com/bphoto/GmVfsEdgbf7ur_KQiu3Ihg/ls.jpg")
-
 Bar.create!(name: '724Hookah',
             address: '724 Geary St',
             lat: 37.7866522,

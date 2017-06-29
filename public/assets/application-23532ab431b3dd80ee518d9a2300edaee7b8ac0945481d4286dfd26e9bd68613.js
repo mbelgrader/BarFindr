@@ -11639,7 +11639,7 @@ return jQuery;
 	
 	var _root2 = _interopRequireDefault(_root);
 	
-	var _session_api_util = __webpack_require__(203);
+	var _sessionApiUtil = __webpack_require__(203);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -11655,7 +11655,7 @@ return jQuery;
 	  }
 	
 	  window.store = store; // testing
-	  window.login = _session_api_util.login; // testing
+	  window.login = _sessionApiUtil.login; // testing
 	  var root = document.getElementById('root');
 	  _reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
 	});
@@ -33085,9 +33085,9 @@ return jQuery;
 	
 	var _redux = __webpack_require__(179);
 	
-	var _root_reducer = __webpack_require__(200);
+	var _rootReducer = __webpack_require__(200);
 	
-	var _root_reducer2 = _interopRequireDefault(_root_reducer);
+	var _rootReducer2 = _interopRequireDefault(_rootReducer);
 	
 	var _reduxThunk = __webpack_require__(295);
 	
@@ -33097,7 +33097,7 @@ return jQuery;
 	
 	var configureStore = function configureStore() {
 	  var preloadedState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	  return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+	  return (0, _redux.createStore)(_rootReducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
 	};
 	
 	exports.default = configureStore;
@@ -34146,29 +34146,29 @@ return jQuery;
 	
 	var _redux = __webpack_require__(179);
 	
-	var _session_reducer = __webpack_require__(201);
+	var _sessionReducer = __webpack_require__(201);
 	
-	var _session_reducer2 = _interopRequireDefault(_session_reducer);
+	var _sessionReducer2 = _interopRequireDefault(_sessionReducer);
 	
-	var _bars_reducer = __webpack_require__(289);
+	var _barsReducer = __webpack_require__(289);
 	
-	var _bars_reducer2 = _interopRequireDefault(_bars_reducer);
+	var _barsReducer2 = _interopRequireDefault(_barsReducer);
 	
-	var _filter_reducer = __webpack_require__(292);
+	var _filterReducer = __webpack_require__(292);
 	
-	var _filter_reducer2 = _interopRequireDefault(_filter_reducer);
+	var _filterReducer2 = _interopRequireDefault(_filterReducer);
 	
-	var _bar_details_reducer = __webpack_require__(294);
+	var _barDetailsReducer = __webpack_require__(294);
 	
-	var _bar_details_reducer2 = _interopRequireDefault(_bar_details_reducer);
+	var _barDetailsReducer2 = _interopRequireDefault(_barDetailsReducer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var RootReducer = (0, _redux.combineReducers)({
-	  session: _session_reducer2.default,
-	  bars: _bars_reducer2.default,
-	  barDetails: _bar_details_reducer2.default,
-	  filters: _filter_reducer2.default
+	  session: _sessionReducer2.default,
+	  bars: _barsReducer2.default,
+	  barDetails: _barDetailsReducer2.default,
+	  filters: _filterReducer2.default
 	});
 	
 	exports.default = RootReducer;
@@ -34183,7 +34183,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -34202,14 +34202,14 @@ return jQuery;
 	
 	  Object.freeze(state);
 	  switch (action.type) {
-	    case _session_actions.RECEIVE_CURRENT_USER:
+	    case _sessionActions.RECEIVE_CURRENT_USER:
 	      var currentUser = action.currentUser;
 	      return (0, _merge2.default)({}, nullUser, {
 	        currentUser: currentUser
 	      });
-	    case _session_actions.LOGOUT:
+	    case _sessionActions.LOGOUT:
 	      return (0, _merge2.default)({}, nullUser);
-	    case _session_actions.RECEIVE_ERRORS:
+	    case _sessionActions.RECEIVE_ERRORS:
 	      var errors = action.errors;
 	      return (0, _merge2.default)({}, nullUser, {
 	        errors: errors
@@ -34232,9 +34232,9 @@ return jQuery;
 	});
 	exports.receiveErrors = exports.receiveCurrentUser = exports.logout = exports.login = exports.signup = exports.RECEIVE_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
 	
-	var _session_api_util = __webpack_require__(203);
+	var _sessionApiUtil = __webpack_require__(203);
 	
-	var APIUtil = _interopRequireWildcard(_session_api_util);
+	var APIUtil = _interopRequireWildcard(_sessionApiUtil);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -34294,7 +34294,7 @@ return jQuery;
 	});
 	exports.logout = exports.login = exports.signup = undefined;
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var signup = exports.signup = function signup(user) {
 	  return $.ajax({
@@ -36997,7 +36997,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -37011,7 +37011,7 @@ return jQuery;
 	
 	  Object.freeze(state);
 	  switch (action.type) {
-	    case _bar_actions.RECEIVE_BARS:
+	    case _BarActions.RECEIVE_BARS:
 	      return action.bars;
 	    default:
 	      return state;
@@ -37031,9 +37031,9 @@ return jQuery;
 	});
 	exports.receiveBar = exports.receiveBars = exports.fetchBar = exports.fetchBars = exports.RECEIVE_BAR_DETAILS = exports.RECEIVE_BAR = exports.RECEIVE_BARS = undefined;
 	
-	var _bar_api_util = __webpack_require__(291);
+	var _barApiUtil = __webpack_require__(291);
 	
-	var APIUtil = _interopRequireWildcard(_bar_api_util);
+	var APIUtil = _interopRequireWildcard(_barApiUtil);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -37105,7 +37105,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _filter_actions = __webpack_require__(293);
+	var _filterActions = __webpack_require__(293);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -37125,7 +37125,7 @@ return jQuery;
 	  var action = arguments[1];
 	
 	  Object.freeze(state);
-	  if (action.type === _filter_actions.UPDATE_FILTER) {
+	  if (action.type === _filterActions.UPDATE_FILTER) {
 	    var newFilter = _defineProperty({}, action.filter, action.value);
 	    return (0, _merge2.default)({}, state, newFilter);
 	  } else {
@@ -37146,14 +37146,14 @@ return jQuery;
 	});
 	exports.changeFilter = exports.updateFilter = exports.UPDATE_FILTER = undefined;
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var UPDATE_FILTER = exports.UPDATE_FILTER = "UPDATE_FILTER";
 	
 	var updateFilter = exports.updateFilter = function updateFilter(filter, value) {
 	  return function (dispatch, getState) {
 	    dispatch(changeFilter(filter, value));
-	    return (0, _bar_actions.fetchBars)(getState().filters)(dispatch);
+	    return (0, _BarActions.fetchBars)(getState().filters)(dispatch);
 	  };
 	};
 	
@@ -37175,7 +37175,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -37192,7 +37192,7 @@ return jQuery;
 	  Object.freeze(state);
 	  // debugger
 	  switch (action.type) {
-	    case _bar_actions.RECEIVE_BAR:
+	    case _BarActions.RECEIVE_BAR:
 	      var newBar = _defineProperty({}, action.bar.id, action.bar);
 	      return (0, _merge2.default)({}, state, newBar);
 	    default:
@@ -43327,7 +43327,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(297);
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _header = __webpack_require__(369);
 	
@@ -43345,7 +43345,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    logout: function logout() {
-	      return dispatch((0, _session_actions.logout)());
+	      return dispatch((0, _sessionActions.logout)());
 	    }
 	  };
 	};
@@ -43439,7 +43439,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(297);
 	
-	var _filter_actions = __webpack_require__(293);
+	var _filterActions = __webpack_require__(293);
 	
 	var _search_bar = __webpack_require__(371);
 	
@@ -43454,7 +43454,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    updateFilter: function updateFilter(filter, value) {
-	      return dispatch((0, _filter_actions.updateFilter)(filter, value));
+	      return dispatch((0, _filterActions.updateFilter)(filter, value));
 	    }
 	  };
 	};
@@ -60682,9 +60682,9 @@ return jQuery;
 	
 	var _reactRouter = __webpack_require__(314);
 	
-	var _marker_manager = __webpack_require__(376);
+	var _markerManager = __webpack_require__(376);
 	
-	var _marker_manager2 = _interopRequireDefault(_marker_manager);
+	var _markerManager2 = _interopRequireDefault(_markerManager);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -60720,7 +60720,7 @@ return jQuery;
 	    value: function componentDidMount() {
 	      var map = this.refs.map;
 	      this.map = new google.maps.Map(map, _mapOptions);
-	      this.MarkerManager = new _marker_manager2.default(this.map, this._handleMarkerClick.bind(this));
+	      this.MarkerManager = new _markerManager2.default(this.map, this._handleMarkerClick.bind(this));
 	      if (this.props.singleBar) {
 	        this.props.fetchBar(this.props.barId);
 	      } else {
@@ -60883,7 +60883,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(297);
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _session_form = __webpack_require__(378);
 	
@@ -60906,7 +60906,7 @@ return jQuery;
 	  var location = _ref2.location;
 	
 	  var formType = location.pathname.slice(1);
-	  var _processForm = formType === 'signup' ? _session_actions.signup : _session_actions.login;
+	  var _processForm = formType === 'signup' ? _sessionActions.signup : _sessionActions.login;
 	
 	  return {
 	    processForm: function processForm(user) {
@@ -61179,7 +61179,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(297);
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _selectors = __webpack_require__(373);
 	
@@ -61206,7 +61206,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    fetchBar: function fetchBar(id) {
-	      return dispatch((0, _bar_actions.fetchBar)(id));
+	      return dispatch((0, _BarActions.fetchBar)(id));
 	    }
 	  };
 	};
@@ -61335,7 +61335,7 @@ return jQuery;
 	
 	var _selectors = __webpack_require__(373);
 	
-	var _filter_actions = __webpack_require__(293);
+	var _filterActions = __webpack_require__(293);
 	
 	var _search = __webpack_require__(383);
 	
@@ -61353,7 +61353,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    updateFilter: function updateFilter(filter, value) {
-	      return dispatch((0, _filter_actions.updateFilter)(filter, value));
+	      return dispatch((0, _filterActions.updateFilter)(filter, value));
 	    }
 	  };
 	};

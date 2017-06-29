@@ -1,4 +1,4 @@
-import { fetchBars } from './bar_actions';
+import { fetchBars } from './BarActions';
 import { merge } from 'lodash';
 
 export const UPDATE_FILTER = "UPDATE_FILTER";

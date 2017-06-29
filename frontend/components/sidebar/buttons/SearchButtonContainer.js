@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { updateFilter } from '../../../actions/filter_actions';
+import { updateFilter } from '../../../actions/filterActions';
 import SearchButton from './SearchButton';
 
 const mapStateToProps = () => ({

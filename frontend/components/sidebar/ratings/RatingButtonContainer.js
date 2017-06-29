@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { updateRating } from '../../../actions/bar_actions';
+import { updateRating } from '../../../actions/BarActions';
 import { selectBar } from '../../../reducers/selectors';
 
 import RatingButton from './RatingButton';

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import SessionReducer from './session_reducer';
-import barsReducer from './bars_reducer';
-import filterReducer from './filter_reducer';
-import barDetailsReducer from './bar_details_reducer';
+import SessionReducer from './sessionReducer';
+import barsReducer from './barsReducer';
+import filterReducer from './filterReducer';
+import barDetailsReducer from './barDetailsReducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,

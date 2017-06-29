@@ -1,4 +1,4 @@
-import { RECEIVE_BARS, RECEIVE_BAR, RECEIVE_COMMENT } from '../actions/bar_actions';
+import { RECEIVE_BARS, RECEIVE_BAR, RECEIVE_COMMENT } from '../actions/BarActions';
 import merge from 'lodash/merge';
 
 const barsReducer = (state = {}, action) => {

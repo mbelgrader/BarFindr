@@ -33074,9 +33074,9 @@ return jQuery;
 	
 	var _redux = __webpack_require__(179);
 	
-	var _root_reducer = __webpack_require__(200);
+	var _rootReducer = __webpack_require__(200);
 	
-	var _root_reducer2 = _interopRequireDefault(_root_reducer);
+	var _rootReducer2 = _interopRequireDefault(_rootReducer);
 	
 	var _reduxThunk = __webpack_require__(296);
 	
@@ -33086,7 +33086,7 @@ return jQuery;
 	
 	var configureStore = function configureStore() {
 	  var preloadedState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	  return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+	  return (0, _redux.createStore)(_rootReducer2.default, preloadedState, (0, _redux.applyMiddleware)(_reduxThunk2.default));
 	};
 	
 	exports.default = configureStore;
@@ -34135,29 +34135,29 @@ return jQuery;
 	
 	var _redux = __webpack_require__(179);
 	
-	var _session_reducer = __webpack_require__(201);
+	var _sessionReducer = __webpack_require__(201);
 	
-	var _session_reducer2 = _interopRequireDefault(_session_reducer);
+	var _sessionReducer2 = _interopRequireDefault(_sessionReducer);
 	
-	var _bars_reducer = __webpack_require__(289);
+	var _barsReducer = __webpack_require__(289);
 	
-	var _bars_reducer2 = _interopRequireDefault(_bars_reducer);
+	var _barsReducer2 = _interopRequireDefault(_barsReducer);
 	
-	var _filter_reducer = __webpack_require__(292);
+	var _filterReducer = __webpack_require__(292);
 	
-	var _filter_reducer2 = _interopRequireDefault(_filter_reducer);
+	var _filterReducer2 = _interopRequireDefault(_filterReducer);
 	
-	var _bar_details_reducer = __webpack_require__(295);
+	var _barDetailsReducer = __webpack_require__(295);
 	
-	var _bar_details_reducer2 = _interopRequireDefault(_bar_details_reducer);
+	var _barDetailsReducer2 = _interopRequireDefault(_barDetailsReducer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var RootReducer = (0, _redux.combineReducers)({
-	  session: _session_reducer2.default,
-	  bars: _bars_reducer2.default,
-	  barDetails: _bar_details_reducer2.default,
-	  filters: _filter_reducer2.default
+	  session: _sessionReducer2.default,
+	  bars: _barsReducer2.default,
+	  barDetails: _barDetailsReducer2.default,
+	  filters: _filterReducer2.default
 	});
 	
 	exports.default = RootReducer;
@@ -34172,7 +34172,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -34191,19 +34191,19 @@ return jQuery;
 	
 	  Object.freeze(state);
 	  switch (action.type) {
-	    case _session_actions.RECEIVE_CURRENT_USER:
+	    case _sessionActions.RECEIVE_CURRENT_USER:
 	      var currentUser = action.currentUser;
 	      return (0, _merge2.default)({}, nullUser, {
 	        currentUser: currentUser
 	      });
-	    case _session_actions.LOGOUT:
+	    case _sessionActions.LOGOUT:
 	      return (0, _merge2.default)({}, nullUser);
-	    case _session_actions.RECEIVE_ERRORS:
+	    case _sessionActions.RECEIVE_ERRORS:
 	      var errors = action.errors;
 	      return (0, _merge2.default)({}, nullUser, {
 	        errors: errors
 	      });
-	    case _session_actions.CLEAR_ERRORS:
+	    case _sessionActions.CLEAR_ERRORS:
 	      return (0, _merge2.default)({}, nullUser);
 	    default:
 	      return state;
@@ -34223,9 +34223,9 @@ return jQuery;
 	});
 	exports.clearErrors = exports.receiveErrors = exports.receiveCurrentUser = exports.logout = exports.login = exports.signup = exports.CLEAR_ERRORS = exports.RECEIVE_ERRORS = exports.RECEIVE_CURRENT_USER = undefined;
 	
-	var _session_api_util = __webpack_require__(203);
+	var _sessionApiUtil = __webpack_require__(203);
 	
-	var APIUtil = _interopRequireWildcard(_session_api_util);
+	var APIUtil = _interopRequireWildcard(_sessionApiUtil);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -36996,7 +36996,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -37012,7 +37012,7 @@ return jQuery;
 	  var newState = (0, _merge2.default)({}, state);
 	
 	  switch (action.type) {
-	    case _bar_actions.RECEIVE_BARS:
+	    case _BarActions.RECEIVE_BARS:
 	      return action.bars;
 	    default:
 	      return state;
@@ -37032,9 +37032,9 @@ return jQuery;
 	});
 	exports.receiveRating = exports.updateRating = exports.removeComment = exports.deleteComment = exports.receiveComment = exports.createComment = exports.receiveBar = exports.fetchBar = exports.receiveBars = exports.fetchBars = exports.RECEIVE_RATING = exports.REMOVE_COMMENT = exports.RECEIVE_COMMENT = exports.RECEIVE_BAR_DETAILS = exports.RECEIVE_BAR = exports.RECEIVE_BARS = undefined;
 	
-	var _bar_api_util = __webpack_require__(291);
+	var _barApiUtil = __webpack_require__(291);
 	
-	var APIUtil = _interopRequireWildcard(_bar_api_util);
+	var APIUtil = _interopRequireWildcard(_barApiUtil);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -37178,7 +37178,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _filter_actions = __webpack_require__(293);
+	var _filterActions = __webpack_require__(293);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -37198,7 +37198,7 @@ return jQuery;
 	  var action = arguments[1];
 	
 	  Object.freeze(state);
-	  if (action.type === _filter_actions.UPDATE_FILTER) {
+	  if (action.type === _filterActions.UPDATE_FILTER) {
 	    var newFilter = _defineProperty({}, action.filter, action.value);
 	    return (0, _merge2.default)({}, state, newFilter);
 	  } else {
@@ -37219,7 +37219,7 @@ return jQuery;
 	});
 	exports.changeFilter = exports.updateFilter = exports.UPDATE_FILTER = undefined;
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _lodash = __webpack_require__(294);
 	
@@ -37228,7 +37228,7 @@ return jQuery;
 	var updateFilter = exports.updateFilter = function updateFilter(filter, value) {
 	  return function (dispatch, getState) {
 	    dispatch(changeFilter(filter, value));
-	    return (0, _bar_actions.fetchBars)(getState().filters)(dispatch);
+	    return (0, _BarActions.fetchBars)(getState().filters)(dispatch);
 	  };
 	};
 	
@@ -54341,7 +54341,7 @@ return jQuery;
 	  value: true
 	});
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _merge = __webpack_require__(204);
 	
@@ -54359,22 +54359,22 @@ return jQuery;
 	  var newState = (0, _merge2.default)({}, state);
 	
 	  switch (action.type) {
-	    case _bar_actions.RECEIVE_BAR:
+	    case _BarActions.RECEIVE_BAR:
 	      var newBar = _defineProperty({}, action.bar.id, action.bar);
 	      if (newBar[action.bar.id].user_rating.length > 0) newBar[action.bar.id].user_rating = newBar[action.bar.id].user_rating[0].rating;
 	      return (0, _merge2.default)({}, state, newBar);
-	    case _bar_actions.RECEIVE_COMMENT:
+	    case _BarActions.RECEIVE_COMMENT:
 	      var comment = action.comment;
 	      newState[comment.bar_id].comments.push(comment);
 	      return newState;
-	    case _bar_actions.REMOVE_COMMENT:
+	    case _BarActions.REMOVE_COMMENT:
 	      var commentId = void 0;
 	      newState[action.comment.bar_id].comments.forEach(function (com, i) {
 	        if (com.id === action.comment.id) commentId = i;
 	      });
 	      newState[action.comment.bar_id].comments.splice(commentId, 1);
 	      return newState;
-	    case _bar_actions.RECEIVE_RATING:
+	    case _BarActions.RECEIVE_RATING:
 	      var barId = action.rating.bar_id;
 	      newState[barId].user_rating = action.rating.rating;
 	      return newState;
@@ -60526,7 +60526,7 @@ return jQuery;
 	
 	var _selectors = __webpack_require__(370);
 	
-	var _filter_actions = __webpack_require__(293);
+	var _filterActions = __webpack_require__(293);
 	
 	var _search = __webpack_require__(371);
 	
@@ -60544,7 +60544,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    updateFilter: function updateFilter(filter, value) {
-	      return dispatch((0, _filter_actions.updateFilter)(filter, value));
+	      return dispatch((0, _filterActions.updateFilter)(filter, value));
 	    }
 	  };
 	};
@@ -60628,7 +60628,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(298);
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _header = __webpack_require__(373);
 	
@@ -60646,7 +60646,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    logout: function logout() {
-	      return dispatch((0, _session_actions.logout)());
+	      return dispatch((0, _sessionActions.logout)());
 	    }
 	  };
 	};
@@ -60860,9 +60860,9 @@ return jQuery;
 	
 	var _reactRouter = __webpack_require__(315);
 	
-	var _marker_manager = __webpack_require__(376);
+	var _markerManager = __webpack_require__(376);
 	
-	var _marker_manager2 = _interopRequireDefault(_marker_manager);
+	var _markerManager2 = _interopRequireDefault(_markerManager);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -60898,7 +60898,7 @@ return jQuery;
 	    value: function componentDidMount() {
 	      var map = this.refs.map;
 	      this.map = new google.maps.Map(map, _mapOptions);
-	      this.MarkerManager = new _marker_manager2.default(this.map, this._handleMarkerClick.bind(this));
+	      this.MarkerManager = new _markerManager2.default(this.map, this._handleMarkerClick.bind(this));
 	      this._registerListeners();
 	      this.MarkerManager.updateMarkers(this.props.bars);
 	    }
@@ -61043,7 +61043,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(298);
 	
-	var _session_actions = __webpack_require__(202);
+	var _sessionActions = __webpack_require__(202);
 	
 	var _session_form = __webpack_require__(378);
 	
@@ -61064,7 +61064,7 @@ return jQuery;
 	  var location = _ref2.location;
 	
 	  var formType = location.pathname.slice(1);
-	  var _processForm = formType === 'signup' ? _session_actions.signup : _session_actions.login;
+	  var _processForm = formType === 'signup' ? _sessionActions.signup : _sessionActions.login;
 	
 	  return {
 	    processForm: function processForm(user) {
@@ -61072,7 +61072,7 @@ return jQuery;
 	    },
 	    formType: formType,
 	    clearErrors: function clearErrors() {
-	      return dispatch((0, _session_actions.clearErrors)());
+	      return dispatch((0, _sessionActions.clearErrors)());
 	    }
 	  };
 	};
@@ -61396,7 +61396,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(298);
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _selectors = __webpack_require__(370);
 	
@@ -61427,10 +61427,10 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    fetchBar: function fetchBar(id) {
-	      return dispatch((0, _bar_actions.fetchBar)(id));
+	      return dispatch((0, _BarActions.fetchBar)(id));
 	    },
 	    deleteComment: function deleteComment(id) {
-	      return dispatch((0, _bar_actions.deleteComment)(id));
+	      return dispatch((0, _BarActions.deleteComment)(id));
 	    }
 	  };
 	};
@@ -61652,7 +61652,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(298);
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _selectors = __webpack_require__(370);
 	
@@ -61665,7 +61665,7 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    updateRating: function updateRating(rating) {
-	      return dispatch((0, _bar_actions.updateRating)(rating));
+	      return dispatch((0, _BarActions.updateRating)(rating));
 	    }
 	  };
 	};
@@ -62062,7 +62062,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(298);
 	
-	var _bar_actions = __webpack_require__(290);
+	var _BarActions = __webpack_require__(290);
 	
 	var _comment_form = __webpack_require__(387);
 	
@@ -62080,10 +62080,10 @@ return jQuery;
 	var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 	  return {
 	    createComment: function createComment(comment) {
-	      return dispatch((0, _bar_actions.createComment)(comment));
+	      return dispatch((0, _BarActions.createComment)(comment));
 	    },
 	    fetchBar: function fetchBar(id) {
-	      return dispatch((0, _bar_actions.fetchBar)(id));
+	      return dispatch((0, _BarActions.fetchBar)(id));
 	    }
 	  };
 	};

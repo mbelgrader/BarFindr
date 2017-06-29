@@ -2,7 +2,7 @@ import { RECEIVE_BAR,
          RECEIVE_BAR_DETAILS,
          RECEIVE_COMMENT,
          REMOVE_COMMENT,
-         RECEIVE_RATING} from '../actions/bar_actions';
+         RECEIVE_RATING} from '../actions/BarActions';
 import merge from 'lodash/merge';
 
 const barDetailsReducer = (state = {}, action) => {
