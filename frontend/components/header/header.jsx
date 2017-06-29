@@ -5,6 +5,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.handleLogout = this.handleLogout.bind(this);
+    this.clickHome = this.clickHome.bind(this);
   }
 
   links() {
@@ -15,6 +16,11 @@ class Header extends React.Component {
         <Link className='links' to="/login">Log In</Link>
       </div>
     );
+  }
+
+  clickHome() {
+    this.props.updateFilter('tag', '');
+    this.props.router.push("/");
   }
 
   handleLogout() {
@@ -31,7 +37,7 @@ class Header extends React.Component {
     const { updateFilter, currentUser } = this.props;
     return(
       <nav>
-        <Link to="/"><h1 id="logo">BarFindr</h1></Link>
+        <button id='logo' onClick={this.clickHome}>BarFindr</button>;
         {currentUser ? this.signOut() : this.links()}
       </nav>
     );

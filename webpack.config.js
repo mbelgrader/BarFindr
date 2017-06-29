@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './frontend/bar_findr.jsx',
+  entry: './frontend/BarFindr.jsx',
   output: {
     path: 'app/assets/javascripts',
     filename: 'bundle.js',
