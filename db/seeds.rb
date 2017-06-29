@@ -263,6 +263,7 @@ Comment.create!(body: 'long line on weekends', user_id: 4, bar_id: 12)
 Comment.create!(body: 'good music', user_id: 2, bar_id: 12)
 Comment.create!(body: 'bottle service is on point', user_id: 3, bar_id: 12)
 Comment.create!(body: 'always crowded', user_id: 8, bar_id: 12)
+Comment.create!(body: 'bartenders are awesome', user_id: 7, bar_id: 12)
 
 # Dada
 Rating.create!(bar_id: 1, user_id: 2, rating: 5)
