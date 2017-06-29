@@ -25,6 +25,7 @@ class Header extends React.Component {
 
   handleLogout() {
     this.props.logout();
+    this.props.updateFilter('tag', '');
     this.props.router.push("/");
   }
 
@@ -37,7 +38,7 @@ class Header extends React.Component {
     const { updateFilter, currentUser } = this.props;
     return(
       <nav>
-        <button id='logo' onClick={this.clickHome}>BarFindr</button>;
+        <button id='logo' onClick={this.clickHome}>BarFindr</button>
         {currentUser ? this.signOut() : this.links()}
       </nav>
     );
